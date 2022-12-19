@@ -18,16 +18,14 @@ public class MemberDAO {
 		try {
 			Class.forName("oracle.jdbc.OracleDriver");
 
-			//String url = "";
-			//String DB_User = "cgi_4_1220_1";
-			//String DB_Password = "smhrd1";
+			String url = "jdbc:oracle:thin:@project-db-stu.ddns.net:1524:xe";
+			String DB_User = "cgi_4_1220_1";
+			String DB_Password = "smhrd1";
 			
-			String url = "jdbc:oracle:thin:@localhost:1521:xe";
-			String DB_User = "hr";
-			String DB_Password = "hr";
+//			String url = "jdbc:oracle:thin:@localhost:1521:xe";
+//			String DB_User = "hr";
+//			String DB_Password = "hr";
 			
-			
-
 			conn = DriverManager.getConnection(url, DB_User, DB_Password);
 
 		} catch (Exception e) {
@@ -35,6 +33,7 @@ public class MemberDAO {
 		}
 
 	}
+	
 	// DB닫음
 	public void close() {
 		try {
@@ -53,6 +52,7 @@ public class MemberDAO {
 		}
 
 	}
+	
 	// 회원가입
 	public int Join(MemberDTO dto) {
 
@@ -84,7 +84,7 @@ public class MemberDAO {
 		try {
 			getConn();
 
-			String sql = "select * from (DB) where id = ? and pw =?";
+			String sql = "SELECT * FROM MEMBER WHERE ID = ? AND PW =?";
 
 			psmt = conn.prepareStatement(sql);
 
