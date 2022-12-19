@@ -33,7 +33,7 @@ public class Login_Service extends HttpServlet {
 		
 		if(user_info != null) {
 			HttpSession session = request.getSession();
-			session.setAttribute("id",id);
+			session.setAttribute("user",user_info);
 			nextPage = "메인페이지";
 		}else {
 			nextPage = "login02.jsp";
