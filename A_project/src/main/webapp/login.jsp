@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,31 +17,32 @@
                     <button type="button" class="togglebtn" onclick="register()">REGISTER</button>
                 </div>
                 <form id="login" action="Login_Service" class="input-group" method = "post">
-                    <input type="text" class="input-field" name = "id" placeholder="your ID">
-                    <input type="password" class="input-field" name = "pw" placeholder="your Password">
+                    <input type="text" class="input-field" name="id" placeholder="your ID">
+                    <input type="password" class="input-field" name="pw" placeholder="your Password">
                     <input type="checkbox" class="checkbox">Remember ID</br>
-                    <button class="submit">Login</button></br>
+                    <button class="submit" type="submit">Login</button></br>
                     <button class="submit">forget id/pw</button></br>
                     <button class="kakao">?</button></br>
-               
-                    
                 </form>
                 
-                <form id="register" action="" class="input-group">
-                    <input type="email" class="input-field" name = "id" placeholder="ID" required>
-                    <input type="password" class="input-field" name = "pw" placeholder="Password" required>
-                    <input type="text" class="input-field"  name = "name" placeholder="User name" required>
-                    <input type="date" class="input-field" name = "rrn" placeholder="Birth" required>
+                <form class="input-group" id="register" action="Join_Service" method="post">
+                    <input class="input-field" type="email" name="id" placeholder="ID" required>
+                    <input class="input-field" type="password" name="pw" placeholder="Password" required>
+                    <input class="input-field" type="text" name="name" placeholder="Name" required>
+                    
+                    <input type="text" class="input-field" name="rrn" placeholder="Resident registration number" required>
+                    
                     <select class="input-field" name = "gender" arai-lable ="gender" >
-                    <option value selected>gender</option>
-                    <option value = "men">men</option>
-                    <option value = "waman">woman</option>
+                    	<option value selected>gender</option>
+                    	<option value = "MEN">men</option>
+                    	<option value = "WOMEN">women</option>
                     </select>
-                    <input type="email" class="input-field" name = "eamil" placeholder="Email" required>
-                    <input type="text" class="input-field" name = "tel" placeholder="Tel" required>
-                    <input type="text" class="input-field" name = "address" placeholder="Address" required>
+                    
+                    <input class="input-field" type="text" name = "email" placeholder="Email" required>
+                    <input class="input-field" type="text" name = "tel" placeholder="Tel" required>
+                    <input class="input-field" type="text" name = "address" placeholder="Address" required>
                     </br>
-                    <button class="submit">REGISTER</button>
+                    <button class="submit" type="submit">REGISTER</button>
                 </form>
             </div>
         </div>
@@ -60,10 +63,7 @@
                 x.style.left = "-400px";
                 y.style.left = "50px";
                 z.style.left = "110px";
-            }
-            
-          
-            
+            }         
         </script>
 
 </body>

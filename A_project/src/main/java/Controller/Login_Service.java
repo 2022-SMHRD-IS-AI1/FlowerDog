@@ -20,30 +20,27 @@ public class Login_Service extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		request.setCharacterEncoding("utf-8");
-		
+
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
-		
+
 		MemberDAO dao = new MemberDAO();
+
 		MemberDTO dto = new MemberDTO(id, pw);
+
+		dao.login(dto);
+
+		MemberDTO result = dao.login(dto);
+
 		
-		MemberDTO user_info = dao.Login(dto);
-		
-		String nextPage = "";
-		
-		if(user_info != null) {
+		if (result != null) {
 			HttpSession session = request.getSession();
-			session.setAttribute("user",user_info);
-			nextPage = "메인페이지";
-		}else {
-			nextPage = "login02.jsp";
+			session.setAttribute("info", result);
+			System.out.println("로그인 성공!");
 		}
-		RequestDispatcher rd = request.getRequestDispatcher(nextPage);
+
+		RequestDispatcher rd = request.getRequestDispatcher("");
 		rd.forward(request, response);
-		
-		
-		
-		
 		
 	}
 
