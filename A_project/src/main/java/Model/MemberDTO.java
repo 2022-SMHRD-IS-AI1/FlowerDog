@@ -7,13 +7,12 @@ public class MemberDTO {
 	String name;
 	String rrn;
 	String gender;
+	String email;
 	String tel;
 	String address;
-	String email;
 	
 	
-	public MemberDTO(String id, String pw, String name, String rRN, String gender, String email, String tel,
-			String address) {
+	public MemberDTO(String id, String pw, String name, String rrn, String gender, String email, String tel, String address) {
 		
 		this.id = id;
 		this.pw = pw;
@@ -26,7 +25,6 @@ public class MemberDTO {
 	}
 	
 	public MemberDTO(String id, String pw) {
-		super();
 		this.id = id;
 		this.pw = pw;
 	}
@@ -94,13 +92,6 @@ public class MemberDTO {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
-
-
-	
-	
-	
-	
 	
 
 }
