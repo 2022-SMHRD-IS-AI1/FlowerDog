@@ -36,7 +36,7 @@ public class Login_Service extends HttpServlet {
 			session.setAttribute("user",user_info);
 			nextPage = "메인페이지";
 		}else {
-			nextPage = "login02.jsp";
+			nextPage = "login.jsp";
 		}
 		RequestDispatcher rd = request.getRequestDispatcher(nextPage);
 		rd.forward(request, response);

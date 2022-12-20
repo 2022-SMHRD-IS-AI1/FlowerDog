@@ -10,24 +10,26 @@
 <body>
 
 <div class="wrap">
+		<!-- 로그인, 회원가입 버튼 -->
             <div class="form-wrap">
                 <div class="button-wrap">
                     <div id="btn"></div>
                     <button type="button" class="togglebtn" onclick="login()">LOG IN</button>
                     <button type="button" class="togglebtn" onclick="register()">REGISTER</button>
                 </div>
+                
+                <!-- 로그인 박스 -->
                 <form id="login" action="Login_Service" class="input-group" method = "post">
                     <input type="text" class="input-field" name = "id" placeholder="your ID">
                     <input type="password" class="input-field" name = "pw" placeholder="your Password">
-                    <input type="checkbox" class="checkbox">Remember ID</br>
+                    <input type="checkbox" class="checkbox">ID 기억하기</br>
                     <button class="submit">Login</button></br>
                     <button type = "submit" class="submit">forget id/pw</button></br>
                     <button class="kakao">?</button></br>
-               
-                    
                 </form>
                 
-                <form id="register" action="" class="input-group">
+                <!-- 회원가입 박스 -->
+                <form id="register" action="login.jsp" class="input-group">
                     <input type="email" class="input-field" name = "id" placeholder="ID" required>
                     <input type="password" class="input-field" name = "pw" placeholder="Password" required>
                     <input type="text" class="input-field"  name = "name" placeholder="User name" required>
@@ -45,7 +47,7 @@
                     <div>
                     <span>
                     <input type ="text" placeholder = "인증번호입력">
-                    <button href = "#" >인증번호받기</button>
+                    <button  href = "#" >인증번호받기</button>
                     </span>
                     
                     </div>
@@ -60,8 +62,7 @@
             var x = document.getElementById("login");
             var y = document.getElementById("register");
             var z = document.getElementById("btn");
-            var p = document.getElementById("pw");
-            var p1 = document.getElementById("pw1");
+     
             function login(){
                 x.style.left = "50px";
                 y.style.left = "450px";
@@ -72,6 +73,13 @@
                 y.style.left = "50px";
                 z.style.left = "110px";
             }
+            
+            
+            
+            // 아이디 기억하기..해보고 있음..
+            
+          
+            
             
           
             
