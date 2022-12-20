@@ -28,11 +28,6 @@
                     <input type="checkbox" class="checkbox">ID 기억하기</br>
                     <button class="submit">Login</button></br>
                     <button type = "submit" class="submit">forget id/pw</button></br>
-                    <input type="text" class="input-field" name="id" placeholder="your ID">
-                    <input type="password" class="input-field" name="pw" placeholder="your Password">
-                    <input type="checkbox" class="checkbox">Remember ID</br>
-                    <button class="submit" type="submit">Login</button></br>
-                    <button class="submit">forget id/pw</button></br>
                     <button class="kakao">?</button></br>
                 </form>
                 
@@ -42,22 +37,10 @@
                     <input type="password" class="input-field" name = "pw" placeholder="Password" required>
                     <input type="text" class="input-field"  name = "name" placeholder="User name" required>
                     <input type="date" class="input-field" name = "rrn" placeholder="Birth" required>
-                    <select class="input-field" name = "gender" arai-lable ="gender" required>
-                    <option value selected>성별</option>
-                    <option value = "men">men</option>
-                    <option value = "waman">woman</option>
-                <form class="input-group" id="register" action="Join_Service" method="post">
-                    <input class="input-field" type="email" name="id" placeholder="ID" required>
-                    <input class="input-field" type="password" name="pw" placeholder="Password" required>
-                    <input class="input-field" type="text" name="name" placeholder="Name" required>
-                    
-                    <input type="text" class="input-field" name="rrn" placeholder="Resident registration number" required>
-                    
                     <select class="input-field" name = "gender" arai-lable ="gender" >
                     	<option value selected>gender</option>
                     	<option value = "MEN">men</option>
                     	<option value = "WOMEN">women</option>
-
                     </select>
 
                     <input type="email" class="input-field" name = "eamil" placeholder="Email" required>
@@ -70,18 +53,8 @@
                     <input type ="text" placeholder = "인증번호입력">
                     <button  href = "#" >인증번호받기</button>
                     </span>
-                    
                     </div>
-                
                     <button type = "submit" class="submit">REGISTER</button>
-
-                    
-                    <input class="input-field" type="text" name = "email" placeholder="Email" required>
-                    <input class="input-field" type="text" name = "tel" placeholder="Tel" required>
-                    <input class="input-field" type="text" name = "address" placeholder="Address" required>
-                    </br>
-                    <button class="submit" type="submit">REGISTER</button>
-
                 </form>
             </div>
         </div>
