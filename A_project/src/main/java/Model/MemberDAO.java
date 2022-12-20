@@ -7,11 +7,10 @@ import java.sql.ResultSet;
 
 public class MemberDAO {
 
-	Connection conn;
-	PreparedStatement psmt;
-	ResultSet rs;
-	int cnt;
-	MemberDTO result = null;
+	Connection conn = null;
+	PreparedStatement psmt = null;
+	ResultSet rs = null;
+	int cnt = 0;
 	
 	// DB연결
 	public void getConn() {
@@ -34,7 +33,7 @@ public class MemberDAO {
 
 	}
 	
-	// DB닫음
+	// 객체 반환
 	public void close() {
 		try {
 			if (rs != null) {
@@ -69,25 +68,24 @@ public class MemberDAO {
 			psmt.setString(7, dto.getTel());
 			psmt.setString(8, dto.getAddress());
 			cnt = psmt.executeUpdate();
-			
+
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
 			close();
 		}
 		return cnt;
-
 	}
 	
 	// 로그인
-	public MemberDTO Login(MemberDTO dto) {
+	public MemberDTO login(MemberDTO dto) {
+
+		MemberDTO result = null;
 		try {
 			getConn();
-
-			String sql = "SELECT * FROM MEMBER WHERE ID = ? AND PW =?";
-
+			String sql = "SELECT * FROM MEMBER WHERE ID=? AND PW=?";
 			psmt = conn.prepareStatement(sql);
-
 			psmt.setString(1, dto.getId());
 			psmt.setString(2, dto.getPw());
 
@@ -99,12 +97,11 @@ public class MemberDAO {
 				String name = rs.getString(3);
 				String rrn = rs.getString(4);
 				String gender = rs.getString(5);
-				String tel = rs.getString(6);
-				String address = rs.getString(7);
-				String email = rs.getString(8);
-				
-				result = new MemberDTO(id, pw, name, rrn, gender, email, tel, address);
-				
+				String email = rs.getString(6);
+				String tel = rs.getString(7);
+				String address = rs.getString(8);
+
+				result = new MemberDTO(id, pw);
 			}
 
 		} catch (Exception e) {

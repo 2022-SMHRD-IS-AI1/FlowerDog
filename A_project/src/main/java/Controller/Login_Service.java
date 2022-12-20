@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.websocket.Session;
 
 import Model.MemberDAO;
 import Model.MemberDTO;
@@ -20,30 +21,31 @@ public class Login_Service extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		request.setCharacterEncoding("utf-8");
-		
+
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
-		
+
 		MemberDAO dao = new MemberDAO();
+
 		MemberDTO dto = new MemberDTO(id, pw);
+		dao.login(dto);
 		
-		MemberDTO user_info = dao.Login(dto);
+		MemberDTO result = dao.login(dto);
+		HttpSession session = request.getSession();
 		
 		String nextPage = "";
 		
-		if(user_info != null) {
-			HttpSession session = request.getSession();
-			session.setAttribute("user",user_info);
+		if (result != null) {
+			session.setAttribute("user",result);
 			nextPage = "메인페이지";
 		}else {
 			nextPage = "login.jsp";
+			session.setAttribute("info", result);
+			System.out.println("로그인 성공!");
 		}
-		RequestDispatcher rd = request.getRequestDispatcher(nextPage);
+
+		RequestDispatcher rd = request.getRequestDispatcher("");
 		rd.forward(request, response);
-		
-		
-		
-		
 		
 	}
 

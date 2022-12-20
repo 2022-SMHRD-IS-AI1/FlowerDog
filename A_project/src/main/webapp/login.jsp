@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang = "en">
 <head>
@@ -20,11 +22,17 @@
                 
                 <!-- 로그인 박스 -->
                 <form id="login" action="Login_Service" class="input-group" method = "post">
+
                     <input type="text" class="input-field" name = "id" placeholder="your ID">
                     <input type="password" class="input-field" name = "pw" placeholder="your Password">
                     <input type="checkbox" class="checkbox">ID 기억하기</br>
                     <button class="submit">Login</button></br>
                     <button type = "submit" class="submit">forget id/pw</button></br>
+                    <input type="text" class="input-field" name="id" placeholder="your ID">
+                    <input type="password" class="input-field" name="pw" placeholder="your Password">
+                    <input type="checkbox" class="checkbox">Remember ID</br>
+                    <button class="submit" type="submit">Login</button></br>
+                    <button class="submit">forget id/pw</button></br>
                     <button class="kakao">?</button></br>
                 </form>
                 
@@ -38,7 +46,20 @@
                     <option value selected>성별</option>
                     <option value = "men">men</option>
                     <option value = "waman">woman</option>
+                <form class="input-group" id="register" action="Join_Service" method="post">
+                    <input class="input-field" type="email" name="id" placeholder="ID" required>
+                    <input class="input-field" type="password" name="pw" placeholder="Password" required>
+                    <input class="input-field" type="text" name="name" placeholder="Name" required>
+                    
+                    <input type="text" class="input-field" name="rrn" placeholder="Resident registration number" required>
+                    
+                    <select class="input-field" name = "gender" arai-lable ="gender" >
+                    	<option value selected>gender</option>
+                    	<option value = "MEN">men</option>
+                    	<option value = "WOMEN">women</option>
+
                     </select>
+
                     <input type="email" class="input-field" name = "eamil" placeholder="Email" required>
                     <input type="text" class="input-field" name = "address" placeholder="Address" required>
                     <input type="text" class="input-field" name = "tel" placeholder="Tel" required>
@@ -53,6 +74,14 @@
                     </div>
                 
                     <button type = "submit" class="submit">REGISTER</button>
+
+                    
+                    <input class="input-field" type="text" name = "email" placeholder="Email" required>
+                    <input class="input-field" type="text" name = "tel" placeholder="Tel" required>
+                    <input class="input-field" type="text" name = "address" placeholder="Address" required>
+                    </br>
+                    <button class="submit" type="submit">REGISTER</button>
+
                 </form>
             </div>
         </div>
@@ -72,17 +101,17 @@
                 x.style.left = "-400px";
                 y.style.left = "50px";
                 z.style.left = "110px";
+
             }
             
             
             
             // 아이디 기억하기..해보고 있음..
             
-          
             
-            
-          
-            
+
+            }         
+
         </script>
 
 </body>
