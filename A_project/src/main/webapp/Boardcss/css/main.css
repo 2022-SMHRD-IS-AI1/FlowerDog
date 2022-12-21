@@ -195,13 +195,12 @@ header .badges .badge{
 
 /* VISUAL */
 .visual{
-  width: 100%;
   margin: 0 auto;
   
 }
 .visual .promotion {
   top: 180px;
-  width: 2180px;
+  width: auto;
   height: 693px;
   background-color: #fff;
   position: relative;
@@ -271,10 +270,11 @@ header .badges .badge{
   color: #fff;
 }
 .content{
+  width: 100%;
   margin-top: 200px;
-  background-image: url("/image/flower-bg.png");
+  background-image: url("../image/flower-bg.png");
   background-repeat: no-repeat;
-  background-position: center;
+
 }
 .content .inner{
   height: 400px;
@@ -323,7 +323,7 @@ header .badges .badge{
 }
 
 .container .animals .animal:nth-child(1) .image {
-  background-image: url("./image/dog01.png");
+  background-image: url("../image/dog01.png");
 }
 
 .container .animals .animal:nth-child(2) .image {
