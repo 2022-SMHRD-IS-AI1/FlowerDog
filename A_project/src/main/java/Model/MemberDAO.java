@@ -57,7 +57,7 @@ public class MemberDAO {
 
 		try {
 			getConn();
-			String sql = "INSERT INTO MEMBER VALUES(?, ?, ?, ?, ?, ?, ?, ?)";
+			String sql = "INSERT INTO MEMBER VALUES(?, ?, ?, ?, ?, ?, ?, ?, SYSDATE, 'M')";
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, dto.getId());
 			psmt.setString(2, dto.getPw());
