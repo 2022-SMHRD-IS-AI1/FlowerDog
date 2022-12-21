@@ -41,7 +41,6 @@ public class Login_Service extends HttpServlet {
 			System.out.println("로그인 성공!");
 		}else {
 			nextPage = "login.jsp";
-			session.setAttribute("info", result);
 		}
 
 		RequestDispatcher rd = request.getRequestDispatcher(nextPage);
