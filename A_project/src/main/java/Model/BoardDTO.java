@@ -11,6 +11,14 @@ public class BoardDTO {
 	public BoardDTO() {}
 	
 	
+	public BoardDTO(String title, String writer, String content) {
+		super();
+		Title = title;
+		Writer = writer;
+		this.content = content;
+	}
+
+
 	// 작성 후 저장
 	public BoardDTO(int number, String title, String writer, String time, String content) {
 		this.Number = number;
