@@ -34,8 +34,8 @@
                     
                     <select class="input-field" name = "gender" arai-lable ="gender" >
                     	<option value selected>성별</option>
-                    	<option value = "MEN">M</option>
-                    	<option value = "WOMEN">W</option>
+                    	<option value = "M">M</option>
+                    	<option value = "W">W</option>
                     </select>
                  
                     <input class="input-field" type="email" name = "email" placeholder="Email" required>
