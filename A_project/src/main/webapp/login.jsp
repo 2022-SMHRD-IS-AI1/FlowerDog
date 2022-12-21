@@ -26,7 +26,7 @@
                 </form>
                 
                 <form class="input-group" id="register" action="Join_Service" method="post">
-                    <input class="input-field" type="email" name="id" placeholder="ID" required>
+                    <input class="input-field" type="text" name="id" placeholder="ID" required>
                     <input class="input-field" type="password" name="pw" placeholder="Password" required>
                     <input class="input-field" type="text" name="name" placeholder="Name" required>
                     
@@ -38,7 +38,7 @@
                     	<option value = "WOMEN">W</option>
                     </select>
                  
-                    <input class="input-field" type="text" name = "email" placeholder="Email" required>
+                    <input class="input-field" type="email" name = "email" placeholder="Email" required>
                     <input class="input-field" type="text" name = "address" placeholder="Address" required>
                     <input class="input-field" type="text" name = "tel" placeholder="Tel" required>
                     </br></br></br></br>
