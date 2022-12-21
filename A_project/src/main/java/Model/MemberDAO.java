@@ -57,7 +57,9 @@ public class MemberDAO {
 
 		try {
 			getConn();
+
 			String sql = "INSERT INTO MEMBER VALUES(?, ?, ?, ?, ?, ?, ?, ?, SYSDATE, 'M')";
+
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, dto.getId());
 			psmt.setString(2, dto.getPw());
@@ -84,7 +86,7 @@ public class MemberDAO {
 		MemberDTO result = null;
 		try {
 			getConn();
-			String sql = "SELECT * FROM MEMBER WHERE ID=? AND PW=?";
+			String sql = "SELECT * FROM TB_MEMBER WHERE ID=? AND PW=?";
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, dto.getId());
 			psmt.setString(2, dto.getPw());

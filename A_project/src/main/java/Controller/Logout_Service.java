@@ -17,7 +17,7 @@ public class Logout_Service extends HttpServlet {
 
 		HttpSession session = request.getSession();
 
-		session.removeAttribute("user");
+		session.removeAttribute("info");
 
 		response.sendRedirect("메인페이지");
 

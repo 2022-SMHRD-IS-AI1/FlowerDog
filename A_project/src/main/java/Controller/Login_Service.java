@@ -36,12 +36,12 @@ public class Login_Service extends HttpServlet {
 		String nextPage = "";
 		
 		if (result != null) {
-			session.setAttribute("user",result);
-			nextPage = "메인페이지";
+			session.setAttribute("info",result);
+			nextPage = "BoardMain.jsp";
+			System.out.println("로그인 성공!");
 		}else {
 			nextPage = "login.jsp";
 			session.setAttribute("info", result);
-			System.out.println("로그인 성공!");
 		}
 
 		RequestDispatcher rd = request.getRequestDispatcher(nextPage);
