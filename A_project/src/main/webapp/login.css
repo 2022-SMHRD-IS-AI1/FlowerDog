@@ -6,11 +6,11 @@
 }
 body {
 	height: 100vh;
-	background-image: url("../Boardcss/image/dog3.jpg");
+	background-image: url("./Boardcss/image/cl.png");
 	opacity:0.9;
 	background-size: cover ;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-attachment: contain;
 	
 	background-position: center;
 	font-family: 'Ubuntu', sans-serif;

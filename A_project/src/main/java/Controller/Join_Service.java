@@ -36,7 +36,7 @@ public class Join_Service extends HttpServlet {
 		String nextPage = "";
 
 		if (cnt > 0) {
-			nextPage = "login.jsp";
+			nextPage = "index.html";
 			System.out.println("회원가입 성공");
 
 		} else {

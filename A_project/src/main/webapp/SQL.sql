@@ -32,3 +32,6 @@ create sequence num_Board
 	maxvalue 99999
 	nocycle
 	nocache;
+	
+SELECT * FROM TB_MEMBER;
+INSERT INTO TB_MEMBER VALUES('a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', SYSDATE, 'M');
