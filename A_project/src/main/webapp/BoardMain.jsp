@@ -56,7 +56,7 @@
 				</table>
 				
 				<a href="index.html"><button id="writer">홈으로가기</button></a>
-				<a href="writh.html"><button id="writer">작성하러가기</button></a>
+				<a href="writh.jsp"><button id="writer">작성하러가기</button></a>
 				
 				<% if (info != null) {%>
 				<a href="Board_Removal"><button id="writer">게시글 수정하기</button></a>

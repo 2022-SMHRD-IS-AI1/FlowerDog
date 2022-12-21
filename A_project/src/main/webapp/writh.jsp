@@ -1,3 +1,6 @@
+<%@page import="Model.MemberDTO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -23,7 +26,9 @@
 	</head>
 	
 	<body>
-	
+	<%
+	MemberDTO info = (MemberDTO)session.getAttribute("info");
+	%> 
 		<div class="wrapper">
 		
 			<!-- header -->
@@ -101,7 +106,7 @@
                       </div>
                       <div>
                          <textarea type="text" name="Writer" rows="1" cols="100"
-                            placeholder="작성자" maxlength="100"></textarea>
+                            placeholder="작성자" maxlength="100" value =<%=info.getId%> ></textarea>
                       </div>
           
                       <div>

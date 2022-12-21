@@ -59,7 +59,7 @@ public class BoardDAO {
 			getConn();
 			
 			// 3) SQL문 실행 준비
-			String sql = "insert into TB_Board values(TB_COMMENT_SEQ.nextval, ?, ?, sysdate, ?)";
+			String sql = "insert into TB_COMMUNITY values(TB_COMMENT_SEQ.nextval, ?, ?, sysdate, ?)";
 			
 			psmt = conn.prepareStatement(sql);
 			MemberDTO dto2 = new MemberDTO();
@@ -82,7 +82,7 @@ public class BoardDAO {
 			getConn();
 
 			// 3) SQL문 실행 준비
-			String sql = "select * from TB_Board";
+			String sql = "select * from TB_COMMUNITY";
 			
 			psmt = conn.prepareStatement(sql);
 			
