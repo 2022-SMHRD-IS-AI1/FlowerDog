@@ -6,7 +6,7 @@
 }
 body {
 	height: 100vh;
-	background-image: url("./image/dog3.jpg");
+	background-image: url("../Boardcss/image/dog3.jpg");
 	opacity:0.9;
 	background-size: cover ;
 	background-repeat: no-repeat;
