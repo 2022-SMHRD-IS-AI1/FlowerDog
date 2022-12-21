@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import Model.BoardDAO;
 import Model.BoardDTO;
+import Model.MemberDTO;
 
 @WebServlet("/Board_Creating")
 public class Board_Creating extends HttpServlet {
@@ -30,8 +31,7 @@ public class Board_Creating extends HttpServlet {
 
 		// 3. DB에 연동될 수 있도록 데이터 넘겨주기 -> DAO 이동!
 		// (DTO타입으로 데이터를 묶어서 전달)
-
-		BoardDTO dto = new BoardDTO(title, writer, content, time);
+		BoardDTO dto = new BoardDTO(title, writer, content);
 
 		// DAO 객채 생성
 		BoardDAO dao = new BoardDAO();
