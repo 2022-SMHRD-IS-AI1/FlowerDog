@@ -33,6 +33,7 @@
 </head>
 <body>
 	<%
+	request.setCharacterEncoding("utf-8");
 	MemberDTO info = (MemberDTO)session.getAttribute("info"); 
 	BoardDAO dao = new BoardDAO();
 	ArrayList<BoardDTO> list = new ArrayList<>();
@@ -154,7 +155,7 @@
 									<%}%>
 									<tr>
 										<td>
-											<button class="btn btn-dark">글쓰기</button>
+											<button class="btn btn-dark"><a href="BoardWrite.jsp">글쓰기</a></button>
 										</td>
 									</tr>
 								</tbody>

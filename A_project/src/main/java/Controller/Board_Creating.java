@@ -45,7 +45,7 @@ public class Board_Creating extends HttpServlet {
 		} else {
 			System.out.println("게시글 실패");
 		}
-		nextPage = "BoardMain.jsp";
+		nextPage = "noticeboard.jsp";
 		// 다음 페이지로 이동
 //		response.sendRedirect(nextPage);
 
