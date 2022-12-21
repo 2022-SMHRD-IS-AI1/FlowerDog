@@ -14,6 +14,8 @@
 </head>
 <body>
 			<!-- Q16. 게시글 작성 기능(작성된 게시글은 DB에 저장) - 파일업로드 cos.jar 사용 -->
+			<h1>커뮤니티</h1>
+			 <hr size="1px" width="auto" color="black">
 			<div id = "board">
 				<form action="Board_Creating" method="psot">
 				<table id="list">
