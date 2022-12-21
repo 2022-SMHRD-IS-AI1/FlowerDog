@@ -39,7 +39,6 @@ public class Login_Service extends HttpServlet {
 			nextPage = "BoardMain.jsp";
 			System.out.println("로그인 성공!");
 		}else {
-			nextPage = "login.jsp";
 			session.setAttribute("info", result);
 			System.out.println("로그인실패");
 		}

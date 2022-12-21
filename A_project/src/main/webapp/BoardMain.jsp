@@ -1,3 +1,4 @@
+<%@page import="Model.MemberDTO"%>
 <%@page import="Model.BoardDTO"%>
 <%@page import="Model.BoardDAO"%>
 <%@page import="java.util.ArrayList"%>
@@ -20,9 +21,9 @@
 			<!-- Q17. 게시글 목록 조회 기능 -->
 			<!-- Q18. 게시글 목록 세부페이지 기능(제목을 클릭하면 세부페이지 BoardDetail.jsp로 이동)-->
 			<div id="board">
-<%-- <%
-	BoardDTO info = (BoardDTO)session.getAttribute("info");
-%> --%>
+<%
+	MemberDTO info = (MemberDTO)session.getAttribute("info");
+%>
 					<%
 					BoardDAO dao = new BoardDAO();
 					ArrayList<BoardDTO> list = new ArrayList<>();
@@ -52,7 +53,7 @@
 				
 				</table>
 				
-				<a href="login.jsp"><button id="writer">홈으로가기</button></a>
+				<a href="index.html"><button id="writer">홈으로가기</button></a>
 				<a href="BoardWrite.jsp"><button id="writer">작성하러가기</button></a>
 				
 				<%-- if (info != null) {%>
