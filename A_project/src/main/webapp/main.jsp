@@ -74,10 +74,15 @@
       <li class="item">
         <div class="item__name">입양</div>
       </li>
+<<<<<<< HEAD
       <li class="item">
       <%if(info != null) {%>
         <div class="item__name"><a href="noticeboard.jsp" >게시판</a></div>
       <%}%>  
+=======
+      <li class="item">
+        <div class="item__name"><a href="BoardMain.jsp" >게시판</a></div>
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-IS-AI1/FlowerDog.git
       </li>
     </ul>
   </div>
