@@ -28,20 +28,19 @@ public class Login_Service extends HttpServlet {
 		MemberDAO dao = new MemberDAO();
 
 		MemberDTO dto = new MemberDTO(id, pw);
-		dao.login(dto);
 		
 		MemberDTO result = dao.login(dto);
 		HttpSession session = request.getSession();
-		
+		System.out.println(result);
 		String nextPage = "";
 		
 		if (result != null) {
-			session.setAttribute("user",result);
-			nextPage = "메인페이지";
-		}else {
-			nextPage = "login.jsp";
-			session.setAttribute("info", result);
+			session.setAttribute("info",result);
+			nextPage = "BoardMain.jsp";
 			System.out.println("로그인 성공!");
+		}else {
+			session.setAttribute("info", result);
+			System.out.println("로그인실패");
 		}
 
 		RequestDispatcher rd = request.getRequestDispatcher(nextPage);

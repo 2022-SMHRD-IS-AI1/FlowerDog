@@ -57,7 +57,9 @@ public class MemberDAO {
 
 		try {
 			getConn();
-			String sql = "INSERT INTO MEMBER VALUES(?, ?, ?, ?, ?, ?, ?, ?)";
+			
+			String sql = "INSERT INTO TB_MEMBER VALUES(?, ?, ?, ?, ?, ?, ?, ?,SYSDATE,'M')";
+			
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, dto.getId());
 			psmt.setString(2, dto.getPw());
@@ -79,12 +81,12 @@ public class MemberDAO {
 	}
 	
 	// 로그인
+	MemberDTO result = null;
 	public MemberDTO login(MemberDTO dto) {
 
-		MemberDTO result = null;
 		try {
 			getConn();
-			String sql = "SELECT * FROM MEMBER WHERE ID=? AND PW=?";
+			String sql = "SELECT * FROM TB_MEMBER WHERE MB_ID=? AND MB_PW=?";
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, dto.getId());
 			psmt.setString(2, dto.getPw());
@@ -101,9 +103,9 @@ public class MemberDAO {
 				String tel = rs.getString(7);
 				String address = rs.getString(8);
 
-				result = new MemberDTO(id, pw);
+				result = new MemberDTO(id, pw, name, rrn, gender, email, tel, address);
 			}
-
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
