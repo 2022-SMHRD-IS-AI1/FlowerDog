@@ -21,18 +21,18 @@ public class BoardDTO {
 
 	// 작성 후 저장
 	public BoardDTO(int number, String title, String writer, String time, String content) {
-		Number = number;
-		Title = title;
-		Writer = writer;
-		Time = time;
+		this.Number = number;
+		this.Title = title;
+		this.Writer = writer;
+		this.Time = time;
 		this.content = content;
 	}
 	
 	// 작성 전 저장
 	public BoardDTO(String title, String writer, String time, String content) {
-		Title = title;
-		Writer = writer;
-		Time = time;
+		this.Title = title;
+		this.Writer = writer;
+		this.Time = time;
 		this.content = content;
 	}
 
