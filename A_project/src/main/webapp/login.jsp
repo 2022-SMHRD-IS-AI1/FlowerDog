@@ -13,24 +13,24 @@
             <div class="form-wrap">
                 <div class="button-wrap">
                     <div id="btn"></div>
-                    <button type="button" class="togglebtn" onclick="login()">LOG IN</button>
-                    <button type="button" class="togglebtn" onclick="register()">REGISTER</button>
+                    <button type="button" class="togglebtn" onclick="login()">로그인</button>
+                    <button type="button" class="togglebtn" onclick="register()">회원가입</button>
                 </div>
                 <form id="login" action="Login_Service" class="input-group" method = "post">
-                    <input type="text" class="input-field" name="id" placeholder="your ID">
-                    <input type="password" class="input-field" name="pw" placeholder="your Password">
+                    <input type="text" class="input-field" name="id" placeholder="아이디">
+                    <input type="password" class="input-field" name="pw" placeholder="비밀번호">
                     <input type="checkbox" class="checkbox">ID 기억하기</br>
-                    <button class="submit" type="submit">Login</button></br>
-                    <button class="submit">forget id/pw</button></br>
+                    <button class="submit" type="submit">로그인</button></br>
+                    <button class="submit">아이디, 비번 잊었니?</button></br>
                     <button class="kakao">?</button></br>
                 </form>
                 
                 <form class="input-group" id="register" action="Join_Service" method="post">
-                    <input class="input-field" type="text" name="id" placeholder="ID" required>
-                    <input class="input-field" type="password" name="pw" placeholder="Password" required>
-                    <input class="input-field" type="text" name="name" placeholder="Name" required>
+                    <input class="input-field" type="text" name="id" placeholder="아이디" required>
+                    <input class="input-field" type="password" name="pw" placeholder="비밀번호" required>
+                    <input class="input-field" type="text" name="name" placeholder="이름" required>
                     
-                    <input type="text" class="input-field" name="rrn" placeholder="Resident registration number" required>
+                    <input type="text" class="input-field" name="rrn" placeholder="주민등록번호" required>
                     
                     <select class="input-field" name = "gender" arai-lable ="gender" >
                     	<option value selected>성별</option>
@@ -38,9 +38,9 @@
                     	<option value = "W">W</option>
                     </select>
                  
-                    <input class="input-field" type="email" name = "email" placeholder="Email" required>
-                    <input class="input-field" type="text" name = "address" placeholder="Address" required>
-                    <input class="input-field" type="text" name = "tel" placeholder="Tel" required>
+                    <input class="input-field" type="email" name = "email" placeholder="이메일" required>
+                    <input class="input-field" type="text" name = "address" placeholder="주소" required>
+                    <input class="input-field" type="text" name = "tel" placeholder="전화번호" required>
                     </br></br></br></br>
 
 					<div>
