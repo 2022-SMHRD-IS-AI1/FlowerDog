@@ -65,16 +65,9 @@ public class BoardDAO {
 			
 		
 			psmt = conn.prepareStatement(sql);
-<<<<<<< HEAD
-			
-			psmt.setString(1, dto.getTitle());
-			psmt.setString(2, dto.getContent());
-			psmt.setString(3, dto.getWriter());
-=======
 			psmt.setString(1, b_dto.getTitle());
 			psmt.setString(2, b_dto.getContent());
 			psmt.setString(3, b_dto.getWriter());
->>>>>>> branch 'master' of https://github.com/2022-SMHRD-IS-AI1/FlowerDog.git
 
 			cnt = psmt.executeUpdate();
 
