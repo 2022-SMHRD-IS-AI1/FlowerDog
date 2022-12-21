@@ -59,13 +59,13 @@ public class BoardDAO {
 			getConn();
 			
 			// 3) SQL문 실행 준비
-			String sql = "insert into Board values(num_Board.nextval, ?, ?, ?, sysdate)";
+			String sql = "insert into TB_Board values(TB_COMMENT_SEQ.nextval, ?, ?, sysdate, ?)";
 			
 			psmt = conn.prepareStatement(sql);
-			
+			MemberDTO dto2 = new MemberDTO();
 			psmt.setString(1, dto.getTitle());
-			psmt.setString(2, dto.getWriter());
-			psmt.setString(3, dto.getContent());
+			psmt.setString(2, dto.getContent());
+			psmt.setString(3, dto2.getId());
 
 			cnt = psmt.executeUpdate();
 
@@ -76,26 +76,25 @@ public class BoardDAO {
 		}
 		return cnt;
 		
-	}public ArrayList<BoardDTO> Listofposts (String id) {
+	}public ArrayList<BoardDTO> Listofposts () {
 		try {
 
 			getConn();
 
 			// 3) SQL문 실행 준비
-			String sql = "select * from Board";
+			String sql = "select * from TB_Board";
 			
 			psmt = conn.prepareStatement(sql);
-			psmt.setString(1, id);
 			
 
 			rs = psmt.executeQuery();
 			
 			while(rs.next()) {
-				int number = rs.getInt(2);
-				String title = rs.getString(3);
-				String writer = rs.getString(4);
-				String content = rs.getString(5);
-				String time = rs.getString(6);
+				int number = rs.getInt(1);
+				String title = rs.getString(2);
+				String writer = rs.getString(3);
+				String content = rs.getString(4);
+				String time = rs.getString(5);
 				
 				BoardDTO dto = new BoardDTO(number, title, writer, content, time);
 				
