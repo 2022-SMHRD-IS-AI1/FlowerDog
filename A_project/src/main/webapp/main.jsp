@@ -69,13 +69,13 @@
         <div class="item__name">회사 소개</div>
       </li>
       <li class="item">
-        <div class="item__name">상품</div>
+        <div class="item__name"><a href="product.jsp">상품</a></div>
       </li>
       <li class="item">
         <div class="item__name">입양</div>
       </li>
       <li class="item">
-        <div class="item__name"><a href="BoardMain.jsp" class="item__name">게시판</a></div>
+        <div class="item__name"><a href="BoardMain.jsp" >게시판</a></div>
       </li>
     </ul>
   </div>
