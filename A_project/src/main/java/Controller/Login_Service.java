@@ -35,8 +35,8 @@ public class Login_Service extends HttpServlet {
 		String nextPage = "";
 		
 		if (result != null) {
-			session.setAttribute("info",result);
-			nextPage = "index.html";
+			session.setAttribute("info", result);
+			nextPage = "main.jsp";
 			System.out.println("로그인 성공!");
 		}else {
 			session.setAttribute("info", result);

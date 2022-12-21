@@ -1,3 +1,4 @@
+<%@page import="Model.MemberDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -37,7 +38,8 @@
   <script defer src="./Boardcss/js/main.js"></script>
 </head>
 <body>
-	<!-- HEADER -->
+<%MemberDTO info = (MemberDTO)session.getAttribute("info"); %>
+<!-- HEADER -->
  <header>
   <div class="inner">
     <a href="/" class="logo">
@@ -47,7 +49,11 @@
     <div class="sub-menu">
       <ul class="menu">
         <li>
-          <a href="login.jsp">로그인</a>
+        <%if(info != null) {%>
+          <a href="loginout">로그아웃</a>
+        <%} else{%>
+          <a href="login.jsp">로그인</a>	
+        <%} %>
         </li>
         <li>
           <a href="javascript:void(0)">My page</a>
