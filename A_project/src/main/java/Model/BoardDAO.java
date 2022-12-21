@@ -65,6 +65,7 @@ public class BoardDAO {
 			
 		
 			psmt = conn.prepareStatement(sql);
+
 			psmt.setString(1, b_dto.getTitle());
 			psmt.setString(2, b_dto.getContent());
 			psmt.setString(3, b_dto.getWriter());
