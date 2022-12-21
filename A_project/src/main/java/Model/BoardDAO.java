@@ -63,13 +63,7 @@ public class BoardDAO {
 			// 3) SQL문 실행 준비
 			String sql = "insert into TB_COMMUNITY values(TB_COMMENT_SEQ.nextval, ?, ?, sysdate, ?)";
 			
-		
-<<<<<<< HEAD
 			psmt = conn.prepareStatement(sql);
-
-=======
-			psmt = conn.prepareStatement(sql);
->>>>>>> branch 'master' of https://github.com/2022-SMHRD-IS-AI1/FlowerDog.git
 			psmt.setString(1, b_dto.getTitle());
 			psmt.setString(2, b_dto.getContent());
 			psmt.setString(3, b_dto.getWriter());
