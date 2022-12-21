@@ -55,7 +55,7 @@
 				
 				</table>
 				
-				<a href="index.html"><button id="writer">홈으로가기</button></a>
+				<a href="main.jsp"><button id="writer">홈으로가기</button></a>
 				<a href="writh.html"><button id="writer">작성하러가기</button></a>
 				
 				<% if (info != null) {%>
