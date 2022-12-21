@@ -1,8 +1,9 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>flower Dog</title>
@@ -36,7 +37,7 @@
   <script defer src="./Boardcss/js/main.js"></script>
 </head>
 <body>
- <!-- HEADER -->
+	<!-- HEADER -->
  <header>
   <div class="inner">
     <a href="/" class="logo">
@@ -149,10 +150,6 @@
       </div>
     </div>
   </div>
-  
-
 </section>
-
-
 </body>
 </html>
