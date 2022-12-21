@@ -100,7 +100,7 @@ body {
     cursor: pointer;
     display: block;
     margin: auto;
-    background: url(./image/kakao.png);
+    background: url(./Boardcss/image/kakao.png);
     color : transparent;
     background-size: cover;
     background-repeat : no-repeat;
