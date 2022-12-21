@@ -97,12 +97,6 @@
                 <div id="board">
 
 
-		<%
-					MemberDTO info = (MemberDTO) session.getAttribute("info");
-					String id = info.getId();
-								
-								
-		%>
 
 
 		<form action="Board_Creating" method="psot">
@@ -110,21 +104,21 @@
                       <div class="list_title">
                         <h1>커뮤니티</h1>
                          <textarea type="text" name="Title" rows="1" cols="100"
-                            placeholder="제목" maxlength="100"></textarea>
+                            placeholder="제목" maxlength="50"></textarea>
                       </div>
                       <div>
                          <textarea type="text" name="Writer" rows="1" cols="100"
-                            maxlength="100"><%=id%></textarea>
+                            maxlength="100">id</textarea>
                       </div>
                       <div>
                          <textarea type="text" name="Writer" rows="1" cols="100"
-                            placeholder="글쓴날짜" maxlength="100"></textarea>
+                            placeholder="글쓴날짜" maxlength="15"></textarea>
                       </div>
                       
                  
           
                       <div>
-                         <textarea name="content" placeholder="내용" required rows="30"
+                         <textarea name="content" placeholder="내용" required rows="20"
                             cols="100"></textarea>
                       </div>
           
@@ -138,29 +132,48 @@
           </tr>
           </table>
           
-                      <div >
+                      <div>
                          <button id="Reset">수정</button> 
                          <button id="Reset">삭제</button> 
                          <input type="submit" value="돌아가기">
                       </div>
                    </div>
                    
-                   
-                   
-                   <div>
+                   <br>
                    
                    <div>
                    <p>댓글</p>
                    </div>
                    
                    <form>
-                   
+                   <fieldset>
+                   <div>
+                   <textarea type="text" placeholder="작성자입력" rows ="1" cols = "100"></textarea>
+                   </div>
+                   <textarea type="text" placeholder="댓글입력" maxlength="100" rows ="5" cols = "100"></textarea>
+                   <button type="button">등록</button>
+                   </fieldset>
                    </form>
+                   
+                   <br>
+                   <div class = "댓글가장큰박스">
+                   <div class = "댓글정보의 박스">
+                   <p>
+                   <strong>댓글작성자</strong>
+                   <span>댓글날짜</span>
+                   <span class = "수정,삭제라인">
+                   <a href = "#">수정</a>
+                   <a href = "#">삭제</a>
+                   </span>
+                   </p>
+                   <div>댓글내용~~</div>
+                   </div>
                    
                    </div>
                    
                    
-          
+                   
+                   
                 </form>
              </div>
              <!-- Scripts -->
