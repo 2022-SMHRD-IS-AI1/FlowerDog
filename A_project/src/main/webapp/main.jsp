@@ -75,7 +75,7 @@
         <div class="item__name">입양</div>
       </li>
       <li class="item">
-        <div class="item__name">게시판</div>
+        <a href="BoardMain.jsp" class="item__name">게시판</a>
       </li>
     </ul>
   </div>

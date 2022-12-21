@@ -6,6 +6,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
+import javax.servlet.http.HttpSession;
+
 public class BoardDAO {
 	Connection conn = null;
 	PreparedStatement psmt = null;
@@ -52,8 +54,8 @@ public class BoardDAO {
 			e2.printStackTrace();
 		}
 
-
-	}public int insertBoard(BoardDTO dto) {
+	
+	}public int insertBoard(BoardDTO b_dto) {
 		try {
 
 			getConn();
@@ -61,11 +63,11 @@ public class BoardDAO {
 			// 3) SQL문 실행 준비
 			String sql = "insert into TB_COMMUNITY values(TB_COMMENT_SEQ.nextval, ?, ?, sysdate, ?)";
 			
+		
 			psmt = conn.prepareStatement(sql);
-			MemberDTO dto2 = new MemberDTO();
-			psmt.setString(1, dto.getTitle());
-			psmt.setString(2, dto.getContent());
-			psmt.setString(3, dto2.getId());
+			psmt.setString(1, b_dto.getTitle());
+			psmt.setString(2, b_dto.getContent());
+			psmt.setString(3, b_dto.getWriter());
 
 			cnt = psmt.executeUpdate();
 
