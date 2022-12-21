@@ -57,9 +57,13 @@ public class MemberDAO {
 
 		try {
 			getConn();
+<<<<<<< HEAD
 
 			String sql = "INSERT INTO MEMBER VALUES(?, ?, ?, ?, ?, ?, ?, ?, SYSDATE, 'M')";
 
+=======
+			String sql = "INSERT INTO TB_MEMBER VALUES(?, ?, ?, ?, ?, ?, ?, ?,SYSDATE,'M')";
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-IS-AI1/FlowerDog.git
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, dto.getId());
 			psmt.setString(2, dto.getPw());
@@ -81,9 +85,9 @@ public class MemberDAO {
 	}
 	
 	// 로그인
+	MemberDTO result = null;
 	public MemberDTO login(MemberDTO dto) {
 
-		MemberDTO result = null;
 		try {
 			getConn();
 			String sql = "SELECT * FROM TB_MEMBER WHERE MB_ID=? AND MB_PW=?";
@@ -103,9 +107,9 @@ public class MemberDAO {
 				String tel = rs.getString(7);
 				String address = rs.getString(8);
 
-				result = new MemberDTO(id, pw);
+				result = new MemberDTO(id, pw, name, rrn, gender, email, tel, address);
 			}
-
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
