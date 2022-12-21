@@ -62,10 +62,10 @@ public class BoardDAO {
 			String sql = "insert into TB_COMMUNITY values(TB_COMMENT_SEQ.nextval, ?, ?, sysdate, ?)";
 			
 			psmt = conn.prepareStatement(sql);
-			MemberDTO dto2 = new MemberDTO();
+			
 			psmt.setString(1, dto.getTitle());
 			psmt.setString(2, dto.getContent());
-			psmt.setString(3, dto2.getId());
+			psmt.setString(3, dto.getWriter());
 
 			cnt = psmt.executeUpdate();
 
