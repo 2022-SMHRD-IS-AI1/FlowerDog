@@ -1,8 +1,10 @@
+<%@page import="Model.MemberDTO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>flower Dog</title>
@@ -36,7 +38,8 @@
   <script defer src="./Boardcss/js/main.js"></script>
 </head>
 <body>
- <!-- HEADER -->
+<%MemberDTO info = (MemberDTO)session.getAttribute("info"); %>
+<!-- HEADER -->
  <header>
   <div class="inner">
     <a href="/" class="logo">
@@ -46,7 +49,11 @@
     <div class="sub-menu">
       <ul class="menu">
         <li>
-          <a href="login.jsp">로그인</a>
+        <%if(info != null) {%>
+          <a href="loginout">로그아웃</a>
+        <%} else{%>
+          <a href="login.jsp">로그인</a>	
+        <%} %>
         </li>
         <li>
           <a href="javascript:void(0)">My page</a>
@@ -149,10 +156,6 @@
       </div>
     </div>
   </div>
-  
-
 </section>
-
-
 </body>
 </html>
