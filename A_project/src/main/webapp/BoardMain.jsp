@@ -45,9 +45,9 @@
 						<td>시간</td>
 					</tr>
 					<%for (int i = 0; i < list.size(); i++){%>
-					<tr>
+					<tr id ="tit">
 						<td><%= i+1%></td>
-						<td><%= list.get(i).getTitle()%></td>
+						<td ><%= list.get(i).getTitle()%></td>
 						<td><%= list.get(i).getWriter()%></td>
 						<td><%= list.get(i).getTime()%></td>
 					</tr>	
@@ -76,5 +76,13 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script>
+			
+			titleIdEl = document.getElementById("tit");
+	        titleIdEl.addEventListener("click", function{
+	        	titleIdEl.innerHTML = "<a href = \"Board_Read\"></a>";
+	        });
+			</script>
+			
 </body>
 </html>
