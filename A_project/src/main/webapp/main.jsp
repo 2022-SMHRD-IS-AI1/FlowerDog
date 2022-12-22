@@ -72,7 +72,7 @@
         <div class="item__name"><a href="product.jsp">상품</a></div>
       </li>
       <li class="item">
-        <div class="item__name">입양</div>
+        <div class="item__name"><a href="adop_list.jsp">입양</a></div>
 
       <li class="item">
       <%if(info != null) {%>

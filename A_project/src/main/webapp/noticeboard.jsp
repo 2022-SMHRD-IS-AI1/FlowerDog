@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Bloger</title>
+<title>flower Dog</title>
 <!-- Description, Keywords and Author -->
 <meta name="description" content="Your description">
 <meta name="keywords" content="Your,Keywords">
@@ -53,12 +53,10 @@ li {
 	MemberDTO info = (MemberDTO) session.getAttribute("info");
 	BoardDAO dao = new BoardDAO();
 	ArrayList<BoardDTO> list = new ArrayList<>();
-	int cnt = 0;
+	list.clear();
 	%>
 	<%
 	if (info != null) {
-		// 로그인 된 회원이 받은 메세지 띄워주기
-		// DB로 바로 접근하기!
 		list = dao.Listofposts();
 	}
 	%>
@@ -75,7 +73,7 @@ li {
 					<div class="navbar-header">
 						<a class="navbar-brand" href="#"><img class="img-responsive"
 							src="./Boardcss/image/logo.png" alt="Logo" /></a>
-							<h1 class="header-h1">꽃길만걷개</h1>
+						<h1 class="header-h1">꽃길만걷개</h1>
 						<button type="button" class="navbar-toggle" data-toggle="collapse"
 							data-target="#bs-example-navbar-collapse-1">
 							<span class="sr-only">Toggle navigation</span> <span
@@ -140,9 +138,9 @@ li {
 
 	</div>
 
-	
+
 	<!-- menu end -->
-	
+
 	<!-- events -->
 	<div class="event" id="event">
 		<div class="container">
@@ -182,11 +180,18 @@ li {
 									</tr>
 								</thead>
 								<tbody>
-										<tr>
-											<td><%=cnt%></td>
-											<td><%=list.get(cnt).getTitle()%></td>
-											<td><%=list.get(cnt).getTime()%></td>
-										</tr>
+									<%
+									for (int i = 0; i < list.size(); i++) {
+									%>
+									<tr>
+										<td><%=i + 1%></td>
+										<td><%=list.get(i).getTitle()%></td>
+										<td><%=list.get(i).getWriter()%></td>
+										<td><%=list.get(i).getTime()%></td>
+									</tr>
+									<%
+									}
+									%>
 									<tr>
 										<td>
 											<button class="btn btn-dark">

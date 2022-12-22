@@ -21,10 +21,6 @@ public class MemberDAO {
 			String DB_User = "cgi_4_1220_1";
 			String DB_Password = "smhrd1";
 			
-//			String url = "jdbc:oracle:thin:@localhost:1521:xe";
-//			String DB_User = "hr";
-//			String DB_Password = "hr";
-			
 			conn = DriverManager.getConnection(url, DB_User, DB_Password);
 
 		} catch (Exception e) {

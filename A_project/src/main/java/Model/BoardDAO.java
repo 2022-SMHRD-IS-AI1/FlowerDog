@@ -27,9 +27,6 @@ public class BoardDAO {
 			String DB_User = "cgi_4_1220_1";
 			String DB_Password = "smhrd1";
 
-//			String url = "jdbc:oracle:thin:@localhost:1521:xe";
-//			String DB_User = "hr";
-//			String DB_Password = "hr";
 
 			conn = DriverManager.getConnection(url, DB_User, DB_Password);
 
@@ -87,7 +84,7 @@ public class BoardDAO {
 			String Array_sql = "select * from TB_COMMUNITY";
 			psmt = conn.prepareStatement(Array_sql);
 			rs = psmt.executeQuery();
-
+			list.clear();
 			while (rs.next()) {
 				int number = rs.getInt(1);
 				String title = rs.getString(2);
@@ -162,7 +159,7 @@ public class BoardDAO {
 		}finally {
 			close();
 		}
-		return -1;//게시글 삭제오류
+		return -1;//게시글 삭제오류났을 때
 	}
 	
 	
