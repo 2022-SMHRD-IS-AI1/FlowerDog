@@ -12,6 +12,7 @@ import javax.servlet.http.HttpSession;
 import org.eclipse.jdt.internal.compiler.ast.TrueLiteral;
 
 public class BoardDAO {
+	// 변수
 	Connection conn = null;
 	PreparedStatement psmt = null;
 	ResultSet rs = null;
@@ -41,15 +42,12 @@ public class BoardDAO {
 	// 객체를 종료하기 위한 close()
 	public void close() {
 		try {
-			// ResultSet 닫기
 			if (rs != null) {
 				rs.close();
 			}
-			// PreparedStatement 닫기
 			if (psmt != null) {
 				psmt.close();
 			}
-			// Connection 닫기
 			if (conn != null) {
 				conn.close();
 			}
@@ -58,21 +56,20 @@ public class BoardDAO {
 		}
 
 	}
-	
 
 	public int insertBoard(BoardDTO b_dto) {
 		try {
-
 			getConn();
 
 			// 3) SQL문 실행 준비
-			String sql = "insert into TB_COMMUNITY values(TB_COMMENT_SEQ.nextval, ?, ?, sysdate, ?)";
-
-			psmt = conn.prepareStatement(sql);
+			
+			String inser_sql = "insert into TB_COMMUNITY values(TB_COMMENT_SEQ.nextval, ?, ?, sysdate, ?)";
+			
+			psmt = conn.prepareStatement(inser_sql);
 			psmt.setString(1, b_dto.getTitle());
 			psmt.setString(2, b_dto.getContent());
 			psmt.setString(3, b_dto.getWriter());
-
+			
 			cnt = psmt.executeUpdate();
 
 		} catch (Exception e) {
@@ -86,14 +83,9 @@ public class BoardDAO {
 
 	public ArrayList<BoardDTO> Listofposts() {
 		try {
-
 			getConn();
-
-			// 3) SQL문 실행 준비
-			String sql = "select * from TB_COMMUNITY";
-
-			psmt = conn.prepareStatement(sql);
-
+			String Array_sql = "select * from TB_COMMUNITY";
+			psmt = conn.prepareStatement(Array_sql);
 			rs = psmt.executeQuery();
 
 			while (rs.next()) {
@@ -102,25 +94,21 @@ public class BoardDAO {
 				String writer = rs.getString(3);
 				String content = rs.getString(4);
 				String time = rs.getString(5);
-
 				BoardDTO dto = new BoardDTO(number, title, writer, content, time);
 
 				list.add(dto);
 			}
-
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
 			close();
 		}
 		return list;
-
 	}
 
 	BoardDTO result = null;
 
 	public BoardDTO readBoard(BoardDTO dto) {
-
 		try {
 			getConn();
 
@@ -145,10 +133,9 @@ public class BoardDAO {
 			e.printStackTrace();
 		} finally {
 			close();
-		}
-		return result;
 
+		}
+
+		return result;
 	}
-	
-	
 }
