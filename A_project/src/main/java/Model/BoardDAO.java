@@ -162,7 +162,34 @@ public class BoardDAO {
 		}finally {
 			close();
 		}
-		return -1;//오류났을 때
+		return -1;//게시글 삭제오류
 	}
+	
+	
+	
+	public int updateBoard(BoardDTO dto) {
+		
+		try {
+			
+			getConn();
+			
+			String spl = "update TB_COMMUNITY set COMM_TITLE =? AND COMM_CONTENT = ? AND COMM_DT = SYSDATE";
+			
+			psmt = conn.prepareStatement(spl);
+			
+			psmt.setString(1, dto.getTitle());
+			psmt.setString(2, dto.getContent());
+			
+			cnt = psmt.executeUpdate();
+			
+			return cnt;
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			close();
+		}
+		return -1;// 업데이트 오류
+	} 
 
 }
