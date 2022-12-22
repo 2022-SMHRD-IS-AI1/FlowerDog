@@ -18,7 +18,6 @@ public class MemberDTO {
 
 	public MemberDTO(String id, String pw, String name, String rrn, String gender, String email, String tel,
 			String address) {
-		super();
 		this.id = id;
 		this.pw = pw;
 		this.name = name;

@@ -8,11 +8,10 @@ public class ProductDTO {
 	private String Prod_Desc;
 	
 	public ProductDTO(int prod_Number, String prod_Name, int prod_Price, String prod_Desc) {
-		super();
-		Prod_Number = prod_Number;
-		Prod_Name = prod_Name;
-		Prod_Price = prod_Price;
-		Prod_Desc = prod_Desc;
+		this.Prod_Number = prod_Number;
+		this.Prod_Name = prod_Name;
+		this.Prod_Price = prod_Price;
+		this.Prod_Desc = prod_Desc;
 	}
 
 	public int getProd_Number() {

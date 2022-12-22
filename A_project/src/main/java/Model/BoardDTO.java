@@ -12,17 +12,15 @@ public class BoardDTO {
 	
 	
 	public BoardDTO(String title, String writer, String content) {
-		super();
-		Title = title;
-		Writer = writer;
+		this.Title = title;
+		this.Writer = writer;
 		this.content = content;
 	}
 	
 	// 게시글 읽을 때 쓰려고 만듦
 	public BoardDTO(String title, String writer) {
-		super();
-		Title = title;
-		Writer = writer;
+		this.Title = title;
+		this.Writer = writer;
 	}
 
 
