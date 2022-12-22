@@ -113,7 +113,7 @@
                             <br>
                             <br>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/adoption/startbootstrap-shop-item-gh-pages/adop_intro copy 2.html">상세보기</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./adop_intro copy 2.jsp">상세보기</a></div>
                             </div>
                         </div>
 
@@ -140,7 +140,7 @@
                             <br>
                             <br>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/adoption/startbootstrap-shop-item-gh-pages/adop_intro copy 3.html">상세보기</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./adop_intro copy 3.jsp">상세보기</a></div>
                             </div>
                         </div>
                     </div>
@@ -164,7 +164,7 @@
                             <br>
                             <br>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/adoption/startbootstrap-shop-item-gh-pages/adop_intro copy 4.html">상세보기</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./adop_intro copy 4.jsp">상세보기</a></div>
                             </div>
                         </div>
 
@@ -189,7 +189,7 @@
                             <br>
                             <br>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/adoption/startbootstrap-shop-item-gh-pages/adop_intro copy 5.html">상세보기</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./adop_intro copy 5.jsp">상세보기</a></div>
                             </div>
                         </div>
 
@@ -216,7 +216,7 @@
                             <br>
                             <br>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/adoption/startbootstrap-shop-item-gh-pages/adop_intro copy 6.html">상세보기</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./adop_intro copy 6.jsp">상세보기</a></div>
                             </div>
                         </div>
                     </div>
@@ -240,7 +240,7 @@
                             <br>
                             <br>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/adoption/startbootstrap-shop-item-gh-pages/adop_intro copy 7.html">상세보기</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./adop_intro copy 7.jsp">상세보기</a></div>
                             </div>
                         </div>
 
@@ -265,7 +265,7 @@
                             <br>
                             <br>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/adoption/startbootstrap-shop-item-gh-pages/adop_intro copy 8.html">상세보기</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./adop_intro copy 8.jsp">상세보기</a></div>
                             </div>
                         </div>
 
@@ -292,7 +292,7 @@
                             <br>
                             <br>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/adoption/startbootstrap-shop-item-gh-pages/adop_intro copy 9.html">상세보기</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./adop_intro copy 9.jsp">상세보기</a></div>
                             </div>
                         </div>
                     </div>
@@ -317,7 +317,7 @@
                             <br>
                             <br>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/adoption/startbootstrap-shop-item-gh-pages/adop_intro copy 10.html">상세보기</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./adop_intro copy 10.jsp">상세보기</a></div>
                             </div>
                         </div>
 
@@ -344,7 +344,7 @@
                             <br>
                             <br>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/adoption/startbootstrap-shop-item-gh-pages/adop_intro copy 11.html">상세보기</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./adop_intro copy 11.jsp">상세보기</a></div>
                             </div>
                         </div>
             </div>
@@ -369,7 +369,7 @@
                     <br>
                     <br>
                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/adoption/startbootstrap-shop-item-gh-pages/adop_intro copy 12.html">상세보기</a></div>
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./adop_intro copy 12.jsp">상세보기</a></div>
                     </div>
                 </div>
                 

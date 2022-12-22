@@ -71,7 +71,7 @@
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                             <br>
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"> 책임비 결제하기</a> <a class="btn btn-outline-dark mt-auto" href="#">입양 절차 및 책임비 가이드 보기</a></div>
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"> 책임비 결제하기</a> <a class="btn btn-outline-dark mt-auto" href="./adop_guide.jsp">입양 절차 및 책임비 가이드 보기</a></div>
                      
                             </button>
                         </div>
