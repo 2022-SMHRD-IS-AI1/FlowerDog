@@ -32,6 +32,7 @@ public class Board_Removal extends HttpServlet {
 		int result = dao.removalBoard(dto);
 		
 		if(result >0) {
+			response.sendRedirect("BoardMain.jsp");
 			System.out.println("게시글삭제 성공");
 		}else {
 			System.out.println("게시글삭제실패");

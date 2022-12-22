@@ -104,7 +104,7 @@
 		%>
 
 
-		<form action="Board_Creating" method="psot">
+		<form action="Board_Creating" method="post">
                    <div id="list">
                       <div class="list_title">
                         <h1>커뮤니티</h1>
