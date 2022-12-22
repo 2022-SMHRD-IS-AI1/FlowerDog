@@ -40,8 +40,7 @@ public class Board_Creating extends HttpServlet {
 		}
 		nextPage = "noticeboard.jsp";
 
-		RequestDispatcher rd = request.getRequestDispatcher(nextPage);
-		rd.forward(request, response);
+		response.sendRedirect(nextPage);
 
 	}
 
