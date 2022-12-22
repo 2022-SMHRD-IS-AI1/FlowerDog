@@ -14,14 +14,14 @@
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="./Boardcss/css/adop_list.css" rel="stylesheet" />
 </head>
 
 <body>
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="/"><img src="로고.png" alt="" style="width: 70px;" ></a>
+            <a class="navbar-brand" href="/"><img src="./Boardcss/image/logo.png" alt="" style="width: 70px;" ></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -70,7 +70,7 @@
                 <div class="col mb-5">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="/adoption/startbootstrap-shop-item-gh-pages/adopt/a1.png" alt="..." />
+                        <img class="card-img-top" src="./Boardcss/image/a1.png" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             
@@ -87,7 +87,7 @@
                             <br>
                             <br>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/adoption/startbootstrap-shop-item-gh-pages/adop_intro copy 1.html">상세보기</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./adop_intro copy 1.jsp">상세보기</a></div>
                             </div>
                         </div>
 
@@ -96,7 +96,7 @@
                 <div class="col mb-5">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="/adoption/startbootstrap-shop-item-gh-pages/adopt/a2.png"alt="..." />
+                        <img class="card-img-top" src="./Boardcss/image/a2.png"alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -124,7 +124,7 @@
                 <div class="col mb-5">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="/adoption/startbootstrap-shop-item-gh-pages/adopt/a3.png" alt="..." />
+                        <img class="card-img-top" src="./Boardcss/image/a3.png" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -148,7 +148,7 @@
                 <div class="col mb-5">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="/adoption/startbootstrap-shop-item-gh-pages/adopt/a4.png" alt="..." />
+                        <img class="card-img-top" src="./Boardcss/image/a4.png" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -173,7 +173,7 @@
                 <div class="col mb-5">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="/adoption/startbootstrap-shop-item-gh-pages/adopt/a5.png" alt="..." />
+                        <img class="card-img-top" src="./Boardcss/image/a5.png" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -200,7 +200,7 @@
                 <div class="col mb-5">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="/adoption/startbootstrap-shop-item-gh-pages/adopt/a6.png" alt="..." />
+                        <img class="card-img-top" src="./Boardcss/image/a6.png" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -224,7 +224,7 @@
                 <div class="col mb-5">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="/adoption/startbootstrap-shop-item-gh-pages/adopt/a7.png" alt="..." />
+                        <img class="card-img-top" src="./Boardcss/image/a7.png" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -249,7 +249,7 @@
                 <div class="col mb-5">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="/adoption/startbootstrap-shop-item-gh-pages/adopt/a8.png" alt="..." />
+                        <img class="card-img-top" src="./Boardcss/image/a8.png" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -276,7 +276,7 @@
                 <div class="col mb-5">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="/adoption/startbootstrap-shop-item-gh-pages/adopt/a9.png" alt="..." />
+                        <img class="card-img-top" src="./Boardcss/image/a9.png" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -301,7 +301,7 @@
                 <div class="col mb-5">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="/adoption/startbootstrap-shop-item-gh-pages/adopt/a10.png" alt="..." />
+                        <img class="card-img-top" src="./Boardcss/image/a10.png"alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -328,7 +328,7 @@
                <div class="col mb-5">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="/adoption/startbootstrap-shop-item-gh-pages/adopt/a11.png" alt="..." />
+                        <img class="card-img-top" src="./Boardcss/image/a11.png" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -353,7 +353,7 @@
         <div class="col mb-5">
             <div class="card h-100">
                 <!-- Product image-->
-                <img class="card-img-top" src="/adoption/startbootstrap-shop-item-gh-pages/adopt/a12.png" alt="..." />
+                <img class="card-img-top" src="./Boardcss/image/a12.png" alt="..." />
                 <!-- Product details-->
                 <div class="card-body p-4">
                     <div class="text-center">

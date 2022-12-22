@@ -14,13 +14,13 @@
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="./Boardcss/css/adop_intro.css" rel="stylesheet" />
+<link href="./Boardcss/css/adop_intro.css" rel="stylesheet" />
     </head>
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="../adoption/js/index.html"><img src="/adoption/imgfile/로고.png" alt="" style="width:80px; height:80px;"></a>
+                <a class="navbar-brand" href="../adoption/js/index.html"><img src="./Boardcss/image/logo.png" alt="" style="width:80px; height:80px;"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
@@ -50,9 +50,9 @@
         <section class="py-5">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
-                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="adopt/a2.png" alt="..." /></div>
+                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="./Boardcss/image/a2.png" alt="..." /></div>
                     <div class="col-md-6 " >
-                        <span><img src="adopt/b2.png" alt=""></span>
+                        <span><img src="./Boardcss/image/b2.png" alt=""></span>
                         <br>
                         
                     </div>
