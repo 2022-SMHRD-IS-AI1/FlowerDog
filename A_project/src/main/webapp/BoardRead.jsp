@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Bloger</title>
+<title>flower Dog</title>
 <!-- Description, Keywords and Author -->
 <meta name="description" content="Your description">
 <meta name="keywords" content="Your,Keywords">
@@ -193,7 +193,7 @@
 				<%}%>
 					
 				</div>
-			</div>
+		</footer>
 
 	<script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
 	<script type="text/javascript">

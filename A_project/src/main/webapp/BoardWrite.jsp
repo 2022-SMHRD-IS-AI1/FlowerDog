@@ -6,7 +6,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Bloger</title>
+		<title>flower Dog</title>
 		<!-- Description, Keywords and Author -->
 		<meta name="description" content="Your description">
 		<meta name="keywords" content="Your,Keywords">
@@ -109,11 +109,11 @@
                       <div class="list_title">
                         <h1>커뮤니티</h1>
                         <h3>자유롭게 글을 쓸 수 있는 공간입니다.</h3>
-                         <textarea type="text" name="Title" rows="1" cols="100"
+                         <textarea name="Title" rows="1" cols="100"
                             placeholder="제목" maxlength="100"></textarea>
                       </div>
                       <div>
-                         <textarea type="text" name="Writer" rows="1" cols="100"
+                         <textarea name="Writer" rows="1" cols="100"
                               maxlength="100"><%=id %></textarea>
                       </div>
           
@@ -161,7 +161,6 @@
 				</div>
 			</footer>
 
-		</div>
 		
 		
 		<!-- Javascript files -->
