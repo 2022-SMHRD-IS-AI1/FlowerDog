@@ -62,14 +62,14 @@ public class BoardDAO {
 			getConn();
 
 			// 3) SQL문 실행 준비
-			
+
 			String inser_sql = "insert into TB_COMMUNITY values(TB_COMMENT_SEQ.nextval, ?, ?, sysdate, ?)";
-			
+
 			psmt = conn.prepareStatement(inser_sql);
 			psmt.setString(1, b_dto.getTitle());
 			psmt.setString(2, b_dto.getContent());
 			psmt.setString(3, b_dto.getWriter());
-			
+
 			cnt = psmt.executeUpdate();
 
 		} catch (Exception e) {
@@ -138,4 +138,16 @@ public class BoardDAO {
 
 		return result;
 	}
+
+	public void removalBoard() {
+
+		try {
+			String sql = "delete from TB_COMMUNITY where COMM_TITLE = ?, COMM_";
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
 }
