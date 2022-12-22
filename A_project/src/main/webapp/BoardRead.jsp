@@ -140,7 +140,7 @@
           
                       <div>
                          <button id="Reset">수정</button> 
-                         <button id="Reset">삭제</button> 
+                         <button id="Reset" ><a href = "Board_Removal">삭제</a></button> 
                          <input type="submit" value="돌아가기">
                       </div>
                    </div>

@@ -73,11 +73,13 @@
       </li>
       <li class="item">
         <div class="item__name">입양</div>
-      </li>
+
       <li class="item">
       <%if(info != null) {%>
         <div class="item__name"><a href="noticeboard.jsp" >게시판</a></div>
+
       <%}%>  
+
       </li>
     </ul>
   </div>

@@ -35,3 +35,6 @@ create sequence num_Board
 	
 SELECT * FROM TB_MEMBER;
 INSERT INTO TB_MEMBER VALUES('a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', SYSDATE, 'M');
+
+
+
