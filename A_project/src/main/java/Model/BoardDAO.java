@@ -4,9 +4,12 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLClientInfoException;
 import java.util.ArrayList;
 
 import javax.servlet.http.HttpSession;
+
+import org.eclipse.jdt.internal.compiler.ast.TrueLiteral;
 
 public class BoardDAO {
 	public void getConn() {
@@ -32,14 +35,6 @@ public class BoardDAO {
 	int cnt = 0;
 	ArrayList<BoardDTO> list = new ArrayList<>();
 	
-	// SQL문
-	String inser_sql = "insert into TB_COMMUNITY values(TB_COMMENT_SEQ.nextval, ?, ?, sysdate, ?)";
-	
-	String Array_sql = "select * from TB_COMMUNITY";
-	
-	String Update_SQL = "UPDATE TB_COMMUNITY SET COMM_TITLE=?, COMM_CONTENT=?, sysdate WHERE MB_ID=?";
-	
-	
 //==============================================================================================================
 	public void close() {
 		try {
@@ -61,6 +56,8 @@ public class BoardDAO {
 	public int insertBoard(BoardDTO b_dto) {
 		try {
 			getConn();
+			String inser_sql = "insert into TB_COMMUNITY values(TB_COMMENT_SEQ.nextval, ?, ?, sysdate, ?)";
+			
 			psmt = conn.prepareStatement(inser_sql);
 			psmt.setString(1, b_dto.getTitle());
 			psmt.setString(2, b_dto.getContent());
@@ -80,6 +77,7 @@ public class BoardDAO {
 	public ArrayList<BoardDTO> Listofposts() {
 		try {
 			getConn();
+			String Array_sql = "select * from TB_COMMUNITY";
 			psmt = conn.prepareStatement(Array_sql);
 			rs = psmt.executeQuery();
 
@@ -101,18 +99,43 @@ public class BoardDAO {
 		return list;
 	}
 
-	public int update(BoardDTO b_dto) {
+	
+	BoardDTO result = null;
+	public BoardDTO readBoard(BoardDTO dto) {
 		
 		try {
-		    psmt = conn.prepareStatement(Update_SQL);  
-		    psmt.setString(1, b_dto.getTitle()); //게시글 제목
-		    psmt.setString(2, b_dto.getContent()); //게시글 내용
-		    psmt.setString(3, b_dto.getWriter()); //게시글 작성자
-		    
-		    return psmt.executeUpdate();
-		}catch(Exception e) {
-		    e.printStackTrace();
+
+			getConn();
+			
+			String sql = "select * from TB_COMMUNITY where MB_ID=? and COMM_TITLE = ?";
+			
+			psmt = conn.prepareStatement(sql);
+			
+			psmt.setString(1,dto.getWriter());
+			psmt.setString(2, dto.getTitle());
+			
+			rs = psmt.executeQuery();
+			
+			if(rs.next()) {
+				
+				String title = rs.getString(2);
+				String content = rs.getString(3);
+				String time = rs.getString(4);
+				String writer = rs.getString(5);
+				
+				result = new BoardDTO(title, writer, time, content);
+			}
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			close();
+
 		}
-		return -1; //데이터베이스 오류발생
-	}
+
+		return result;
+
+}
+
 }

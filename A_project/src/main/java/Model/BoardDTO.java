@@ -17,6 +17,13 @@ public class BoardDTO {
 		Writer = writer;
 		this.content = content;
 	}
+	
+	// 게시글 읽을 때 쓰려고 만듦
+	public BoardDTO(String title, String writer) {
+		super();
+		Title = title;
+		Writer = writer;
+	}
 
 
 	// 작성 후 저장

@@ -106,11 +106,107 @@
 
 
 		<form action="Board_Creating" method="psot">
-			<div id="list">
-				<div class="list_title">
-					<h1>커뮤니티</h1>
-					<textarea type="text" name="Title" rows="1" cols="100"
-						placeholder="제목" maxlength="50"><%=dto.getTitle()%></textarea>
+                   <div id="list">
+                      <div class="list_title">
+                        <h1>커뮤니티</h1>
+                         <textarea type="text" name="Title" rows="1" cols="100"
+                             maxlength="50" readonly>제목</textarea>
+                      </div>
+                      <div>
+                         <textarea type="text" name="Writer" rows="1" cols="100"
+                            maxlength="100" readonly>id</textarea>
+                      </div>
+                      <div>
+                         <textarea type="text" name="Time" rows="1" cols="100"
+                             maxlength="15" readonly>글쓴날짜</textarea>
+                      </div>
+                      
+                 
+          
+                      <div>
+                         <textarea name="content" required rows="20"
+                            cols="100" readonly>내용</textarea>
+                      </div>
+          
+          
+          <table>
+          <tr>
+          <td>조회수</td>
+          <td colspan = "2">개수</td>
+          <td>좋아요</td>
+          <td colspan = "2">개수</td>
+          </tr>
+          </table>
+          
+                      <div>
+                         <button id="Reset">수정</button> 
+                         <button id="Reset">삭제</button> 
+                         <input type="submit" value="돌아가기">
+                      </div>
+                   </div>
+                   
+                   <br>
+                   
+                   <div>
+                   <p>댓글</p>
+                   </div>
+                   
+                   <form>
+                   <fieldset>
+                   <div>
+                   <textarea type="text" placeholder="작성자입력" rows ="1" cols = "100"></textarea>
+                   </div>
+                   <textarea type="text" placeholder="댓글입력" maxlength="100" rows ="5" cols = "100"></textarea>
+                   <button type="button">등록</button>
+                   </fieldset>
+                   </form>
+                   
+                   <br>
+                   <div class = "댓글가장큰박스">
+                   <div class = "댓글정보의 박스">
+                   <p>
+                   <strong>댓글작성자</strong>
+                   <span>댓글날짜</span>
+                   <span class = "수정,삭제라인">
+                   <a href = "#">수정</a>
+                   <a href = "#">삭제</a>
+                   </span>
+                   </p>
+                   <div>댓글내용~~</div>
+                   </div>
+                   
+                   </div>
+                   
+                   
+                   
+                   
+                </form>
+             </div>
+             <!-- Scripts -->
+             <script src="assets/js/jquery.min.js"></script>
+             <script src="assets/js/jquery.scrolly.min.js"></script>
+             <script src="assets/js/jquery.scrollex.min.js"></script>
+             <script src="assets/js/skel.min.js"></script>
+             <script src="assets/js/util.js"></script>
+             <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+             <script src="assets/js/main.js"></script>
+			<!-- events end -->
+			
+			<!-- footer -->
+			<footer>
+				<div class="container">
+					<p><a href="#">Home</a> | <a href="#work">works</a> | <a href="#team">Team</a> | <a href="#contact">Contact</a></p>
+					<div class="social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-dribbble"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+						<a href="#"><i class="fa fa-google-plus"></i></a>
+					</div>
+					<!-- copy right -->
+					<!-- This theme comes under Creative Commons Attribution 4.0 Unported. So don't remove below link back -->
+					<p class="copy-right">Copyright &copy; 2014 <a href="#">Your Site</a> | Designed By : <a href="http://www.indioweb.in/portfolio">IndioWeb</a>, All rights reserved. </p>
+
 				</div>
 				<div>
 					<textarea type="text" name="Writer" rows="1" cols="100"
