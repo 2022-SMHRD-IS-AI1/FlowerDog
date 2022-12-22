@@ -11,10 +11,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
- header{
+header{
   height: 100%;
   width: 100%;
-  background: url(./Boardcss/image/dogbanner.jpg) fixed no-repeat center;
+  background: url("../image/dogbanner.jpg") fixed no-repeat center;
   background-size: cover;
 }
 
