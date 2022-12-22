@@ -11,7 +11,7 @@ import javax.servlet.http.HttpSession;
 import Model.BoardDTO;
 
 @WebServlet("/UpdataBoard")
-public class UpdataBoard extends HttpServlet {
+public class Board_Update extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void service(HttpServletRequest request, HttpServletResponse response)

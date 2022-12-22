@@ -39,6 +39,7 @@ public class Board_Creating extends HttpServlet {
 
 		// 4. 성공실패 구분
 		String nextPage = "";
+		
 		if (cnt > 0) {
 			System.out.println("게시글 성공");
 		} else {
