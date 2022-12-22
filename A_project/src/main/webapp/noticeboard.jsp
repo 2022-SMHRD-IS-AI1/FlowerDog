@@ -176,6 +176,7 @@ li {
 									<tr>
 										<th scope="col" class="th-num">번호</th>
 										<th scope="col" class="th-title">제목</th>
+										<th scope="col" class="th-date">작성자</th>
 										<th scope="col" class="th-date">등록일</th>
 									</tr>
 								</thead>
@@ -185,7 +186,7 @@ li {
 									%>
 									<tr>
 										<td><%=i + 1%></td>
-										<td><%=list.get(i).getTitle()%></td>
+										<td><a href = "view"><%=list.get(i).getTitle()%></a></td>
 										<td><%=list.get(i).getWriter()%></td>
 										<td><%=list.get(i).getTime()%></td>
 									</tr>

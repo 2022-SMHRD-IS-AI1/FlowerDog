@@ -60,7 +60,7 @@ public class BoardDAO {
 
 			// 3) SQL문 실행 준비
 
-			String inser_sql = "insert into TB_COMMUNITY values(TB_COMMENT_SEQ.nextval, ?, ?, sysdate, ?)";
+			String inser_sql = "insert into TB_COMMUNITY values(TB_COMMUNITY_SEQ.nextval, ?, ?, sysdate, ?)";
 
 			psmt = conn.prepareStatement(inser_sql);
 			psmt.setString(1, b_dto.getTitle());
@@ -188,5 +188,6 @@ public class BoardDAO {
 		}
 		return -1;// 업데이트 오류
 	} 
+	
 
 }
