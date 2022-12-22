@@ -36,15 +36,5 @@ public class Board_Removal extends HttpServlet {
 		
 	}
 	
-	public void removalBoard() {
-		
-		try {
-			String sql = "delete from TB_COMMUNITY where COMM_TITLE = ?, COMM_";
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		
-	}
-
+	
 }

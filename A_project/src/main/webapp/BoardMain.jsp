@@ -94,12 +94,6 @@ document.onkeydown = noEvent;
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-<<<<<<< HEAD
-	
-			
-=======
-		
 
->>>>>>> branch 'master' of https://github.com/2022-SMHRD-IS-AI1/FlowerDog.git
 </body>
 </html>
