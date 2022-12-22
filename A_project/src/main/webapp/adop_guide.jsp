@@ -82,7 +82,9 @@
                         </span>
                         
                         <h4 class="my-3">책임 입양이 가능한 18세 이상 신원확인 가능한 성인</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <div class="adop-text">
+                        <p class="text-muted">반려동물을 맞이할 환경적 경제적 준비, 마음의 각오가 되어있는 분이 필요해요</p>
+                    </div>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -90,7 +92,7 @@
                             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">경제적 능력이 있고 반려동물을 사랑하는 가정</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <p class="text-muted">아플 때 적절한 치료를 해주고,모든 가족과의 합의가 되어있는 반려동물을 진심으로 사랑해 줄 가정이 필요해요 </p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -98,7 +100,7 @@
                             <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">입양 후 1년간 6회이내 아이 생활사진을 보내주실 수 있는 분</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <p class="text-muted">반려동물은 10~15년 이상 삽니다.결혼, 임신, 유학, 이사 등으로 가정환경이 바뀌어도 한번 인연을 맺은 동물은 끝까지 책임지고 보살펴줄 가정이 필요해요</p>
                     </div>
                 </div>
             </div>
@@ -116,17 +118,17 @@
                 </div>
                 <ul class="timeline">
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="./Boardcss/image/1.jpg"  alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="./Boardcss/image/1.png"  alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>공고 확인</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">꽃개를 통해 보호소에서 보호중인 아이들을 간편하게 확인해 보세요!</p></div>
-                            <a href="">공고 확인 바로가기</a>
+                            <a href="./adop_list.jsp">공고 확인 바로가기</a>
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="./Boardcss/image/2.jpg" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="./Boardcss/image/2.png" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="subheading"> 방문예약 & 입양 문의</h4>
@@ -136,7 +138,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="./Boardcss/image/3.jpg" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="./Boardcss/image/3.png" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="subheading">입양 전 상담</h4>
@@ -145,7 +147,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="./Boardcss/image/4.jpg" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="./Boardcss/image/4.png" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="subheading">계약서 작성 및 입양</h4>
