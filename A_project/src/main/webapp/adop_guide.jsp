@@ -14,14 +14,14 @@
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="./Boardcss/css/adop_guide.css" rel="stylesheet" />
 </head>
 
 <body>
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="/"><img src="/imgfile/로고.png" alt="" style="width: 70px;" ></a>
+            <a class="navbar-brand" href="/"><img src="./Boardcss/image/logo.png" alt="" style="width: 70px;" ></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -68,7 +68,7 @@
         <section class="page-section" id="services">
             <div class="container">
                 <div class="text-center">
-                    <img src="/imgfile/guide1.png" alt="">
+                    <img src="Boardcss/image/guide1.png" alt="">
                     <hr >
                     <br>
                     <h2 class="section-heading text-uppercase"> 입양 자격 </h2>
@@ -109,14 +109,14 @@
         <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
-                    <img src="/imgfile/guide2.png" alt="">
+                    <img src="Boardcss/image/guide2.png" alt="">
                     <hr>
                     <h2 class="section-heading text-uppercase">입양 절차 안내</h2>
                     <h3 class="section-subheading text-muted"> 꽃개에서 보호중인 아이들을 가족으로 맞이하기 위한 입양절차</h3>
                 </div>
                 <ul class="timeline">
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="/imgfile/1.jpg" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="./Boardcss/image/1.jpg"  alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>공고 확인</h4>
@@ -126,7 +126,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="/adoption/imgfile/2.jpg" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="./Boardcss/image/2.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="subheading"> 방문예약 & 입양 문의</h4>
@@ -136,7 +136,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="/adoption/imgfile/3.jpg" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="./Boardcss/image/3.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="subheading">입양 전 상담</h4>
@@ -145,7 +145,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="/adoption/imgfile/4.jpg" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="./Boardcss/image/4.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="subheading">계약서 작성 및 입양</h4>
