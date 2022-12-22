@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.websocket.Session;
 
+import Model.BoardDTO;
 import Model.MemberDAO;
 import Model.MemberDTO;
 
@@ -30,8 +31,8 @@ public class Login_Service extends HttpServlet {
 		MemberDTO dto = new MemberDTO(id, pw);
 		
 		MemberDTO result = dao.login(dto);
+	
 		HttpSession session = request.getSession();
-		System.out.println(result);
 		String nextPage = "";
 		
 		if (result != null) {
@@ -39,7 +40,6 @@ public class Login_Service extends HttpServlet {
 			nextPage = "main.jsp";
 			System.out.println("로그인 성공!");
 		}else {
-			session.setAttribute("info", result);
 			nextPage = "login.jsp";
 			System.out.println("로그인실패");
 		}

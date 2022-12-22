@@ -131,11 +131,7 @@
                          <a href="BoardWrite.jsp"><button id="Reset">초기화하기</button></a> 
                          <input type="submit" value="작성하기">
                       </div>
-          
                    </div>
-                   
-                   
-          
                 </form>
              </div>
              <!-- Scripts -->
