@@ -104,22 +104,22 @@
                       <div class="list_title">
                         <h1>커뮤니티</h1>
                          <textarea type="text" name="Title" rows="1" cols="100"
-                            placeholder="제목" maxlength="50"></textarea>
+                             maxlength="50" readonly>제목</textarea>
                       </div>
                       <div>
                          <textarea type="text" name="Writer" rows="1" cols="100"
-                            maxlength="100">id</textarea>
+                            maxlength="100" readonly>id</textarea>
                       </div>
                       <div>
-                         <textarea type="text" name="Writer" rows="1" cols="100"
-                            placeholder="글쓴날짜" maxlength="15"></textarea>
+                         <textarea type="text" name="Time" rows="1" cols="100"
+                             maxlength="15" readonly>글쓴날짜</textarea>
                       </div>
                       
                  
           
                       <div>
-                         <textarea name="content" placeholder="내용" required rows="20"
-                            cols="100"></textarea>
+                         <textarea name="content" required rows="20"
+                            cols="100" readonly>내용</textarea>
                       </div>
           
           

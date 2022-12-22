@@ -4,9 +4,12 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLClientInfoException;
 import java.util.ArrayList;
 
 import javax.servlet.http.HttpSession;
+
+import org.eclipse.jdt.internal.compiler.ast.TrueLiteral;
 
 public class BoardDAO {
 	Connection conn = null;
@@ -110,28 +113,48 @@ public class BoardDAO {
 		}
 		return list;
 		
-	}public void Modify(BoardDTO dto) {
+	}
+	
+	
+	BoardDTO result = null;
+	public BoardDTO readBoard(BoardDTO dto) {
+		
 		try {
-
 			getConn();
-
-			// 3) SQL문 실행 준비
-			String sql = "select * from web_message where id=?";
+			
+			String sql = "select * from TB_COMMUNITY where MB_ID=? and COMM_TITLE = ?";
 			
 			psmt = conn.prepareStatement(sql);
 			
-			psmt.setInt(1, dto.getNumber());
+			psmt.setString(1,dto.getWriter());
 			psmt.setString(2, dto.getTitle());
-			psmt.setString(3, dto.getWriter());
-			psmt.setString(4, dto.getContent());
-			psmt.setString(5, dto.getTime());
-
-			cnt = psmt.executeUpdate();
-
+			
+			rs = psmt.executeQuery();
+			
+			if(rs.next()) {
+				
+				String title = rs.getString(2);
+				String content = rs.getString(3);
+				String time = rs.getString(4);
+				String writer = rs.getString(5);
+				
+				result = new BoardDTO(title, writer, time, content);
+			}
+			
+			
 		} catch (Exception e) {
 			e.printStackTrace();
-		} finally {
+		}finally {
 			close();
 		}
-}
+		return result;
+		
+	}
+	
+	
+	
+	
+	
+	
+	
 }
