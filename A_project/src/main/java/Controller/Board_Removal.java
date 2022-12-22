@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import Model.BoardDAO;
+import Model.BoardDTO;
 
 @WebServlet("/Board_Removal")
 public class Board_Removal extends HttpServlet {
@@ -26,12 +27,15 @@ public class Board_Removal extends HttpServlet {
 		
 		
 		BoardDAO dao = new BoardDAO();
+		BoardDTO dto = new BoardDTO(title, writer, content);
+			
+		int result = dao.removalBoard(dto);
 		
-		
-		
-		
-	
-		// dao.removal(); => 만들어야함		
+		if(result >0) {
+			System.out.println("게시글삭제 성공");
+		}else {
+			System.out.println("게시글삭제실패");
+		}
 		
 		
 	}

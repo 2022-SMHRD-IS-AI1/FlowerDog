@@ -139,15 +139,29 @@ public class BoardDAO {
 		return result;
 	}
 
-	public void removalBoard() {
+	public int removalBoard(BoardDTO dto) {
 
 		try {
-			String sql = "delete from TB_COMMUNITY where COMM_TITLE = ?, COMM_";
+			String sql = "delete from TB_COMMUNITY where COMM_TITLE = ?and COMM_CONTENT = ? and MB_ID=?";
 
+			psmt = conn.prepareStatement(sql);
+			
+			psmt.setString(1, dto.getTitle());
+			psmt.setString(2, dto.getContent());
+			psmt.setString(3, dto.getWriter());
+			
+			cnt = psmt.executeUpdate();
+			
+			return cnt;
+			
+			
+			
 		} catch (Exception e) {
 			e.printStackTrace();
+		}finally {
+			close();
 		}
-
+		return -1;//오류났을 때
 	}
 
 }
