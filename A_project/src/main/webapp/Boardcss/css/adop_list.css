@@ -14,7 +14,7 @@
 header{
   height: 100%;
   width: 100%;
-  background: url(/adoption/imgfile/dogbanner.jpg)  fixed no-repeat center;
+  background: url(./Boardcss/image/dogbanner.jpg)  fixed no-repeat center;
   background-size: cover;
 }
 
