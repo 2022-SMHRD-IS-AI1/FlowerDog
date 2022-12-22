@@ -75,6 +75,7 @@ li {
 					<div class="navbar-header">
 						<a class="navbar-brand" href="#"><img class="img-responsive"
 							src="./Boardcss/image/logo.png" alt="Logo" /></a>
+							<h1 class="header-h1">꽃길만걷개</h1>
 						<button type="button" class="navbar-toggle" data-toggle="collapse"
 							data-target="#bs-example-navbar-collapse-1">
 							<span class="sr-only">Toggle navigation</span> <span
