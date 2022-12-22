@@ -27,7 +27,6 @@ public class Board_Creating extends HttpServlet {
 		String title = request.getParameter("Title");
 		String writer = request.getParameter("Writer");
 		String content = request.getParameter("content");
-		String time = request.getParameter("Time");
 
 		// 3. DB에 연동될 수 있도록 데이터 넘겨주기 -> DAO 이동!
 		// (DTO타입으로 데이터를 묶어서 전달)

@@ -1,13 +1,13 @@
 package Model;
 
-public class GoodsDTO {
+public class ProductDTO {
 	
 	private int Prod_Number;
 	private String Prod_Name;
 	private int Prod_Price;
 	private String Prod_Desc;
 	
-	public GoodsDTO(int prod_Number, String prod_Name, int prod_Price, String prod_Desc) {
+	public ProductDTO(int prod_Number, String prod_Name, int prod_Price, String prod_Desc) {
 		super();
 		Prod_Number = prod_Number;
 		Prod_Name = prod_Name;
