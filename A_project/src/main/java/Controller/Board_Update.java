@@ -10,7 +10,7 @@ import javax.servlet.http.HttpSession;
 
 import Model.BoardDTO;
 
-@WebServlet("/UpdataBoard")
+@WebServlet("/Board_Update")
 public class Board_Update extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
