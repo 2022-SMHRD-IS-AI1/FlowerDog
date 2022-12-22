@@ -189,17 +189,13 @@ li {
 									</tr>
 								</thead>
 								<tbody>
-									<%
-									for (int i = 0; i < list.size(); i++) {
-									%>
+									<%int cnt = 0; %>
 									<tr>
-										<td><%=i + 1%></td>
-										<td><%=list.get(i).getTitle()%></td>
-										<td><%=list.get(i).getTime()%></td>
+										<td><%=cnt + 1%></td>
+										<td><%=list.get(cnt).getTitle()%></td>
+										<td><%=list.get(cnt).getTime()%></td>
 									</tr>
-									<%
-									}
-									%>
+									
 									<tr>
 										<td>
 											<button class="btn btn-dark">
