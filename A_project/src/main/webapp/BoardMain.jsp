@@ -19,20 +19,7 @@
 </head>
 <body>	
 <script language='javascript'>
-
-function noEvent() {
-    if (event.keyCode == 116) {
-        event.keyCode= 2;
-        return false;
-    }
-    else if(event.ctrlKey && (event.keyCode==78 || event.keyCode == 82))
-    {
-        return false;
-    }
-}
-document.onkeydown = noEvent;
-
-</script>	
+	
 			<!-- Q17. 게시글 목록 조회 기능 -->
 			<!-- Q18. 게시글 목록 세부페이지 기능(제목을 클릭하면 세부페이지 BoardDetail.jsp로 이동)-->
 			<div id="board">
