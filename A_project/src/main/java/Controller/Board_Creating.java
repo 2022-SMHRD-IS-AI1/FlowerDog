@@ -32,6 +32,7 @@ public class Board_Creating extends HttpServlet {
 		int cnt = dao.insertBoard(dto);
 
 		String nextPage = "";
+		
 		if (cnt > 0) {
 			System.out.println("게시글 성공");
 		} else {
