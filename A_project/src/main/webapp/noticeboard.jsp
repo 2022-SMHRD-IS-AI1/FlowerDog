@@ -189,9 +189,9 @@ li {
 									</tr>
 								</thead>
 								<tbody>
-									<%int cnt = 0; %>
+									<%int cnt = 0;%>
 									<tr>
-										<td><%=cnt + 1%></td>
+										<td><%=cnt+1%></td>
 										<td><%=list.get(cnt).getTitle()%></td>
 										<td><%=list.get(cnt).getTime()%></td>
 									</tr>
