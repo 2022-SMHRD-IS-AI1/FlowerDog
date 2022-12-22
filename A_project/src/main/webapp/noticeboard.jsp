@@ -34,7 +34,8 @@
 ul {
 	list-style: none;
 	padding-left: 0px;
-	position: static;
+	position: relative;
+	top: 50px;
 }
 
 li {
@@ -130,7 +131,7 @@ li {
 			</li>
 			<li><a href="#"><span>입양</span></a>
 			</li>
-			<li><a href="#"><span>상품</span></a>
+			<li><a href="product.jsp"><span>상품</span></a>
 			</li>
 			<li><a href="#"><span>혜택</span></a>
 			</li>
