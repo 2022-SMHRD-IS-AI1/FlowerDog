@@ -82,7 +82,7 @@
                         </span>
                         
                         <h4 class="my-3">책임 입양이 가능한 18세 이상 신원확인 가능한 성인</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <p class="text-muted"></p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -90,7 +90,7 @@
                             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">경제적 능력이 있고 반려동물을 사랑하는 가정</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <p class="text-muted"></p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -98,7 +98,7 @@
                             <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">입양 후 1년간 6회이내 아이 생활사진을 보내주실 수 있는 분</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <p class="text-muted"></p>
                     </div>
                 </div>
             </div>
