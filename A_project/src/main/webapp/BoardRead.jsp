@@ -248,7 +248,7 @@
 					<button id="Reset">삭제</button>
 					<input type="submit" value="돌아가기">
 				</div>
-			</div>
+		</footer>
 
 			<br>
 
