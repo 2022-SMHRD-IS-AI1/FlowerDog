@@ -12,30 +12,34 @@ import javax.servlet.http.HttpSession;
 import org.eclipse.jdt.internal.compiler.ast.TrueLiteral;
 
 public class BoardDAO {
-	public void getConn() {
-		try {
-			Class.forName("oracle.jdbc.OracleDriver");
-			
-			String url = "jdbc:oracle:thin:@project-db-stu.ddns.net:1524:xe";
-			String DB_User = "cgi_4_1220_1";
-			String DB_Password = "smhrd1";
-			
-			conn = DriverManager.getConnection(url, DB_User, DB_Password);
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		
-	}
-//==============================================================================================================
 	// 변수
 	Connection conn = null;
 	PreparedStatement psmt = null;
 	ResultSet rs = null;
 	int cnt = 0;
 	ArrayList<BoardDTO> list = new ArrayList<>();
-	
-//==============================================================================================================
+
+	public void getConn() {
+		try {
+			Class.forName("oracle.jdbc.OracleDriver");
+
+			String url = "jdbc:oracle:thin:@project-db-stu.ddns.net:1524:xe";
+			String DB_User = "cgi_4_1220_1";
+			String DB_Password = "smhrd1";
+
+//			String url = "jdbc:oracle:thin:@localhost:1521:xe";
+//			String DB_User = "hr";
+//			String DB_Password = "hr";
+
+			conn = DriverManager.getConnection(url, DB_User, DB_Password);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	// 객체를 종료하기 위한 close()
 	public void close() {
 		try {
 			if (rs != null) {
@@ -56,6 +60,9 @@ public class BoardDAO {
 	public int insertBoard(BoardDTO b_dto) {
 		try {
 			getConn();
+
+			// 3) SQL문 실행 준비
+			
 			String inser_sql = "insert into TB_COMMUNITY values(TB_COMMENT_SEQ.nextval, ?, ?, sysdate, ?)";
 			
 			psmt = conn.prepareStatement(inser_sql);
@@ -99,43 +106,36 @@ public class BoardDAO {
 		return list;
 	}
 
-	
 	BoardDTO result = null;
-	public BoardDTO readBoard(BoardDTO dto) {
-		
-		try {
 
+	public BoardDTO readBoard(BoardDTO dto) {
+		try {
 			getConn();
-			
-			String sql = "select * from TB_COMMUNITY where MB_ID=? and COMM_TITLE = ?";
-			
+
+			String sql = "select * from TB_COMMUNITY where Writer = ?";
+
 			psmt = conn.prepareStatement(sql);
-			
-			psmt.setString(1,dto.getWriter());
-			psmt.setString(2, dto.getTitle());
-			
+
+			psmt.setString(1, dto.getWriter());
+
 			rs = psmt.executeQuery();
-			
-			if(rs.next()) {
-				
+
+			if (rs.next()) {
 				String title = rs.getString(2);
 				String content = rs.getString(3);
 				String time = rs.getString(4);
 				String writer = rs.getString(5);
-				
+
 				result = new BoardDTO(title, writer, time, content);
 			}
-			
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
-		}finally {
+		} finally {
 			close();
 
 		}
 
 		return result;
-
-}
-
+	}
 }
