@@ -17,7 +17,22 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		
 </head>
-<body>	
+<body>
+<script language='javascript'>
+// 새로고침 막기
+function noEvent() {
+    if (event.keyCode == 116) {
+        event.keyCode= 2;
+        return false;
+    }
+    else if(event.ctrlKey && (event.keyCode==78 || event.keyCode == 82))
+    {
+        return false;
+    }
+}
+document.onkeydown = noEvent;
+
+</script>
 <script language='javascript'>
 	
 			<!-- Q17. 게시글 목록 조회 기능 -->
@@ -86,20 +101,6 @@
 	        	titleIdEl.innerHTML = "<a href = \"Board_Read\"></a>";
 	        });
 			</script>
-			<script language='javascript'>
-// 새로고침 막기
-function noEvent() {
-    if (event.keyCode == 116) {
-        event.keyCode= 2;
-        return false;
-    }
-    else if(event.ctrlKey && (event.keyCode==78 || event.keyCode == 82))
-    {
-        return false;
-    }
-}
-document.onkeydown = noEvent;
 
-</script>
 </body>
 </html>
