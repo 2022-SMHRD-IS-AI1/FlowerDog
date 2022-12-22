@@ -121,12 +121,13 @@ public class BoardDAO {
 			rs = psmt.executeQuery();
 
 			if (rs.next()) {
+				int number = rs.getInt(1);
 				String title = rs.getString(2);
 				String content = rs.getString(3);
 				String time = rs.getString(4);
 				String writer = rs.getString(5);
 
-				result = new BoardDTO(title, writer, time, content);
+				result = new BoardDTO(number, title, writer, time, content);
 			}
 
 		} catch (Exception e) {

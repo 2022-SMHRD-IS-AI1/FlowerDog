@@ -2,43 +2,66 @@ package Model;
 
 public class BoardDTO {
 	
-	private int Number;
-	private String Title;
-	private String Writer;
-	private String Time;
+	private int number;
+	private String title;
+	private String writer;
+	private String time;
 	private String content;
 	
 	public BoardDTO() {}
+
 	
 	
 	public BoardDTO(String title, String writer, String content) {
-		this.Title = title;
-		this.Writer = writer;
+		super();
+		this.title = title;
+		this.writer = writer;
 		this.content = content;
 	}
-	
-	// 게시글 읽을 때 쓰려고 만듦
-	public BoardDTO(String title, String writer) {
-		this.Title = title;
-		this.Writer = writer;
-	}
 
 
-	// 작성 후 저장
+
 	public BoardDTO(int number, String title, String writer, String time, String content) {
-		this.Number = number;
-		this.Title = title;
-		this.Writer = writer;
-		this.Time = time;
+		super();
+		this.number = number;
+		this.title = title;
+		this.writer = writer;
+		this.time = time;
 		this.content = content;
 	}
-	
-	// 작성 전 저장
-	public BoardDTO(String title, String writer, String time, String content) {
-		this.Title = title;
-		this.Writer = writer;
-		this.Time = time;
-		this.content = content;
+
+
+
+	public int getNumber() {
+		return number;
+	}
+
+	public void setNumber(int number) {
+		this.number = number;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getWriter() {
+		return writer;
+	}
+
+	public void setWriter(String writer) {
+		this.writer = writer;
+	}
+
+	public String getTime() {
+		return time;
+	}
+
+	public void setTime(String time) {
+		this.time = time;
 	}
 
 	public String getContent() {
@@ -48,40 +71,5 @@ public class BoardDTO {
 	public void setContent(String content) {
 		this.content = content;
 	}
-
-	public int getNumber() {
-		return Number;
-	}
-
-	public void setNumber(int number) {
-		Number = number;
-	}
-
-	public String getTitle() {
-		return Title;
-	}
-
-	public void setTitle(String title) {
-		Title = title;
-	}
-
-	public String getWriter() {
-		return Writer;
-	}
-
-	public void setWriter(String writer) {
-		Writer = writer;
-	}
-
-	public String getTime() {
-		return Time;
-	}
-
-	public void setTime(String time) {
-		Time = time;
-	}
-	
-	
-	
 
 }
