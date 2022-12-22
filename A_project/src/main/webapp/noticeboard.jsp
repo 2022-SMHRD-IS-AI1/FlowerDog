@@ -126,23 +126,14 @@ li {
 
 	<!-- menu start -->
 	<div class="menu">
-		<ul class="menu_name">
-			<li><a href="#"><span>소개</span></a>
-			</li>
-			<li><a href="#"><span>입양</span></a>
-			</li>
-			<li><a href="product.jsp"><span>상품</span></a>
-			</li>
-			<li><a href="#"><span>혜택</span></a>
-			</li>
-			<li><a href="#"><span>커뮤니티</span></a>
-			</li>
-			<li>
-			<li><a href="#"><span>방문예약&문의</span></a>
-			</li>
-			<li>
-			<li><a href="#"><span>후원</span></a>
-			</li>
+		<ul class="snip1555">
+			<li class="current"><a href="#" data-hover="소개">소개</a></li>
+			<li><a href="#" data-hover="입양">입양</a></li>
+			<li><a href="product.jsp" data-hover="상품">상품</a></li>
+			<li><a href="#" data-hover="혜택">혜택</a></li>
+			<li><a href="#" data-hover="커뮤니티">커뮤니티</a></li>
+			<li><a href="#" data-hover="방문예약&문의">방문예약&문의</a></li>
+			<li><a href="#" data-hover="후원">후원</a></li>
 		</ul>
 
 	</div>
