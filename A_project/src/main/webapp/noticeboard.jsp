@@ -3,38 +3,53 @@
 <%@page import="Model.BoardDAO"%>
 <%@page import="Model.MemberDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Bloger</title>
-	<!-- Description, Keywords and Author -->
-	<meta name="description" content="Your description">
-	<meta name="keywords" content="Your,Keywords">
-	<meta name="author" content="ResponsiveWebInc">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<!-- Styles -->
-	<!-- Bootstrap CSS -->
-	<link href="./Boardcss/css/bootstrapMK.min.css" rel="stylesheet">
-	<!-- Font awesome CSS -->
-	<link href="./Boardcss/css/font-awesomeMK.min.css" rel="stylesheet">
-	<!-- Custom CSS -->
-	<link href="./Boardcss/css/styleMK.css" rel="stylesheet">
-	
-	<link rel="stylesheet" href="assetsBoard/css/main.css" />
-	<link rel="stylesheet" href="assetsBoard/css/board.css" />
-	
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="#">
-	<link rel="stylesheet" type="text/css" href="./Boardcss/css/styleMK.css">
+<meta charset="utf-8">
+<title>Bloger</title>
+<!-- Description, Keywords and Author -->
+<meta name="description" content="Your description">
+<meta name="keywords" content="Your,Keywords">
+<meta name="author" content="ResponsiveWebInc">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Styles -->
+<!-- Bootstrap CSS -->
+<link href="./Boardcss/css/bootstrapMK.min.css" rel="stylesheet">
+<!-- Font awesome CSS -->
+<link href="./Boardcss/css/font-awesomeMK.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="./Boardcss/css/styleMK.css" rel="stylesheet">
+
+<link rel="stylesheet" href="assetsBoard/css/main.css" />
+<link rel="stylesheet" href="assetsBoard/css/board.css" />
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="#">
+<link rel="stylesheet" type="text/css" href="./Boardcss/css/styleMK.css">
+<style type="text/css">
+ul {
+	list-style: none;
+	padding-left: 0px;
+	position: static;
+}
+
+li {
+	display: inline-block;
+	padding: 20px;
+	box-sizing: border-box;
+	font-weight: bold;
+	font-size: 20px;
+}
+</style>
 </head>
 <body>
 	<%
 	request.setCharacterEncoding("utf-8");
-	MemberDTO info = (MemberDTO)session.getAttribute("info"); 
+	MemberDTO info = (MemberDTO) session.getAttribute("info");
 	BoardDAO dao = new BoardDAO();
 	ArrayList<BoardDTO> list = new ArrayList<>();
 	%>
@@ -71,9 +86,13 @@
 					<div class="collapse navbar-collapse"
 						id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav navbar-right">
-							<%if(info!= null) {%>
+							<%
+							if (info != null) {
+							%>
 							<li><a href="login.jsp">Logout</a></li>
-							<%}%>
+							<%
+							}
+							%>
 							<li class="dropdown"><a href="#" class="dropdown-toggle"
 								data-toggle="dropdown">Menu <span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
@@ -82,8 +101,7 @@
 									<li><a href="#subscribe">커뮤니티</a></li>
 									<li><a href="#team">고객센터</a></li>
 									<li><a href="#">회사소개</a></li>
-								</ul>
-							</li>
+								</ul></li>
 						</ul>
 					</div>
 					<!-- /.navbar-collapse -->
@@ -104,6 +122,32 @@
 		</div>
 	</div>
 	<!-- banner end -->
+
+	<!-- menu start -->
+	<div class="menu">
+		<ul class="menu_name">
+			<li><a href="#"><span>소개</span></a>
+			</li>
+			<li><a href="#"><span>입양</span></a>
+			</li>
+			<li><a href="#"><span>상품</span></a>
+			</li>
+			<li><a href="#"><span>혜택</span></a>
+			</li>
+			<li><a href="#"><span>커뮤니티</span></a>
+			</li>
+			<li>
+			<li><a href="#"><span>방문예약&문의</span></a>
+			</li>
+			<li>
+			<li><a href="#"><span>후원</span></a>
+			</li>
+		</ul>
+
+	</div>
+
+
+	<!-- menu end -->
 
 	<!-- events -->
 	<div class="event" id="event">
@@ -152,10 +196,14 @@
 										<td><%=list.get(i).getTitle()%></td>
 										<td><%=list.get(i).getTime()%></td>
 									</tr>
-									<%}%>
+									<%
+									}
+									%>
 									<tr>
 										<td>
-											<button class="btn btn-dark"><a href="BoardWrite.jsp">글쓰기</a></button>
+											<button class="btn btn-dark">
+												<a href="BoardWrite.jsp">글쓰기</a>
+											</button>
 										</td>
 									</tr>
 								</tbody>
@@ -171,7 +219,7 @@
 
 	<!-- footer -->
 	<footer>
-		<div class="container">
+		<div class="container-footer">
 			<p>
 				<a href="#">Home</a> | <a href="#work">works</a> | <a href="#team">Team</a>
 				| <a href="#contact">Contact</a>
