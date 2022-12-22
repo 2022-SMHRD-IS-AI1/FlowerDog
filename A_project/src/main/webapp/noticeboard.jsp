@@ -53,6 +53,7 @@ li {
 	MemberDTO info = (MemberDTO) session.getAttribute("info");
 	BoardDAO dao = new BoardDAO();
 	ArrayList<BoardDTO> list = new ArrayList<>();
+	int cnt = 0;
 	%>
 	<%
 	if (info != null) {
@@ -138,9 +139,9 @@ li {
 
 	</div>
 
-
+	
 	<!-- menu end -->
-
+	
 	<!-- events -->
 	<div class="event" id="event">
 		<div class="container">
@@ -180,17 +181,15 @@ li {
 									</tr>
 								</thead>
 								<tbody>
-									<%int cnt = 0;%>
-									<tr>
-										<td><%=cnt+1%></td>
-										<td><%=list.get(cnt).getTitle()%></td>
-										<td><%=list.get(cnt).getTime()%></td>
-									</tr>
-									
+										<tr>
+											<td><%=cnt%></td>
+											<td><%=list.get(cnt).getTitle()%></td>
+											<td><%=list.get(cnt).getTime()%></td>
+										</tr>
 									<tr>
 										<td>
 											<button class="btn btn-dark">
-												<a href="BoardWrite.jsp">글쓰기</a>
+												<a href="BoardWrite.jsp" class="cnt">글쓰기</a>
 											</button>
 										</td>
 									</tr>
@@ -243,5 +242,11 @@ li {
 	<script src="js/html5shivMK.js"></script>
 	<!-- Custom JS -->
 	<script src="js/customMK.js"></script>
+	<script>
+		cntEl = document.getSelection(".cnt")
+		cntEl.addEventListener("click", function{
+		  cnt+1;
+		});
+	</script>
 </body>
 </html>

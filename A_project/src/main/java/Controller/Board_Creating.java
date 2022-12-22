@@ -45,12 +45,6 @@ public class Board_Creating extends HttpServlet {
 			System.out.println("게시글 실패");
 		}
 		nextPage = "noticeboard.jsp";
-		// 다음 페이지로 이동
-//		response.sendRedirect(nextPage);
-
-		// 페이지 이동시 회원가입한 회원의 이메일 값을 유지하기 위하여 forward방식으로 페이지 이동하기
-		// +)scope : 데이터들을 저장하거나 유지하기 위한 영역을 정리한 기능
-		// -> 요청에 대한 데이터를 유지할 수 있는 requestScope활용!
 
 		RequestDispatcher rd = request.getRequestDispatcher(nextPage);
 		rd.forward(request, response);
