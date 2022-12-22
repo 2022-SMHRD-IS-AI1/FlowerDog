@@ -84,7 +84,7 @@ public class BoardDAO {
 			String Array_sql = "select * from TB_COMMUNITY";
 			psmt = conn.prepareStatement(Array_sql);
 			rs = psmt.executeQuery();
-
+			list.clear();
 			while (rs.next()) {
 				int number = rs.getInt(1);
 				String title = rs.getString(2);
