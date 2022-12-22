@@ -53,6 +53,7 @@ li {
 	MemberDTO info = (MemberDTO) session.getAttribute("info");
 	BoardDAO dao = new BoardDAO();
 	ArrayList<BoardDTO> list = new ArrayList<>();
+	list.clear();
 	%>
 	<%
 	if (info != null) {
