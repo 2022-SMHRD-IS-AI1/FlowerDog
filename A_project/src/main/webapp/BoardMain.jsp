@@ -17,12 +17,30 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		
 </head>
-<body>		
+<body>
+<script language='javascript'>
+// 새로고침 막기
+function noEvent() {
+    if (event.keyCode == 116) {
+        event.keyCode= 2;
+        return false;
+    }
+    else if(event.ctrlKey && (event.keyCode==78 || event.keyCode == 82))
+    {
+        return false;
+    }
+}
+document.onkeydown = noEvent;
+
+</script>
+<script language='javascript'>
+	
 			<!-- Q17. 게시글 목록 조회 기능 -->
 			<!-- Q18. 게시글 목록 세부페이지 기능(제목을 클릭하면 세부페이지 BoardDetail.jsp로 이동)-->
 			<div id="board">
 <%
 	MemberDTO info = (MemberDTO)session.getAttribute("info");
+	BoardDTO dto = new BoardDTO();
 %> 
 
 					<%
@@ -31,8 +49,6 @@
 					ArrayList<BoardDTO> list = new ArrayList<>();
 					%>
 					<%if(info != null){
-						// 로그인 된 회원이 받은 메세지 띄워주기
-						// DB로 바로 접근하기!
 						list = dao.Listofposts();
 					}%>
 				
@@ -58,9 +74,11 @@
 				<a href="index.html"><button id="writer">홈으로가기</button></a>
 				<a href="BoardWrite.jsp"><button id="writer">작성하러가기</button></a>
 				
-				<% if (info != null) {%>
-				<a href="Board_Removal"><button id="writer">게시글 수정하기</button></a>
-				<a href="Board_Modify"><button id="writer">게시글 삭제하기</button></a>
+				<% if (info != null) {
+					if (info.getId().equals(dto.getWriter())){%>
+						<a href="Board_Removal"><button id="writer">게시글 수정하기</button></a>
+						<a href="Board_Modify"><button id="writer">게시글 삭제하기</button></a>
+					<%}%>
 				<%}else{%>
 				<li>로그인을 하세요.</li>
 				<%}%>
@@ -76,7 +94,12 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+<<<<<<< HEAD
 	
 			
+=======
+		
+
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-IS-AI1/FlowerDog.git
 </body>
 </html>
