@@ -159,7 +159,7 @@ public class BoardDAO {
 		}finally {
 			close();
 		}
-		return -1;//게시글 삭제오류
+		return -1;//게시글 삭제오류났을 때
 	}
 	
 	
