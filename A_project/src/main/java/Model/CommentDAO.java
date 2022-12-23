@@ -48,19 +48,16 @@ public class CommentDAO {
 
 	}
 	
-	BoardDTO board = null;
 	public int commentInsert(CommentDTO dto) {
 		
 		try {
 			getConn();
-			
-			String sql = "INSERT INTO TB_COMMENT VALUES(TB_COMMENT_SEQ.nextval,?,?,SYSDATE,0,?)";
+			String sql = "INSERT INTO TB_COMMENT VALUES(TB_COMMENT_SEQ.nextval,?,SYSDATE,?)";
 			
 			psmt = conn.prepareStatement(sql);
 			
-			psmt.setInt(1, board.getNumber());
-			psmt.setString(2, dto.getContent());
-			psmt.setString(3, dto.getWriter());
+			psmt.setString(1, dto.getContent());
+			psmt.setString(2, dto.getWriter());
 			
 			cnt = psmt.executeUpdate();
 			
