@@ -14,7 +14,24 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="./Boardcss/css/product_detail.css" rel="stylesheet" />
-    </head>
+        
+        
+
+<script type="text/javascript">
+	function fnCart(name, price, image) {
+		if (confirm("장바구니에 담으시겠습니까?")) {
+			location.href = "CartProcess.jsp?name=" + name + "&price=" + price;
+		}
+	}
+
+	function fnView() {
+		if (confirm("장바구니를 보시겠습니까?")) {
+			location.href = "CartView.jsp";
+		}
+	}
+</script>
+
+</head>
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -37,7 +54,7 @@
 
                     </ul>
                     <form class="d-flex" action="" method="post">
-                        <button class="btn btn-outline-dark" type="submit">
+                        <button class="btn btn-outline-dark" onclick="fnView()">
                             <i class="bi-cart-fill me-1"></i>
                             Cart
                             <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
@@ -60,7 +77,7 @@
                         </div>수량
                         <div class="d-flex">
                             <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
-                            <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                            <button class="btn btn-outline-dark flex-shrink-0" type="button" onclick='fnCart("상품명", "0")'>
                                 <i class="bi-cart-fill me-1"></i>
                                 장바구니
                             </button>

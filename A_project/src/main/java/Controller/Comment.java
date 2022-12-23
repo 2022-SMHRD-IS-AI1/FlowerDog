@@ -38,6 +38,7 @@ public class Comment extends HttpServlet {
 		
 
 		int result = dao.commentInsert(dto);
+		
 		System.out.println(result);
 		list.add(dto);
 
