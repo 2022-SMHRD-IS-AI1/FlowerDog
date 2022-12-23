@@ -26,7 +26,7 @@
 
 	function fnView() {
 		if (confirm("장바구니를 보시겠습니까?")) {
-			location.href = "CartView.jsp";
+			location.href = "CartView.jsp"; // 이거 문제임..
 		}
 	}
 </script>
