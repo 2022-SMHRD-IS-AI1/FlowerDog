@@ -82,13 +82,9 @@
                         </span>
                         
                         <h4 class="my-3">책임 입양이 가능한 18세 이상 신원확인 가능한 성인</h4>
-<<<<<<< HEAD
-                        <p class="text-muted"></p>
-=======
                         <div class="adop-text">
                         <p class="text-muted">반려동물을 맞이할 환경적 경제적 준비, 마음의 각오가 되어있는 분이 필요해요</p>
                     </div>
->>>>>>> branch 'master' of https://github.com/2022-SMHRD-IS-AI1/FlowerDog.git
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -96,11 +92,7 @@
                             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">경제적 능력이 있고 반려동물을 사랑하는 가정</h4>
-<<<<<<< HEAD
-                        <p class="text-muted"></p>
-=======
                         <p class="text-muted">아플 때 적절한 치료를 해주고,모든 가족과의 합의가 되어있는 반려동물을 진심으로 사랑해 줄 가정이 필요해요 </p>
->>>>>>> branch 'master' of https://github.com/2022-SMHRD-IS-AI1/FlowerDog.git
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -108,11 +100,7 @@
                             <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">입양 후 1년간 6회이내 아이 생활사진을 보내주실 수 있는 분</h4>
-<<<<<<< HEAD
-                        <p class="text-muted"></p>
-=======
                         <p class="text-muted">반려동물은 10~15년 이상 삽니다.결혼, 임신, 유학, 이사 등으로 가정환경이 바뀌어도 한번 인연을 맺은 동물은 끝까지 책임지고 보살펴줄 가정이 필요해요</p>
->>>>>>> branch 'master' of https://github.com/2022-SMHRD-IS-AI1/FlowerDog.git
                     </div>
                 </div>
             </div>
