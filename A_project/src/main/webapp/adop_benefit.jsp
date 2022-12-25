@@ -21,7 +21,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="/"><img src="로고.png" alt="" style="width: 70px;" ></a>
+            <a class="navbar-brand" href="/"><img src="./Boardcss/image/logo.png" alt="" style="width: 70px;" ></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -67,11 +67,11 @@
     <section class="page-section" id="services">
         <div class="container">
             <div class="text-center">
-                <img src="/adoption/imgfile/dog" alt="">
-                <hr >
                 <br>
+                <img src="./Boardcss/image/dogbenefit.png" alt="">
                 <h2 class="section-heading text-uppercase"> 입양 시 혜택 </h2>
-                <hr >
+                <hr>
+                <hr>
                 <br>
             </div>  
                   
@@ -90,7 +90,7 @@
     <div class="container px-5">
         <div class="row gx-5 align-items-center">
             <div class="col-lg-6 order-lg-2">
-                <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/01.jpg" alt="..." /></div>
+                <div class="p-5"><img class="img-fluid rounded-circle" src="./image/01.jpg" alt="..." /></div>
             </div>
             <div class="col-lg-6 order-lg-1">
                 <div class="p-5">
@@ -106,7 +106,7 @@
     <div class="container px-5">
         <div class="row gx-5 align-items-center">
             <div class="col-lg-6">
-                <div class="p-5"><img class="img-fluid rounded-circle" src="/adoption/imgfile/dogperson.jpg" alt="..." /></div>
+                <div class="p-5"><img class="img-fluid rounded-circle" src="./Boardcss/image/dogtrain.png" alt="..." /></div>
             </div>
             <div class="col-lg-6">
                 <div class="p-5">

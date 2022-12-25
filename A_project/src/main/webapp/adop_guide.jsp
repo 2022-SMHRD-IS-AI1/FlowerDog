@@ -158,11 +158,10 @@
                     <li class="timeline-inverted">
                         <div class="timeline-image">
                             <h4>
-                                Be Part
+                                Flower
                                 <br />
-                                Of Our
                                 <br />
-                                Story!
+                                Dog
                             </h4>
                         </div>
                     </li>
