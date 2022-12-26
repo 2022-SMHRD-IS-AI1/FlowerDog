@@ -56,8 +56,8 @@
          <%if(info != null) {%>
           <a href="loginout">로그아웃</a>
         <%} else{%>
-          <a href="login.jsp">로그인</a>	
-        <%} %>
+       	  <a href="login.jsp">로그인</a>	
+     	<%} %>
         </li>
         <li>
           <a href="javascript:void(0)">My page</a>
@@ -73,7 +73,7 @@
         <div class="item__name">회사 소개</div>
       </li>
       <li class="item">
-        <div class="item__name"><a href="product.jsp">상품</a></div>
+        <div class="item__name"><a href="Product_list.jsp">상품</a></div>
       </li>
       <li class="item">
         <div class="item__name"><a href="adop_list.jsp">입양</a></div>
