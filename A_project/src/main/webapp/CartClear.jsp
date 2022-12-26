@@ -10,7 +10,7 @@
 	<%
 	session.getAttribute("cart");
 	session.removeAttribute("cart");
-	response.sendRedirect("main.jsp");
+	response.sendRedirect("Product_list.jsp");
 	%>
 </body>
 </html>

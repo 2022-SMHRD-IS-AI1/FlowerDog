@@ -74,7 +74,8 @@ pageEncoding="UTF-8"%>
                 <h2 class="section-heading text-uppercase"> 입양 시 혜택  </h2>
                 <br>
             </div>  
-                  
+                </div>
+                </section>  
 
  
     

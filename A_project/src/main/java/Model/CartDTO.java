@@ -4,7 +4,8 @@ import java.io.Serializable;
 
 public class CartDTO implements Serializable {
 
-	 String name;	// 과일명
+	String img;		// 이미지 경로 
+	String name;	// 과일명
 	 int price;		// 가격
 	 int cnt;		// 수량
 	 
@@ -14,13 +15,34 @@ public class CartDTO implements Serializable {
 	}
 
 
-	public CartDTO(String name, int price, int cnt) {
+	
+	
+	public CartDTO(String img, String name, int price, int cnt) {
+		super();
+		this.img = img;
+		this.name = name;
+		this.price = price;
+		this.cnt = cnt;
+	}
+
+	public CartDTO( String name, int price, int cnt) {
 		super();
 		this.name = name;
 		this.price = price;
 		this.cnt = cnt;
 	}
 	
+	
+	public String getImg() {
+		return img;
+	}
+	
+	
+	
+	
+	public void setImg(String img) {
+		this.img = img;
+	}
 	
 	public String getName() {
 		return name;
