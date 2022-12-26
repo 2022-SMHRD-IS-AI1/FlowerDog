@@ -9,10 +9,7 @@
 <body>
 <form action="Adopting_Service" method="post">
 	
-	<div>
-		<label for="serialnum"><strong>입양하는 동물의 일련번호를 적어주세요</strong> </label> <div><input type="text" name="serialnum">
-	</div>
-	</div>
+	
 	<div>
 		<label for="name"><strong>신청인 성명</strong> </label> <div><input type="text" name="name" value="홍길동" readonly/>
 	</div>
@@ -27,7 +24,7 @@
 			placeholder="숫자만 입력">
 	</div>
 	<div>
-		<label for="tel"><strong>전화번호</strong> </label> <input type="number" name="tel"
+		<label for="tel"><strong>전화번호</strong> </label> <input type="text" name="tel"
 			placeholder="숫자만 입력">
 	</div>
 	<div>
@@ -44,6 +41,10 @@
 	</div>
 	<div>
 		<label for="job"><strong>신청인 직업</strong> </label> <input type="text" name="job">
+	</div>
+	<div>
+		<label for="serialnum"><strong>입양하는 동물의 일련번호를 적어주세요</strong> </label> <div><input type="text" name="serialnum">
+	</div>
 	</div>
 	<input type="submit" value="등록">
 </form>
