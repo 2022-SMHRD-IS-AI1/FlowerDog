@@ -77,7 +77,56 @@ public class BoardDAO {
 		return cnt;
 
 	}
-
+	public BoardDTO getTitle(String title) {
+		BoardDTO dto = new BoardDTO();
+		try {
+			getConn();
+			
+			String sql = "select * from TB_COMMUNITY where title = ?";
+			psmt = conn.prepareStatement(sql);
+			psmt.setString(1, title);
+			
+			rs = psmt.executeQuery();
+			if(rs.next()) {
+				dto.setNumber(rs.getInt(1));
+				dto.setTitle(rs.getString(2));
+				dto.setWriter(rs.getString(3));
+				dto.setTime(rs.getString(4));
+				dto.setContent(rs.getString(5));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			close();
+		}
+		return dto;
+	}
+	public BoardDTO selectOne(int num) {
+		BoardDTO dto = null;
+		try {
+			getConn();
+			
+			String sql = "select *from TB_COMMUNITY where number = ?";
+			psmt = conn.prepareStatement(sql);
+			psmt.setInt(1, num);
+			
+			rs = psmt.executeQuery();
+			if(rs.next()) {
+				dto.setNumber(rs.getInt("number"));
+				dto.setTitle(rs.getString("title"));
+				dto.setWriter(rs.getString("writer"));
+				dto.setTime(rs.getString("time"));
+				dto.setContent(rs.getString("content"));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			close();
+		}
+		return dto;
+	}
+	
+	
 	public ArrayList<BoardDTO> Listofposts() {
 		try {
 			getConn();
