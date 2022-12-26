@@ -62,7 +62,7 @@ if (obj == null) { //세션 정보가 없으면 배열을 생성 : 주문한 제
 				out.println("</tr>");
 			} else {
 				int totalSum = 0, total = 0;
-				DecimalFormat df = new DecimalFormat("￦#,##0");
+				DecimalFormat df = new DecimalFormat("#,##0");
 				for (int i = 0; i < cart.size(); i++) {
 					CartDTO dto = cart.get(i);
 					out.println("<tr align= 'center'>");

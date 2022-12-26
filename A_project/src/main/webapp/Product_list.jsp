@@ -1,5 +1,12 @@
+<%@page import="Model.CartDTO"%>
+<%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+ <%
+ String[] img ={"goods_01.jpg", "goods_02.jpg", "goods_03.jpg", "goods_04.jpg", "goods_05.jpg", "goods_06.jpg", "goods_07.jpg", "goods_08.jpg"};
+ String[] product ={"굿즈1", "굿즈2", "굿즈3", "굿즈4", "굿즈5", "굿즈6", "굿즈7", "굿즈8"};
+ String[] price ={"1000", "20000", "5000", "15000", "2000", "8000", "2200", "6600"};
+ %>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -17,6 +24,20 @@
     </head>
     <body>
         <!-- Navigation-->
+            <script>
+	function fnView() {
+		if (confirm("장바구니를 보시겠습니까?")) {
+			location.href = "CartView.jsp"; 
+		}
+	}
+</script>
+<script>
+	function fnCart(name, price) {
+		if (confirm("장바구니에 담으시겠습니까?")) {
+			location.href = "CartProcess.jsp?name=" + name + "&price=" + price;
+		}
+	}
+</script>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="#!"><img src="/image/logo.png" height="100px" width="100px"></a>
@@ -37,11 +58,17 @@
                         </li>
                         
                     </ul>
+                    <% ArrayList<CartDTO> cart = (ArrayList<CartDTO>)session.getAttribute("cart"); %>
                     <form class="d-flex">
-                        <button class="btn btn-outline-dark" type="submit">
+                        <button class="btn btn-outline-dark" onclick="fnView(); return false;">
                             <i class="bi-cart-fill me-1"></i>
                             Cart
-                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                              <% if (cart != null){%> 
+                      <span class="badge bg-dark text-white ms-1 rounded-pill">
+                      <%= cart.size()%></span>
+                      <%}else { %>
+                      <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                      <% }%>
                         </button>
                     </form>
                 </div>
@@ -63,34 +90,35 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="/image/goods/goods_05.jpg" alt="..." />
+                            <img class="card-img-top" src="<%=img[0] %>" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">굿즈상품1</h5>
+                                    <h5 class="fw-bolder"><%=product[0] %></h5>
                                     <!-- Product price-->
-                                    15000&#8361;
+                                    <%=price[0] %>원
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product_detail.html">자세히 보기</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="Product_detail.jsp">자세히 보기</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick='fnCart("<%=product[0]%>", "<%=price[0]%>")'>장바구니 담기</a></div>
                             </div>
                         </div>
                     </div>
-
+					<%for(int i = 1; i <img.length;i++){ %>
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Sale badge-->
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                             <!-- Product image-->
-                            <img class="card-img-top" src="/image/goods/goods_15.jpg" alt="..." />
+                            <img class="card-img-top" src="<%=img[i] %>" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">굿즈상품2</h5>
+                                    <h5 class="fw-bolder"><%=product[i] %></h5>
                                     <!-- Product reviews-->
                                     <!-- <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>
@@ -100,146 +128,21 @@
                                         <div class="bi-star-fill"></div>
                                     </div> -->
                                     <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">30000&#8361;</span>
-                                    25000&#8361;
+                                    <span class="text-muted text-decoration-line-through"></span>
+                                    <%=price[i]%>원
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product_detail.html">자세히 보기</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="Product_detail.jsp">자세히 보기</a></div>
+                            	<div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick='fnCart("<%=product[i]%>", "<%=price[i]%>")'>장바구니 담기</a></div>
                             </div>
                         </div>
                     </div>
+<%} %>
 
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="/image/goods/goods_20.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">굿즈상품3</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">50000&#8361;</span>
-                                    40000&#8361;
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product_detail.html">자세히 보기</a></div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="/image/goods/goods_16.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">굿즈상품3</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">30000&#8361;</span>
-                                    25000&#8361;
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product_detail.html">자세히 보기</a></div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="/image/goods/goods_08.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">굿즈상품5</h5>
-                                    <!-- Product price-->
-                                    10000&#8361;
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product_detail.html">자세히 보기</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="/image/goods/goods_24.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">굿즈상품6</h5>
-                                    <!-- Product price-->
-                                    6000&#8361;
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product_detail.html">자세히 보기</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="/image/goods/goods_25.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">굿즈상품7</h5>
-                                    <!-- Product reviews-->
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">20000&#8361;</span>
-                                    15000&#8361;
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product_detail.html">자세히 보기</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="/image/goods/goods_09.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">굿즈상품8</h5>
-                                    <!-- Product reviews-->
-                                    <!-- Product price-->
-                                    12000&#8361;
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product_detail.html">자세히 보기</a></div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -251,5 +154,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
     </body>
 </html>

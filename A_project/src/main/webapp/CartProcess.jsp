@@ -1,3 +1,4 @@
+<%@page import="Model.CartDAO"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="Model.CartDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -34,7 +35,13 @@
 		if (dto.getName().equals(name)) {
 			pos = 1;
 			dto.setCnt(dto.getCnt() + 1);
+			//장바구니 DAO
+			//CartDAO dao = new CartDAO();
+			//int cnt = dao.cartInsert(dto);
+			//System.out.print(cnt);
 			break;
+			
+			
 		}
 	}
 
@@ -43,7 +50,8 @@
 		
 		CartDTO dto = new CartDTO();
 		dto.setName(name);
-		//dto.setPrice(Integer.parseInt(price.replace(",", ""))); //1,500 ▶ 1500 : 쉼표 제거 후 정수형으로 랩핑
+		dto.setPrice(Integer.parseInt(price));     
+		//(Integer.parseInt(price.replace(",", ""))); //1,500 ▶ 1500 : 쉼표 제거 후 정수형으로 랩핑
 		dto.setCnt(1);
 		cart.add(dto);
 	}
@@ -54,7 +62,7 @@
 
 	<script>
 		alert("장바구니에 담았습니다.");
-		location.href = "main.jsp"
+		location.href = "Product_list.jsp"
 	</script>
 
 

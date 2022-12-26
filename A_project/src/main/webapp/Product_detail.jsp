@@ -1,3 +1,5 @@
+<%@page import="Model.CartDTO"%>
+<%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -15,24 +17,26 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="./Boardcss/css/product_detail.css" rel="stylesheet" />
         
-        
 
-<script type="text/javascript">
-	function fnCart(name, price, image) {
+
+</head>
+<script>
+	function fnCart(name, price) {
 		if (confirm("장바구니에 담으시겠습니까?")) {
 			location.href = "CartProcess.jsp?name=" + name + "&price=" + price;
 		}
 	}
-
+</script>
+<script>
 	function fnView() {
 		if (confirm("장바구니를 보시겠습니까?")) {
-			location.href = "CartView.jsp"; // 이거 문제임..
+			location.href = "CartView.jsp";
 		}
 	}
 </script>
-
-</head>
     <body>
+    <% ArrayList<CartDTO> cart = (ArrayList<CartDTO>)session.getAttribute("cart"); %>
+    
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
@@ -54,10 +58,16 @@
 
                     </ul>
                     <form class="d-flex" action="" method="post">
-                        <button class="btn btn-outline-dark" onclick="fnView()">
+                        <button class="btn btn-outline-dark" onclick="fnView(); return false;">
                             <i class="bi-cart-fill me-1"></i>
                             Cart
-                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                            
+                      <% if (cart != null){%> 
+                      <span class="badge bg-dark text-white ms-1 rounded-pill">
+                      <%= cart.size()%></span>
+                      <%}else { %>
+                      <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                      <% }%>
                         </button>
                     </form>
                 </div>
@@ -77,7 +87,7 @@
                         </div>수량
                         <div class="d-flex">
                             <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
-                            <button class="btn btn-outline-dark flex-shrink-0" type="button" onclick='fnCart("상품명", "0")'>
+                            <button class="btn btn-outline-dark flex-shrink-0" type="button" onclick='fnCart("흐헤", "5000")'>
                                 <i class="bi-cart-fill me-1"></i>
                                 장바구니
                             </button>
@@ -162,7 +172,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick='fnCart("상품명", "0")'>Add to cart</a></div>
                             </div>
                         </div>
                     </div>
@@ -205,4 +215,5 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
+
 </html>
