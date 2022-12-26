@@ -3,7 +3,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
  <%
- String[] img ={"goods_01.jpg", "goods_02.jpg", "goods_03.jpg", "goods_04.jpg", "goods_05.jpg", "goods_06.jpg", "goods_07.jpg", "goods_08.jpg"};
+ String[] img ={"./Boardcss/image/goods_01.jpg", "./Boardcss/image/goods_02.jpg", "./Boardcss/image/goods_03.jpg", "./Boardcss/image/goods_04.jpg", "./Boardcss/image/goods_05.jpg", "./Boardcss/image/goods_06.jpg", "./Boardcss/image/goods_07.jpg", "./Boardcss/image/goods_08.jpg"};
  String[] product ={"굿즈1", "굿즈2", "굿즈3", "굿즈4", "굿즈5", "굿즈6", "굿즈7", "굿즈8"};
  String[] price ={"1000", "20000", "5000", "15000", "2000", "8000", "2200", "6600"};
  %>
@@ -32,9 +32,9 @@
 	}
 </script>
 <script>
-	function fnCart(name, price) {
+	function fnCart(img, name, price) {
 		if (confirm("장바구니에 담으시겠습니까?")) {
-			location.href = "CartProcess.jsp?name=" + name + "&price=" + price;
+			location.href = "CartProcess.jsp?name=" + name + "&price=" + price +"&img=" + img;
 		}
 	}
 </script>
@@ -103,7 +103,7 @@
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="Product_detail.jsp">자세히 보기</a></div>
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick='fnCart("<%=product[0]%>", "<%=price[0]%>")'>장바구니 담기</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick='fnCart("<%=img[0]%>","<%=product[0]%>", "<%=price[0]%>")'>장바구니 담기</a></div>
                             </div>
                         </div>
                     </div>
@@ -135,7 +135,7 @@
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="Product_detail.jsp">자세히 보기</a></div>
-                            	<div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick='fnCart("<%=product[i]%>", "<%=price[i]%>")'>장바구니 담기</a></div>
+                            	<div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick='fnCart("<%=img[i]%>","<%=product[i]%>", "<%=price[i]%>")'>장바구니 담기</a></div>
                             </div>
                         </div>
                     </div>
