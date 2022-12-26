@@ -2,6 +2,11 @@
 <%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%
+ String[] img ={"./Boardcss/image/goods_01.jpg", "./Boardcss/image/goods_02.jpg", "./Boardcss/image/goods_03.jpg", "./Boardcss/image/goods_04.jpg", "./Boardcss/image/goods_05.jpg", "./Boardcss/image/goods_06.jpg", "./Boardcss/image/goods_07.jpg", "./Boardcss/image/goods_08.jpg"};
+ String[] product ={"굿즈1", "굿즈2", "굿즈3", "굿즈4", "굿즈5", "굿즈6", "굿즈7", "굿즈8"};
+ String[] price ={"1000", "20000", "5000", "15000", "2000", "8000", "2200", "6600"};
+ %>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -21,11 +26,11 @@
 
 </head>
 <script>
-	function fnCart(name, price) {
-		if (confirm("장바구니에 담으시겠습니까?")) {
-			location.href = "CartProcess.jsp?name=" + name + "&price=" + price;
-		}
+function fnCart(img, name, price) {
+	if (confirm("장바구니에 담으시겠습니까?")) {
+		location.href = "CartProcess.jsp?name=" + name + "&price=" + price +"&img=" + img;
 	}
+}
 </script>
 <script>
 	function fnView() {
@@ -40,7 +45,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#!"><img src="/image/logo.png" height="100px" width="100px"></a>
+                <a class="navbar-brand" href="#!"><img src="./Boardcss/image/logo.png" height="100px" width="100px"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
@@ -77,19 +82,19 @@
         <section class="py-5">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
-                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="/image/goods/10_shop1_110606.jpg" alt="..." /></div>
+                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="<%=img[0]%>" alt="..." /></div>
                     <div class="col-md-6">
-                        <h1 class="display-5 fw-bolder">상품명</h1>
+                        <h1 class="display-5 fw-bolder"><%=product[0] %></h1>
                         <div class="small mb-1">색상</div>
                         <div class="fs-5 mb-5">
-                            <span class="text-decoration-line-through">원가격</span>
+                            <span class="text-decoration-line-through"><%=price[0] %></span>
                             <span>가격</span>
                         </div>수량
                         <div class="d-flex">
                             <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
-                            <button class="btn btn-outline-dark flex-shrink-0" type="button" onclick='fnCart("흐헤", "5000")'>
+                            <button class="btn btn-outline-dark flex-shrink-0" type="button" onclick='fnCart("<%=img[0]%>","<%=product[0]%>", "<%=price[0]%>")'>
                                 <i class="bi-cart-fill me-1"></i>
-                                장바구니
+                                장바구니 담기
                             </button>
                             <button class="btn btn-outline-dark flex-shrink-0" type="button">결제</button>
                         </div>

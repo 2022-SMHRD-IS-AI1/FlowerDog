@@ -17,6 +17,7 @@
 	
 	String name = request.getParameter("name");
 	String price = request.getParameter("price");
+	String img = request.getParameter("img");
 
 	ArrayList<CartDTO> cart =null;
 
@@ -49,9 +50,9 @@
 	if (pos == -1) {
 		
 		CartDTO dto = new CartDTO();
+		dto.setImg(img);
 		dto.setName(name);
 		dto.setPrice(Integer.parseInt(price));     
-		//(Integer.parseInt(price.replace(",", ""))); //1,500 ▶ 1500 : 쉼표 제거 후 정수형으로 랩핑
 		dto.setCnt(1);
 		cart.add(dto);
 	}

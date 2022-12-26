@@ -47,7 +47,8 @@ if (obj == null) { //세션 정보가 없으면 배열을 생성 : 주문한 제
 		<table border="1">
 			<tr>
 				<th>번호</th>
-				<th>과일명</th>
+				<th>상품이미지</th>
+				<th>상품명</th>
 				<th>단가</th>
 				<th>주문 수량</th>
 				<th>가격</th>
@@ -57,7 +58,7 @@ if (obj == null) { //세션 정보가 없으면 배열을 생성 : 주문한 제
 				out.println("<tr align='center'>");
 				out.println("<td colspan= '5'>");
 				out.println("장바구니에 담긴 상품이 없습니다.");
-				out.println("<a href= 'main.jsp'>주문하기</a>");
+				out.println("<a href= 'Product_list.jsp'>주문하기</a>");
 				out.println("</td>");
 				out.println("</tr>");
 			} else {
@@ -67,6 +68,7 @@ if (obj == null) { //세션 정보가 없으면 배열을 생성 : 주문한 제
 					CartDTO dto = cart.get(i);
 					out.println("<tr align= 'center'>");
 					out.println("<td>" + (i + 1) + "</td>");
+					out.println("<td>" + "<img src=\""+dto.getImg()+"\" width=\"150px\" height=\"150px\">" + "</td>");
 					out.println("<td>" + dto.getName() + "</td>");
 					out.println("<td>" + df.format(dto.getPrice()) + "</td>");
 					out.println("<td>" + dto.getCnt() + "</td>");
@@ -81,7 +83,7 @@ if (obj == null) { //세션 정보가 없으면 배열을 생성 : 주문한 제
 				out.println("<input type='button' value='장바구니 비우기' onclick='fnClear()' />");
 				out.println("<input type='button' value='쇼핑 계속하기' onclick='fnGo()' />");
 				out.println("</td>");
-				out.println("<td>");
+				out.println("<td  colspan = '2' 'text-align'> 총액 : ");
 				out.println(df.format(totalSum));
 				out.println("</td>");
 				out.println("</tr>");
