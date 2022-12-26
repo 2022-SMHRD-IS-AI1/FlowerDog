@@ -46,7 +46,7 @@
 <!-- HEADER -->
  <header>
   <div class="inner">
-    <a href="/" class="logo">
+    <a href="main.jsp" class="logo">
       <img src="./Boardcss/image/logo.png" alt="꽃개"/>
     </a>
 
