@@ -23,15 +23,15 @@ if (obj == null) { //세션 정보가 없으면 배열을 생성 : 주문한 제
 <meta charset="UTF-8">
 <title>Insert title here</title>
 
-
 <script type="text/javascript">
 	function fnPay() {
-		alert("결제 API를 발급 받으시기 바랍니다.");
+		location.href = "Payment_api.jsp";
 	}
 
 	function fnClear() {
 		if (confirm("장바구니를 비우시겠습니까?")) {
 			location.href = "CartClear.jsp";
+			
 		}
 	}
 
@@ -42,6 +42,7 @@ if (obj == null) { //세션 정보가 없으면 배열을 생성 : 주문한 제
 
 </head>
 <body>
+
 	<div align="center">
 		<h3>[장바구니 보기]</h3>
 		<table border="1">
@@ -63,19 +64,20 @@ if (obj == null) { //세션 정보가 없으면 배열을 생성 : 주문한 제
 				out.println("</tr>");
 			} else {
 				int totalSum = 0, total = 0;
-				DecimalFormat df = new DecimalFormat("#,##0");
+				
 				for (int i = 0; i < cart.size(); i++) {
 					CartDTO dto = cart.get(i);
 					out.println("<tr align= 'center'>");
 					out.println("<td>" + (i + 1) + "</td>");
 					out.println("<td>" + "<img src=\""+dto.getImg()+"\" width=\"150px\" height=\"150px\">" + "</td>");
 					out.println("<td>" + dto.getName() + "</td>");
-					out.println("<td>" + df.format(dto.getPrice()) + "</td>");
+					out.println("<td>" + dto.getPrice() + "</td>");
 					out.println("<td>" + dto.getCnt() + "</td>");
 					total = dto.getPrice() * dto.getCnt();
-					out.println("<td>" + df.format(total) + "</td>");
+					out.println("<td>" + total + "</td>");
 					out.println("</tr>");
 					totalSum += total;
+					
 				}
 				out.println("<tr align = 'center'>");
 				out.println("<td colspan= '4'>");
@@ -83,10 +85,11 @@ if (obj == null) { //세션 정보가 없으면 배열을 생성 : 주문한 제
 				out.println("<input type='button' value='장바구니 비우기' onclick='fnClear()' />");
 				out.println("<input type='button' value='쇼핑 계속하기' onclick='fnGo()' />");
 				out.println("</td>");
-				out.println("<td  colspan = '2' 'text-align'> 총액 : ");
-				out.println(df.format(totalSum));
+				out.println("<td  colspan = '2' 'text-align' name = \"pay\"> 총액 : ");
+				out.println(totalSum);
 				out.println("</td>");
 				out.println("</tr>");
+				session.setAttribute("pay", totalSum);
 			} //if else
 			%>
 		</table>

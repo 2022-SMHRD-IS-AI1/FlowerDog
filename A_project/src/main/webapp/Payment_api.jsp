@@ -10,13 +10,15 @@
   <script src="https://js.tosspayments.com/v1/payment"></script>
 </head>
 <body>
+<% int pay = (int)session.getAttribute("pay") ; %>
 
   <script>
+  
     clientKey = 'test_ck_5GePWvyJnrKaj1AD7o13gLzN97Eo'
     tossPayments = TossPayments(clientKey) 
     tossPayments.requestPayment('카드', { 
     	
-    	  amount: 150000,
+    	  amount: <%=pay%>,
     	  orderId: '1RPUbUDqwRNYi9Rej_kIi',
     	  orderName: '쿠리 입양비',
     	  customerName: '입양비',
@@ -29,4 +31,9 @@
     	  }
     	})
   </script>
+  
+  
+
+  
+  
 </body>
