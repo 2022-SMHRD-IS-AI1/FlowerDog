@@ -1,5 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	
+	<%
+	String[] bolder = { "쿠리", "후니", "쭈글", "해니", "열무", "몽쓰", "모모", "콩식", "초록", "함박", "탄이", "마중" };
+ String[] info_img ={"./Boardcss/image/b1.png", "./Boardcss/image/b2.png", "./Boardcss/image/b3.png", "./Boardcss/image/b4.png", 
+		 "./Boardcss/image/b5.png", "./Boardcss/image/b6.png", "./Boardcss/image/b7.png", "./Boardcss/image/b8.png",
+		 "./Boardcss/image/b9.png", "./Boardcss/image/b10.png","./Boardcss/image/b11.png", "./Boardcss/image/b12.png"};
+ String[] img ={"./Boardcss/image/a1.png", "./Boardcss/image/a2.png", "./Boardcss/image/a3.png", "./Boardcss/image/a4.png", 
+		 "./Boardcss/image/a5.png", "./Boardcss/image/a6.png", "./Boardcss/image/a7.png", "./Boardcss/image/a8.png",
+		 "./Boardcss/image/a9.png", "./Boardcss/image/a10.png","./Boardcss/image/a11.png", "./Boardcss/image/a12.png"};
+ %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,6 +31,15 @@
 </head>
 
 <body>
+
+	<script>
+		function fnad(bolder,img,info_img) {
+
+			location.href = "adop_intro copy.jsp?bolder=" + bolder + "&img="
+					+ img + "&info_img=" + info_img;
+
+		}
+	</script>
 	<!-- Navigation-->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container px-4 px-lg-5">
@@ -77,7 +96,7 @@
 			<div
 				class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 				<%
-				String[] bolder = { "쿠리", "후니", "쭈글", "해니", "열무", "몽쓰", "모모", "콩식", "초록", "함박", "탄이", "마중" };
+				
 				String[] type = { "믹스", "믹스", "믹스", "믹스", "믹스", "믹스", "치와와", "믹스", "보더콜리", "진도믹스", "시바견", "셰퍼드" };
 				String[] age = { "7살", "3살", "4살", "1살", "5살", "2살", "2살", "4살", "4살", "1살", "5살", "2살", };
 				String[] gender = { "남아", "여아", "여아", "남아", "남아", "남아", "남아", "남아", "남아", "남아", "남아", "남아", };
@@ -109,7 +128,7 @@
 							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 								<div class="text-center">
 									<a class="btn btn-outline-dark mt-auto"
-										href="./adop_intro copy <%=i + 1%>.jsp">상세보기</a>
+										onclick='fnad("<%=bolder[i]%>","<%=img[i]%>", "<%=info_img[i]%>")'>상세보기</a>
 								</div>
 							</div>
 						</div>
