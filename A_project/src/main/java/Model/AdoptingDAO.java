@@ -71,7 +71,7 @@ public int InsertData(AdoptingDTO dto) {
 			psmt.setInt(9, dto.getSerialNum());
 			
 			cnt = psmt.executeUpdate();
-			
+			System.out.println("1111");
 			
 		} catch (Exception e) {
 			e.printStackTrace();

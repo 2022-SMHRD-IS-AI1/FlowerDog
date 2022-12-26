@@ -1,3 +1,4 @@
+<%@page import="Model.MemberDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -17,6 +18,10 @@
         <link href="./Boardcss/css/adop_intro.css" rel="stylesheet" />
     </head>
     <body>
+    <%
+	 MemberDTO info = (MemberDTO)session.getAttribute("info");
+%>
+    
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
@@ -74,7 +79,15 @@
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                             <br>
-                         <div class="text-center"> <a class="" href="https://developers.kakao.com/demo/pay/index"><img alt="" src="./Boardcss/image/카카오페이.png"></a> <a class="btn btn-outline-dark mt-auto" href="adopting.jsp"> 입양신청하기</a>
+                         <div class="text-center">
+                          <a class="" href="https://developers.kakao.com/demo/pay/index">
+                          <img alt="" src="./Boardcss/image/카카오페이.png">
+                          </a>
+                          <%if(info !=null){ %>
+                          <a class="btn btn-outline-dark mt-auto" href="adopting.jsp"> 입양신청하기</a>
+                          <%}else{ %>
+                          <a class="btn btn-outline-dark mt-auto" href="login.jsp"> 입양신청하기</a>
+                          <%} %>
                         	<a class="btn btn-outline-dark mt-auto" href="./adop_guide.jsp">입양 절차 및 책임비 가이드 보기</a></div> -->
                      
                             </button>
