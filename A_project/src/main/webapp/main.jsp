@@ -46,7 +46,7 @@
 <!-- HEADER -->
  <header>
   <div class="inner">
-    <a href="/" class="logo">
+    <a href="main.jsp" class="logo">
       <img src="./Boardcss/image/logo.png" alt="꽃개"/>
     </a>
 
@@ -73,7 +73,7 @@
         <div class="item__name">회사 소개</div>
       </li>
       <li class="item">
-        <div class="item__name"><a href="product.jsp">상품</a></div>
+        <div class="item__name"><a href="Product_list.jsp">상품</a></div>
       </li>
       <li class="item">
         <div class="item__name"><a href="adop_list.jsp">입양</a></div>
