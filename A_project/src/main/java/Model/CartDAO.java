@@ -5,6 +5,9 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import javax.security.auth.message.callback.PrivateKeyCallback.Request;
+import javax.servlet.http.HttpSession;
+
 public class CartDAO {
 	
 	
@@ -49,19 +52,27 @@ public class CartDAO {
 	}
 	
 	
-	public void cartInsert() {
+	public int cartInsert(CartDTO dto) {
 		try {
+			MemberDTO m_dto = new MemberDTO();
 			
 			getConn();
+		
+			String sql = "insert into Cart values(CART_SEQ.nextval,?,?,?,NVL(MAX(AMONT),'0')+1)";
 			
+			psmt = conn.prepareStatement(sql);
+			psmt.setString(1,m_dto.getId());
+			psmt.setString(1, dto.getName());
+			psmt.setInt(1, dto.getPrice());
 			
-			String sql = "";
-			
+			cnt = psmt.executeUpdate();
 			
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-		}
+		}finally {
+			close();
+		}return cnt;
 	}
 	
 	
