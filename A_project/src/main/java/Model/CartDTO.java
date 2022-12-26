@@ -8,8 +8,22 @@ public class CartDTO implements Serializable {
 	String name;	// 과일명
 	 int price;		// 가격
 	 int cnt;		// 수량
+	 int totalSum; // 총 가격
 	 
-	 
+	public int getTotalSum() {
+		return totalSum;
+	}
+
+
+
+
+	public void setTotalSum(int totalSum) {
+		this.totalSum = totalSum;
+	}
+
+
+
+
 	public CartDTO() {
 		super();
 	}
