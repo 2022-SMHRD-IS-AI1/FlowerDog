@@ -18,8 +18,6 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="./Boardcss/css/product_detail.css" rel="stylesheet" />
         
-
-
 </head>
 
 		<% String img = request.getParameter("img");
