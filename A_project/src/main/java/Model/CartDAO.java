@@ -58,7 +58,7 @@ public class CartDAO {
 			
 			getConn();
 		
-			String sql = "insert into Cart values(CART_SEQ.nextval,?,?,?,NVL(MAX(AMONT),'0')+1)";
+			String sql = "insert into Cart values(CART_SEQ.nextval,?,?,?,1)";
 			
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1,m_dto.getId());
