@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +9,7 @@
 <body>
 <form action="">
 	<div>
-		<label for="name"><strong>신청인 성명</strong> </label> <div><input type="text" name="name">
+		<label for="name"><strong>신청인 성명</strong> </label> <div><input type="text" name="name" value="홍길동" readonly/>
 	</div>
 	</div>
 	<div>
@@ -16,18 +18,18 @@
 		<input type="radio" name="gender" value="여"><span>여</span>
 	</div>
 	<div>
-		<label for="name"><strong>나이</strong> </label> <input type="number" name="age"
+		<label for="age"><strong>나이</strong> </label> <input type="number" name="age"
 			placeholder="숫자만 입력">
 	</div>
 	<div>
-		<label for="name"><strong>전화번호</strong> </label> <input type="number" name="tel"
+		<label for="tel"><strong>전화번호</strong> </label> <input type="number" name="tel"
 			placeholder="숫자만 입력">
 	</div>
 	<div>
-		<label for="name"><strong>이메일</strong> </label> <input type="text" name="email">
+		<label for="email"><strong>이메일</strong> </label> <input type="text" name="email">
 	</div>
 	<div>
-		<label for="name"><strong>살고있는 지역</strong> </label> <input type="text" name="city"
+		<label for="city"><strong>살고있는 지역</strong> </label> <input type="text" name="city"
 			placeholder="(예: 서울,경기,강원 등...)">
 	</div>
 	<div>
@@ -36,7 +38,7 @@
 		미혼<input type="radio" name="merry" value="미혼">
 	</div>
 	<div>
-		<label for="name"><strong>신청인 직업</strong> </label> <input type="text" name="job">
+		<label for="job"><strong>신청인 직업</strong> </label> <input type="text" name="job">
 	</div>
 	<input type="button" value="등록">
 </form>
