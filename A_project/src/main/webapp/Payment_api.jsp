@@ -18,7 +18,7 @@
     tossPayments = TossPayments(clientKey) 
     tossPayments.requestPayment('카드', { 
     	
-    	  amount: <%=pay%>,
+    	  amount: <%//여기에다가 받아온 값 적으면 됨%>,
     	  orderId: '1RPUbUDqwRNYi9Rej_kIi',
     	  orderName: '쿠리 입양비',
     	  customerName: '입양비',

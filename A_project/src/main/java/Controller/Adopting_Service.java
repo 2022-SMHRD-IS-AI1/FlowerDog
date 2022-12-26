@@ -57,9 +57,7 @@ public class Adopting_Service extends HttpServlet {
 			System.out.println("입양신청 실패");
 		}
 
-		RequestDispatcher rd = request.getRequestDispatcher(nextPage);
-		rd.forward(request, response);
-
+		response.sendRedirect(nextPage);
 	}
 	
 	

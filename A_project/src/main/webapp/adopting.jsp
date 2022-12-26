@@ -1,3 +1,4 @@
+<%@page import="Model.MemberDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -7,14 +8,19 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%
+	MemberDTO info = (MemberDTO) session.getAttribute("info");
+	String name = info.getName();
+	%>
 <form action="Adopting_Service" method="post">
 	
+	
 	<div>
-		<label for="serialnum"><strong>입양하는 동물의 일련번호를 적어주세요</strong> </label> <div><input type="text" name="serialnum">
+		<label for="serialnum"><strong>입양하는 동물의 일련번호를 적어주세요</strong> </label> <div><input type="text" name="serialnum" placeholder="숫자만 입력해주세요">
 	</div>
 	</div>
 	<div>
-		<label for="name"><strong>신청인 성명</strong> </label> <div><input type="text" name="name" value="홍길동" readonly/>
+		<label for="name"><strong>신청인 성명</strong> </label> <div><input type="text" name="name" value="<%=name %>" readonly/>
 	</div>
 	</div>
 	<div>
@@ -27,7 +33,7 @@
 			placeholder="숫자만 입력">
 	</div>
 	<div>
-		<label for="tel"><strong>전화번호</strong> </label> <input type="number" name="tel"
+		<label for="tel"><strong>전화번호</strong> </label> <input type="text" name="tel"
 			placeholder="숫자만 입력">
 	</div>
 	<div>
