@@ -9,9 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import Model.AdoptingDAO;
 import Model.AdoptingDTO;
-import Model.MemberDAO;
-import Model.MemberDTO;
 
 @WebServlet("/Adopting_Service")
 public class Adopting_Service extends HttpServlet {
@@ -24,25 +23,38 @@ public class Adopting_Service extends HttpServlet {
 		String name = request.getParameter("name");
 		String gender = request.getParameter("gender");
 		int age = Integer.parseInt(request.getParameter("age"));
-		int tel = Integer.parseInt(request.getParameter("tel"));
+		String tel = request.getParameter("tel");
 		String email = request.getParameter("email");
 		String city = request.getParameter("city");
 		String merry = request.getParameter("merry");
 		String job = request.getParameter("job");
+		int serialnum = Integer.parseInt(request.getParameter("serialnum"));
+		
+		System.out.println(name);
+		System.out.println(gender);
+		System.out.println(age);
+		System.out.println(tel);
+		System.out.println(email);
+		System.out.println(city);
+		System.out.println(merry);
+		System.out.println(job);
+		System.out.println(serialnum);
+		
 
-		AdoptingDTO dto = new AdoptingDTO(name, gender, age, tel, email, city, merry, job);
-		MemberDAO dao = new MemberDAO();
-		int cnt = dao.Join(dto);
+		
+		AdoptingDTO dto = new AdoptingDTO(name, gender, age, tel, email, city, merry, job,serialnum);
+		AdoptingDAO dao = new AdoptingDAO();
+		int cnt = dao.InsertData(dto);
 
 		String nextPage = "";
 
 		if (cnt > 0) {
-			nextPage = "index.html";
-			System.out.println("회원가입 성공");
+			nextPage = "AdoptingFinish.jsp";
+			System.out.println("입양신청 성공");
 
 		} else {
-			nextPage = "login.jsp";
-			System.out.println("회원가입 실패");
+			nextPage = "adopting.jsp";
+			System.out.println("입양신청 실패");
 		}
 
 		RequestDispatcher rd = request.getRequestDispatcher(nextPage);
@@ -53,4 +65,4 @@ public class Adopting_Service extends HttpServlet {
 	
 	}
 
-}
+

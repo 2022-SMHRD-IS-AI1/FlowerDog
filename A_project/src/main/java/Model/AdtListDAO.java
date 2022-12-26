@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class AdoptingDAO {
+public class AdtListDAO {
 	
 	Connection conn = null;
 	PreparedStatement psmt = null;
@@ -45,40 +45,6 @@ public class AdoptingDAO {
 			e2.printStackTrace();
 		}
 
-	}
-	
-
-	
-	
-	
-	
-public int InsertData(AdoptingDTO dto) {
-		
-		try {
-			getConn();
-			String sql = "INSERT INTO tb_adopting VALUES(?,?,?,?,?,?,?,?,?)";
-			
-			psmt = conn.prepareStatement(sql);
-			
-			psmt.setString(1, dto.getName());
-			psmt.setString(2, dto.getGender());
-			psmt.setInt(3, dto.getAge());
-			psmt.setString(4, dto.getTel());
-			psmt.setString(5, dto.getEmail());
-			psmt.setString(6, dto.getCity());
-			psmt.setString(7, dto.getMerry());
-			psmt.setString(8, dto.getJob());
-			psmt.setInt(9, dto.getSerialNum());
-			
-			cnt = psmt.executeUpdate();
-			
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-		}finally {
-			close();
-		}
-		return cnt; 
 	}
 
 }

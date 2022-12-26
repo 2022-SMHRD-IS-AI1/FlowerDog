@@ -5,15 +5,16 @@ public class AdoptingDTO {
 	private String name;
 	private String gender;
 	private int age;
-	private int tel;
+	private String tel;
 	private String email;
 	private String city;
 	private String merry;
 	private String job;
-
+	private int serialNum;
 	
-	public AdoptingDTO(String name, String gender, int age, int tel, String email, String city, String merry,
-			String job) {
+	
+	public AdoptingDTO(String name, String gender, int age, String tel, String email, String city, String merry,
+			String job, int serialNum) {
 		super();
 		this.name = name;
 		this.gender = gender;
@@ -23,11 +24,12 @@ public class AdoptingDTO {
 		this.city = city;
 		this.merry = merry;
 		this.job = job;
+		this.serialNum = serialNum;
 	}
 
 
 	public AdoptingDTO() {
-
+		super();
 	}
 
 
@@ -61,12 +63,12 @@ public class AdoptingDTO {
 	}
 
 
-	public int getTel() {
+	public String getTel() {
 		return tel;
 	}
 
 
-	public void setTel(int tel) {
+	public void setTel(String tel) {
 		this.tel = tel;
 	}
 
@@ -109,6 +111,20 @@ public class AdoptingDTO {
 	public void setJob(String job) {
 		this.job = job;
 	}
+
+
+	public int getSerialNum() {
+		return serialNum;
+	}
+
+
+	public void setSerialNum(int serialNum) {
+		this.serialNum = serialNum;
+	}
+
+
+
+	
 	
 	
 

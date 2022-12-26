@@ -7,7 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="">
+<form action="Adopting_Service" method="post">
+	
+	<div>
+		<label for="serialnum"><strong>입양하는 동물의 일련번호를 적어주세요</strong> </label> <div><input type="text" name="serialnum">
+	</div>
+	</div>
 	<div>
 		<label for="name"><strong>신청인 성명</strong> </label> <div><input type="text" name="name" value="홍길동" readonly/>
 	</div>
@@ -40,7 +45,7 @@
 	<div>
 		<label for="job"><strong>신청인 직업</strong> </label> <input type="text" name="job">
 	</div>
-	<input type="button" value="등록">
+	<input type="submit" value="등록">
 </form>
 </body>
 </html>
