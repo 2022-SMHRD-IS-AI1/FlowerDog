@@ -38,7 +38,9 @@
   <script defer src="./Boardcss/js/main.js"></script>
 </head>
 <body>
-<%MemberDTO info = (MemberDTO)session.getAttribute("info"); %>
+<%MemberDTO info = (MemberDTO)session.getAttribute("info");
+	String id = info.getId();
+%>
 <!-- HEADER -->
  <header>
   <div class="inner">
@@ -162,4 +164,6 @@
   </div>
 </section>
 </body>
+
+
 </html>
