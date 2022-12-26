@@ -5,7 +5,7 @@
  <%
  String[] img ={"goods_01.jpg", "goods_02.jpg", "goods_03.jpg", "goods_04.jpg", "goods_05.jpg", "goods_06.jpg", "goods_07.jpg", "goods_08.jpg"};
  String[] product ={"굿즈1", "굿즈2", "굿즈3", "굿즈4", "굿즈5", "굿즈6", "굿즈7", "굿즈8"};
- String[] price ={"1000", "20000", "5000", "15000", "2000", "8000", "2200", "6600"};
+ String[] price ={"1000", "20000", "5000", "15000", "2000", "8000", "2200", "660000"};
  %>
 <!DOCTYPE html>
 <html lang="en">
