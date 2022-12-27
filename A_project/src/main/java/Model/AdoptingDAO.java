@@ -68,7 +68,7 @@ public int InsertData(AdoptingDTO dto) {
 			psmt.setString(6, dto.getCity());
 			psmt.setString(7, dto.getMerry());
 			psmt.setString(8, dto.getJob());
-			psmt.setInt(9, dto.getSerialNum());
+			psmt.setString(9, dto.getSerialNum());
 			
 			cnt = psmt.executeUpdate();
 			System.out.println("1111");
