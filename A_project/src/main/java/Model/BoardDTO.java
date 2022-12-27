@@ -16,6 +16,13 @@ public class BoardDTO {
 		this.writer = writer;
 		this.content = content;
 	}
+	
+	public BoardDTO(int number, String title, String writer, String content) {
+		this.number = number;
+		this.title = title;
+		this.writer = writer;
+		this.content = content;
+	}
 
 
 
