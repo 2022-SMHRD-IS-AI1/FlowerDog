@@ -10,11 +10,11 @@ public class AdoptingDTO {
 	private String city;
 	private String merry;
 	private String job;
-	private int serialNum;
+	private String serialNum;
 	
 	
 	public AdoptingDTO(String name, String gender, int age, String tel, String email, String city, String merry,
-			String job, int serialNum) {
+			String job, String serialNum) {
 		super();
 		this.name = name;
 		this.gender = gender;
@@ -113,12 +113,12 @@ public class AdoptingDTO {
 	}
 
 
-	public int getSerialNum() {
+	public String getSerialNum() {
 		return serialNum;
 	}
 
 
-	public void setSerialNum(int serialNum) {
+	public void setSerialNum(String serialNum) {
 		this.serialNum = serialNum;
 	}
 

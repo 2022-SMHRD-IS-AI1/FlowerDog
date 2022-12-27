@@ -28,7 +28,7 @@ public class Adopting_Service extends HttpServlet {
 		String city = request.getParameter("city");
 		String merry = request.getParameter("merry");
 		String job = request.getParameter("job");
-		int serialnum = Integer.parseInt(request.getParameter("serialnum"));
+		String serialnum = request.getParameter("serialnum");
 		
 		System.out.println(name);
 		System.out.println(gender);
