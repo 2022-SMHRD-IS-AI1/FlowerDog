@@ -187,9 +187,9 @@ public class BoardDAO {
 	}
 
 	public int removalBoard(int number) {
-		
 		try {
-			String sql = "delete from TB_COMMUNITY where ?";
+			getConn();
+			String sql = "DELETE TB_COMMUNITY WHERE comm_seq = ?";
 
 			psmt = conn.prepareStatement(sql);
 			

@@ -23,10 +23,10 @@ public class Board_Removal extends HttpServlet {
 		int number = Integer.parseInt(request.getParameter("number"));
 		
 		BoardDAO dao = new BoardDAO();
-			
+		
 		int cnt = dao.removalBoard(number);
 		
-		if(cnt >0) {
+		if(cnt > 0) {
 			System.out.println("게시글삭제 성공");
 		}else {
 			System.out.println("게시글삭제실패");
