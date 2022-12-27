@@ -326,47 +326,51 @@ header .badges .badge{
 }
 
 .container .animals .animal:nth-child(1) .image {
-  background-image: url("../image/dog01.png");
+  background-image: url("../image/a1.png");
 }
 
 .container .animals .animal:nth-child(2) .image {
-  background-image: url("../image/dog02.png");
+  background-image: url("../image/a2.png");
 }
 
 .container .animals .animal:nth-child(3) .image {
-  background-image: url(../image/dog03.png);
+  background-image: url(../image/a3.png);
 }
 
 .container .animals .animal:nth-child(4) .image {
-  background: url(../image/dog04.png);
+  background-image: url(../image/a4.png);
 }
 
 .container .animals .animal:nth-child(5) .image {
-  background-image: url("../image/dog05.png");
+  background-image: url("../image/a5.png");
 }
 
 .container .animals .animal:nth-child(6) .image {
-  background-image: url("../image/dog06.png");
+  background-image: url("../image/a6.png");
 }
 
 .container .animals .animal:nth-child(7) .image {
-  background-image: url("../image/dog07.png");
+  background-image: url("../image/a7.png");
 }
 
 .container .animals .animal:nth-child(8) .image {
-  background-image: url("../image/dog08.png");
+  background-image: url("../image/a8.png");
 }
 
 .container .animals .animal:nth-child(9) .image {
-  background-image: url("../image/dog09.png");
+  background-image: url("../image/a9.png");
 }
 
 .container .animals .animal:nth-child(10) .image {
-  background-image: url("../image/dog10.png");
+  background-image: url("../image/a10.png");
 }
 
 .container .animals .animal:nth-child(11) .image {
-  background-image: url("../image/dog11.png");
+  background-image: url("../image/a11.png");
+}
+
+.container .animals .animal:nth-child(12) .image {
+  background-image: url("../image/a12.png");
 }
 
 /* YOUTUBE VIDEO */

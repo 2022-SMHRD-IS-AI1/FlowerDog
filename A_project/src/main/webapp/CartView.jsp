@@ -25,7 +25,7 @@ if (obj == null) { //세션 정보가 없으면 배열을 생성 : 주문한 제
 
 <script type="text/javascript">
 	function fnPay() {
-		location.href = "Payment_goods.jsp";
+		location.href = "pay_info.jsp";
 	}
 
 	function fnClear() {

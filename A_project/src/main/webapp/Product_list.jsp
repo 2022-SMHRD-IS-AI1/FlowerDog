@@ -3,9 +3,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
  <%
- String[] img ={"./Boardcss/image/goods_01.jpg", "./Boardcss/image/goods_02.jpg", "./Boardcss/image/goods_03.jpg", "./Boardcss/image/goods_04.jpg", "./Boardcss/image/goods_05.jpg", "./Boardcss/image/goods_06.jpg", "./Boardcss/image/goods_07.jpg", "./Boardcss/image/goods_08.jpg"};
- String[] product ={"굿즈1", "굿즈2", "굿즈3", "굿즈4", "굿즈5", "굿즈6", "굿즈7", "굿즈8"};
- String[] price ={"1000", "20000", "5000", "15000", "2000", "8000", "2200", "660000"};
+ String[] img ={"./Boardcss/image/goods_01.jpg", "./Boardcss/image/goods_02.jpg", "./Boardcss/image/goods_13.jpg", "./Boardcss/image/goods_19.jpg", "./Boardcss/image/goods_05.jpg", "./Boardcss/image/goods_06.jpg", "./Boardcss/image/goods_15.jpg", "./Boardcss/image/goods_23.jpg"};
+ String[] product ={"유기견 일러스트 파우치", "유기견 일러스트 파우치", "2022 유기견 벽걸이 달력", "유기견 일러스트 에코백", "2022 유기묘 포스터벽걸이 달력", "2022 유기묘 포스터벽걸이 달력", "유기동물 일러스트 텀블러", "유기견 일러스트 폰케이스"};
+ String[] price ={"8500", "8500", "14000", "18000", "14000", "14000", "22000", "9000"};
  %>
 <!DOCTYPE html>
 <html lang="en">

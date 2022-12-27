@@ -45,6 +45,7 @@
 </head>
 <body>
 <!-- HEADER -->
+
  <header>
   <div class="inner">
     <a href="main.jsp" class="logo">
@@ -119,6 +120,7 @@
     <div class="inner">
       <div class="fade-in">
         <div class="container">
+        
           <div class="animals">
             <div class="animal">
               <div class="image"></div>
@@ -157,6 +159,7 @@
               <div class="image"></div>
             </div>
           </div>
+          
         </div>
       </div>
     </div>
@@ -173,9 +176,7 @@
     </div>
   </section>
   
- 
+
 
 </body>
-
-
 </html>
