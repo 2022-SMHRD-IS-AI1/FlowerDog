@@ -1,9 +1,6 @@
 <%@page import="Model.ProductDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<<<<<<< HEAD
 
-=======
->>>>>>> branch 'master' of https://github.com/2022-SMHRD-IS-AI1/FlowerDog.git
 <!DOCTYPE html>
 <html>
 <head>
