@@ -4,7 +4,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | MIT 라이센스 | git.io/정상화 */
+* {
+	cursor: url(./Boardcss/image/01Dog.cur) 4 5, url(./Boardcss/image/01Dog.cur), url(./Boardcss/image/01Dog.cur) 5 5, auto;
+}.
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
