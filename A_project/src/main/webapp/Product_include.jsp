@@ -35,7 +35,7 @@
                         
                         <div class="fs-5 mb-5">
                             <span class="text-decoration-line-through"></span>
-                            <div>할인가</div>
+                            <div>가격</div>
                             <span><%=price%>원</span>
                         </div>수량
                         <div class="d-flex">
