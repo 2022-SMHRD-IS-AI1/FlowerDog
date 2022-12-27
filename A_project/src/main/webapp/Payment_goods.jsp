@@ -19,8 +19,8 @@
 %>
 
   <script>
-  
-  
+ 
+ 
   	<%if(info == null){%>
   	alert("로그인이 필요합니다.")
   	location.href='login.jsp'
@@ -32,8 +32,8 @@
     	
     	  amount: <%=pay%>,
     	  orderId: '1RPUbUDqwRNYi9Rej_kIi',
-    	  orderName: '상품구매총액',
-    	  customerName: '구매상품총액',
+    	  orderName: '상품 총 금액',
+    	  customerName: '상품총금액',
     	  successUrl: 'http://localhost:8080/success',
     	  failUrl: 'http://localhost:8080/fail',
     	})
