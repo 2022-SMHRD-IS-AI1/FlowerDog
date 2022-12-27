@@ -83,17 +83,6 @@ li {
 								<li><a href="#" data-hover="후원">후원</a></li>
 							</ul>
 						</div>
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav navbar-right">
-								<%
-								if (info != null) {
-								%>
-								<li><a href="login.jsp">Logout</a></li>
-								<%
-								}
-								%>
-							</ul>
-						</div>
 					</div>
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
