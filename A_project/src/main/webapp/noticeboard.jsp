@@ -48,18 +48,16 @@ li {
 </style>
 </head>
 <body>
+
 	<%
 	request.setCharacterEncoding("utf-8");
 	MemberDTO info = (MemberDTO) session.getAttribute("info");
 	BoardDAO dao = new BoardDAO();
 	ArrayList<BoardDTO> list = new ArrayList<>();
 	list.clear();
+	list = dao.Listofposts();
 	%>
-	<%
-	if (info != null) {
-		list = dao.Listofposts();
-	}
-	%>
+
 	<div class="wrapper">
 		<!-- header -->
 		<header>
@@ -70,41 +68,25 @@ li {
 				<div class="container">
 
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<a class="navbar-brand" href="#"><img class="img-responsive"
-							src="./Boardcss/image/logo.png" alt="Logo" /></a>
-						<h1 class="header-h1">꽃길만걷개</h1>
-						<button type="button" class="navbar-toggle" data-toggle="collapse"
-							data-target="#bs-example-navbar-collapse-1">
-							<span class="sr-only">Toggle navigation</span> <span
-								class="icon-bar"></span> <span class="icon-bar"></span> <span
-								class="icon-bar"></span>
-						</button>
-
+					<div class="navbar-header" style="display: inline;">
+						<a class="navbar-brand" href="main.jsp"><img class="img-responsive"
+							src="./Boardcss/image/logo.png" alt="Logo" style="width: 100px; height: 100px;"/></a>
+						<!-- menu start -->
+						<div class="menu" style="justify-content: center; left: 25%;">
+							<ul class="snip1555">
+								<li class="current"><a href="#" data-hover="소개">소개</a></li>
+								<li><a href="#" data-hover="입양">입양</a></li>
+								<li><a href="product.jsp" data-hover="상품">상품</a></li>
+								<li><a href="#" data-hover="혜택">혜택</a></li>
+								<li><a href="#" data-hover="커뮤니티">커뮤니티</a></li>
+								<li><a href="#" data-hover="방문예약&문의">방문예약&문의</a></li>
+								<li><a href="#" data-hover="후원">후원</a></li>
+							</ul>
+						</div>
 					</div>
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse"
-						id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav navbar-right">
-							<%
-							if (info != null) {
-							%>
-							<li><a href="login.jsp">Logout</a></li>
-							<%
-							}
-							%>
-							<li class="dropdown"><a href="#" class="dropdown-toggle"
-								data-toggle="dropdown">Menu <span class="caret"></span></a>
-								<ul class="dropdown-menu" role="menu">
-									<li><a href="#event">상품구매</a></li>
-									<li><a href="#blog">입양</a></li>
-									<li><a href="#subscribe">커뮤니티</a></li>
-									<li><a href="#team">고객센터</a></li>
-									<li><a href="#">회사소개</a></li>
-								</ul></li>
-						</ul>
-					</div>
+					
 					<!-- /.navbar-collapse -->
 				</div>
 				<!-- /.container-fluid -->
@@ -124,19 +106,7 @@ li {
 	</div>
 	<!-- banner end -->
 
-	<!-- menu start -->
-	<div class="menu">
-		<ul class="snip1555">
-			<li class="current"><a href="#" data-hover="소개">소개</a></li>
-			<li><a href="#" data-hover="입양">입양</a></li>
-			<li><a href="product.jsp" data-hover="상품">상품</a></li>
-			<li><a href="#" data-hover="혜택">혜택</a></li>
-			<li><a href="#" data-hover="커뮤니티">커뮤니티</a></li>
-			<li><a href="#" data-hover="방문예약&문의">방문예약&문의</a></li>
-			<li><a href="#" data-hover="후원">후원</a></li>
-		</ul>
-
-	</div>
+	
 
 
 	<!-- menu end -->
@@ -196,9 +166,11 @@ li {
 									%>
 									<tr>
 										<td>
+											<%if(info != null) {%>
 											<button class="btn btn-dark">
 												<a href="BoardWrite.jsp" class="cnt">글쓰기</a>
 											</button>
+											<%} %>
 										</td>
 									</tr>
 								</tbody>
