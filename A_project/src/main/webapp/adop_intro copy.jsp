@@ -82,9 +82,6 @@
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                             <br>
                          <div class="text-center">
-                          <a class="" href="https://developers.kakao.com/demo/pay/index">
-                          <img alt="" src="./Boardcss/image/카카오페이.png">
-                          </a>
                           <%if(info !=null){ %>
                           <a class="btn btn-outline-dark mt-auto" href="adopting.jsp"> 입양신청하기</a>
                           <%}else{ %>
