@@ -4,7 +4,7 @@
 <html>
 <head>
 	<meta charset="utf-8"/>
-	<title>Kakao 지도 시작하기</title>
+	<title>주변 보호소</title>
 	 <style>
        .customoverlay {position:relative;bottom:85px;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;float:left;}
 .customoverlay:nth-of-type(n) {border:0; box-shadow:0px 1px 2px #888;}

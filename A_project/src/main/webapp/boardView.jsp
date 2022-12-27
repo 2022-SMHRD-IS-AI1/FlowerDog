@@ -24,6 +24,7 @@
 	
 	
 	<div id="wrap" align="center">
+
 		<h1>게시글 상세보기</h1>
 		<table border="2">
 			<tr>
