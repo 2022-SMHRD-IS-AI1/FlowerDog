@@ -1,4 +1,7 @@
 /* COMMON */
+* {
+	cursor: url(./Boardcss/image/01Dog.cur) 4 5, url(./Boardcss/image/01Dog.cur), url(./Boardcss/image/01Dog.cur) 5 5, auto;
+}
 body{
   color: #333;
   font-size: 16px;
@@ -389,7 +392,7 @@ header .badges .badge{
   padding-top: 56.25%;
 }
 .youtube .youtube__cover{
-  background-image: url("../Boardcss/image/video_cover_pattern.png");
+  background-image: url("../image/youtube-patten.png");
   background-color: rgb(0, 0, 0, .3);
   position: absolute;
   top: 0;
