@@ -38,16 +38,11 @@
                                 <hr class="dropdown-divider" />
                             </li>
                             <li><a href="adop_list.jsp" class="dropdown-item" href="#!">입양 아이들</a></li>
-                            <li><a class="dropdown-item" href="#!">준비중....</a></li>
+                            <li><a class="dropdown-item" href="adop_map.jsp">주변 보호소 찾기</a></li>
                         </ul>
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <button class="btn btn-outline-dark" type="submit">
-                        <i class="bi-cart-fill me-1"></i>
-                        Cart
-                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                    </button>
                 </form>
             </div>
         </div>
