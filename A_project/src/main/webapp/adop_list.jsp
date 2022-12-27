@@ -53,8 +53,6 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-					<li class="nav-item"><a href="main.jsp"
-						class="nav-link active" aria-current="page" href="#!">메인</a></li>
 					<li class="nav-item"><a href="noticeboard.jsp"
 						class="nav-link" href="#!">게시판</a></li>
 					<li class="nav-item dropdown"><a
@@ -65,16 +63,11 @@
 							<li>
 								<hr class="dropdown-divider" />
 							</li>
-							<li><a href="adop_list.jsp" class="dropdown-item" href="#!">입양
-									아이들</a></li>
-							<li><a class="dropdown-item" href="#!">준비중....</a></li>
+							<li><a href="adop_list.jsp" class="dropdown-item" href="#!">입양아이들</a></li>
+							<li><a class="dropdown-item" href="kakaomap.jsp">주변 보호소 찾기</a></li>
 						</ul></li>
 				</ul>
 				<form class="d-flex">
-					<button class="btn btn-outline-dark" type="submit">
-						<i class="bi-cart-fill me-1"></i> Cart <span
-							class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-					</button>
 				</form>
 			</div>
 		</div>

@@ -2,14 +2,14 @@ package Model;
 
 public class ProductDTO {
 	
-	private int pro_number;
+	private int pro_seq;
 	private String pro_name;
 	private int pro_price;
 	private String pro_desc;
 	private String pro_img;
 	
-	public ProductDTO(int pro_number, String pro_name, int pro_price, String pro_desc, String pro_img) {
-		this.pro_number = pro_number;
+	public ProductDTO(int pro_seq, String pro_name, int pro_price, String pro_desc, String pro_img) {
+		this.pro_seq = pro_seq;
 		this.pro_name = pro_name;
 		this.pro_price = pro_price;
 		this.pro_desc = pro_desc;
@@ -19,12 +19,12 @@ public class ProductDTO {
 	public ProductDTO() {
 	}
 
-	public int getPro_number() {
-		return pro_number;
+	public int getPro_seq() {
+		return pro_seq;
 	}
 
-	public void setPro_number(int pro_number) {
-		this.pro_number = pro_number;
+	public void setPro_seq(int pro_seq) {
+		this.pro_seq = pro_seq;
 	}
 
 	public String getPro_name() {

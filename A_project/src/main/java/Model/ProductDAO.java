@@ -9,11 +9,20 @@ import java.util.List;
 
 public class ProductDAO {
 
+//	private ProductDAO() {
+//		
+//	}
+//	
+//	private static ProductDAO instance = new ProductDAO();
+//	
+//	public static ProductDAO getInstance() {
+//		return instance;
+//	}
+	
 	Connection conn = null;
 	PreparedStatement psmt = null;
 	ResultSet rs = null;
 	int cnt = 0;
-	List<ProductDTO> list = new ArrayList<>();
 	
 	// DB연결
 	public void getConn() {
@@ -51,22 +60,24 @@ public class ProductDAO {
 	// 상품 조회
 	public List<ProductDTO> selectAllProducts(){
 	
+		List<ProductDTO> list = new ArrayList<ProductDTO>();
 		try {
 			getConn();
 			
-			String sql = "select * from product order by code desc";
+			String sql = "SELECT * FROM PRODUCT ORDER BY PRO_SEQ DESC";
 			psmt = conn.prepareStatement(sql);
 			rs = psmt.executeQuery();
 			
 			while (rs.next()) {
 				ProductDTO dto = new ProductDTO();
-				dto.setPro_number(rs.getInt("PRO_SEQ"));
-				dto.setPro_name(rs.getString("PRO_NAME"));
-				dto.setPro_price(rs.getInt("PRO_PRICE"));
-				dto.setPro_desc(rs.getString("PRO_DESC"));
-				dto.setPro_img(rs.getString("PRO_IMG1"));
+				dto.setPro_seq(rs.getInt("pro_seq"));
+				dto.setPro_name(rs.getString("pro_name"));
+				dto.setPro_price(rs.getInt("pro_price"));
+				dto.setPro_desc(rs.getString("pro_desc"));
+				dto.setPro_img(rs.getString("pro_img"));
 				list.add(dto);
 			}
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
@@ -80,12 +91,12 @@ public class ProductDAO {
 		
 		try {
 			getConn();
-			String sql = "INSERT INTO PRODUCT VALUES(PRO_SEQ.NEXTVAL, ?, ?, ?, ?";
+			String sql = "INSERT INTO PRODUCT VALUES(PRODUCT_SEQ.NEXTVAL, ?, ?, ?, null";
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, dto.getPro_name());
 			psmt.setInt(2, dto.getPro_price());
 			psmt.setString(3, dto.getPro_desc());
-			psmt.setString(3, dto.getPro_img());
+//			psmt.setString(4, dto.getPro_img());
 			psmt.executeUpdate();
 			
 		} catch (Exception e) {
@@ -111,7 +122,7 @@ public class ProductDAO {
 			
 			if(rs.next()) {
 				dto = new ProductDTO();
-				dto.setPro_number(rs.getInt("PRO_SEQ"));
+				dto.setPro_seq(rs.getInt("PRO_SEQ"));
 				dto.setPro_name(rs.getString("PRO_NAME"));
 				dto.setPro_price(rs.getInt("PRO_PRICE"));
 				dto.setPro_desc("PRO_DESC");
