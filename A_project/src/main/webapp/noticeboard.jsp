@@ -35,7 +35,7 @@ ul {
 	list-style: none;
 	padding-left: 0px;
 	position: relative;
-	top: 50px;
+	top: 25px;
 }
 
 li {
@@ -77,7 +77,7 @@ li {
 							    <li class="nav-item"><a href="main.jsp" class="nav-link active" aria-current="page" href="#!">메인</a></li>
 								<li class="current"><a href="#" data-hover="소개">소개</a></li>
 								<li><a href="adop_list.jsp" data-hover="입양">입양</a></li>
-								<li><a href="product.jsp" data-hover="상품">상품</a></li>
+								<li><a href="Product_list.jsp" data-hover="상품">상품</a></li>
 								<li></li>
 								<!-- <li><a href="#" data-hover="후원">후원</a></li>
 							</ul>

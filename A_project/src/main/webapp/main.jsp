@@ -120,7 +120,6 @@
     <div class="inner">
       <div class="fade-in">
         <div class="container">
-        
           <div class="animals">
             <div class="animal">
               <div class="image"></div>
