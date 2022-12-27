@@ -170,14 +170,15 @@
 <!-- YOUTUBE VIDEO -->
   <section class="youtube">
     <div class="youtube__area">
-      <div id="player"></div>
+      <div id="player">
+      
+      <video src="../image/youtube-patten.png" type = "video/mp4" autoplay controls></video>
+      </div>
     </div>
     <div class="youtube__cover"></div>
     <div class="inner">
     </div>
   </section>
-  
- 
 
 </body>
 

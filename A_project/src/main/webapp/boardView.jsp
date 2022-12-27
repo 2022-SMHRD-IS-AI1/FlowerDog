@@ -13,12 +13,12 @@
 </head>
 <body>
 	<%
-	request.setCharacterEncoding("utf-8");
-		String title = request.getParameter("title");
+		request.setCharacterEncoding("utf-8");
+		int number = Integer.parseInt(request.getParameter("number"));
 
 		BoardDTO dto = new BoardDTO();
 		BoardDAO dao = new  BoardDAO();
-		dto = dao.getTitle(title);
+		dto = dao.getNumber(number);
 		
 	%>
 	
@@ -38,7 +38,7 @@
 			</tr>
 			<tr>
 				<th>제목</th>
-				<td colspan="3"><%=dto.getWriter()%></td>
+				<td colspan="3"><%=dto.getTitle()%></td>
 			</tr>
 			<tr>
 				<th>내용</th>
@@ -46,8 +46,8 @@
 			</tr>
 		</table>
 		<br><br>
-		<input type="button" value="게시글 수정" onclick="open_win('BoardServlet?command=board_check_pass_form&number=${tb_community.number}','update')">
-		<input type="button" value="게시글 삭제" onclick="open_win('BoardServlet?command=board_check_pass_form&number=${tb_community.number}','delete')">
+		<input type="button" value="게시글 수정" onclick="location.href='BoardUpdate.jsp?number=<%=dto.getNumber()%>'">
+		<input type="button" value="게시글 삭제" onclick="location.href='Board_Removal?number=<%=dto.getNumber()%>'">
 		<input type="button" value="게시글 리스트" onclick="location.href='noticeboard.jsp'">
 		<input type="button" value="게시글 등록" onclick="location.href='BoardServlet?command=board_write_form'">
 			

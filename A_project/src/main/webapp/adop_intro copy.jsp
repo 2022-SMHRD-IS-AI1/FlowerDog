@@ -19,7 +19,15 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="./Boardcss/css/adop_intro.css" rel="stylesheet" />
     </head>
+    
     <body>
+    <script>
+	function fndog(bolder) {
+		
+			sessionStorage.setItem("bolder", bolder);
+		
+	}
+</script>
 
 
 	<%
@@ -83,7 +91,7 @@
                             <br>
                          <div class="text-center">
                           <%if(info !=null){ %>
-                          <a class="btn btn-outline-dark mt-auto" href="adopting.jsp"> 입양신청하기</a>
+                          <a class="btn btn-outline-dark mt-auto" href="adopting.jsp" onclick='fndog("<%=bolder%>")' > 입양신청하기</a>
                           <%}else{ %>
                           <a class="btn btn-outline-dark mt-auto" href="login.jsp"> 입양신청하기</a>
                           <%} %>

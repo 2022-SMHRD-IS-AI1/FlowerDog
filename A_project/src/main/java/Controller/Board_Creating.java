@@ -22,8 +22,8 @@ public class Board_Creating extends HttpServlet {
 		
 		request.setCharacterEncoding("UTF-8");
 
-		String title = request.getParameter("Title");
-		String writer = request.getParameter("Writer");
+		String title = request.getParameter("title");
+		String writer = request.getParameter("writer");
 		String content = request.getParameter("content");
 
 		BoardDTO dto = new BoardDTO(title, writer, content);

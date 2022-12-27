@@ -1,3 +1,6 @@
+<%@page import="Model.BoardDAO"%>
+<%@page import="Model.BoardDTO"%>
+<%@page import="Controller.Board_Update"%>
 <%@page import="Model.MemberDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -98,27 +101,32 @@
 
 
 		<%
-					MemberDTO info = (MemberDTO) session.getAttribute("info");
-					String id = info.getId();
+			request.setCharacterEncoding("utf-8");
+			int number = Integer.parseInt(request.getParameter("number"));
+
+			BoardDTO dto = new BoardDTO();
+			BoardDAO dao = new  BoardDAO();
+			dto = dao.getNumber(number);
+			
 		%>
+		
 
-
-		<form action="Board_Creating" method="post">
+		<form action="Board_Update?number=<%=number %>" method="post">
                    <div id="list">
                       <div class="list_title">
                         <h1>커뮤니티</h1>
                         <h3>자유롭게 글을 쓸 수 있는 공간입니다.</h3>
                          <textarea name="title" rows="1" cols="100"
-                            placeholder="제목" maxlength="100"></textarea>
+                            placeholder="제목" maxlength="100"><%=dto.getTitle() %></textarea>
                       </div>
                       <div>
                          <textarea name="writer" rows="1" cols="100"
-                              maxlength="100"><%=id %></textarea>
+                              maxlength="100"><%=dto.getWriter() %></textarea>
                       </div>
           
                       <div>
                          <textarea name="content" placeholder="내용" required rows="30"
-                            cols="100"></textarea>
+                            cols="100"><%=dto.getContent() %></textarea>
                       </div>
           
           
@@ -127,7 +135,7 @@
                       </div>
           
                       <div>
-                         <a href="BoardWrite.jsp"><button id="Reset">초기화하기</button></a> 
+                         <a href="BoardUpdate.jsp"><button id="Reset">초기화하기</button></a> 
                          <input type="submit" value="작성하기">
                       </div>
                    </div>
