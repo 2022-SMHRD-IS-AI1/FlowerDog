@@ -100,7 +100,6 @@
 		<%
 					MemberDTO info = (MemberDTO) session.getAttribute("info");
 					String id = info.getId();
-								
 		%>
 
 
@@ -109,11 +108,11 @@
                       <div class="list_title">
                         <h1>커뮤니티</h1>
                         <h3>자유롭게 글을 쓸 수 있는 공간입니다.</h3>
-                         <textarea name="Title" rows="1" cols="100"
+                         <textarea name="title" rows="1" cols="100"
                             placeholder="제목" maxlength="100"></textarea>
                       </div>
                       <div>
-                         <textarea name="Writer" rows="1" cols="100"
+                         <textarea name="writer" rows="1" cols="100"
                               maxlength="100"><%=id %></textarea>
                       </div>
           

@@ -2,7 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
-
+	
 	 MemberDTO info = (MemberDTO)session.getAttribute("info");
 	
 %>
@@ -39,6 +39,7 @@
   
   <!-- SWIPER -->
   <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+  <script src="./Boardcss/js/video.js"></script>
   <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
   <script defer src="./Boardcss/js/main.js"></script>
 </head>
@@ -165,6 +166,19 @@
     </div>
   </div>
 </section>
+
+<!-- YOUTUBE VIDEO -->
+  <section class="youtube">
+    <div class="youtube__area">
+      <div id="player"></div>
+    </div>
+    <div class="youtube__cover"></div>
+    <div class="inner">
+    </div>
+  </section>
+  
+ 
+
 </body>
 
 

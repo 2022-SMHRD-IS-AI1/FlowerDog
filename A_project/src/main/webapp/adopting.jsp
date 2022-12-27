@@ -14,6 +14,7 @@
 	%>
 <form action="Adopting_Service" method="post">
 	
+	
 	<div>
 		<label for="serialnum"><strong>입양하는 동물의 일련번호를 적어주세요</strong> </label> <div><input type="text" name="serialnum" placeholder="숫자만 입력해주세요">
 	</div>

@@ -1,5 +1,6 @@
 @charset "UTF-8";
 * {
+	cursor: url(./Boardcss/image/01Dog.cur) 4 5, url(./Boardcss/image/01Dog.cur), url(./Boardcss/image/01Dog.cur) 5 5, auto;
     margin: 0;
     padding: 0;
     font-family: sans-serif;

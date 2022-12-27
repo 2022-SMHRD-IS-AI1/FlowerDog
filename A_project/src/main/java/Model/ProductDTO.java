@@ -2,49 +2,61 @@ package Model;
 
 public class ProductDTO {
 	
-	private int Prod_Number;
-	private String Prod_Name;
-	private int Prod_Price;
-	private String Prod_Desc;
+	private int pro_seq;
+	private String pro_name;
+	private int pro_price;
+	private String pro_desc;
+	private String pro_img;
 	
-	public ProductDTO(int prod_Number, String prod_Name, int prod_Price, String prod_Desc) {
-		this.Prod_Number = prod_Number;
-		this.Prod_Name = prod_Name;
-		this.Prod_Price = prod_Price;
-		this.Prod_Desc = prod_Desc;
+	public ProductDTO(int pro_seq, String pro_name, int pro_price, String pro_desc, String pro_img) {
+		this.pro_seq = pro_seq;
+		this.pro_name = pro_name;
+		this.pro_price = pro_price;
+		this.pro_desc = pro_desc;
+		this.pro_img = pro_img;
 	}
 
-	public int getProd_Number() {
-		return Prod_Number;
+	public ProductDTO() {
 	}
 
-	public void setProd_Number(int prod_Number) {
-		Prod_Number = prod_Number;
+	public int getPro_seq() {
+		return pro_seq;
 	}
 
-	public String getProd_Name() {
-		return Prod_Name;
+	public void setPro_seq(int pro_seq) {
+		this.pro_seq = pro_seq;
 	}
 
-	public void setProd_Name(String prod_Name) {
-		Prod_Name = prod_Name;
+	public String getPro_name() {
+		return pro_name;
 	}
 
-	public int getProd_Price() {
-		return Prod_Price;
+	public void setPro_name(String pro_name) {
+		this.pro_name = pro_name;
 	}
 
-	public void setProd_Price(int prod_Price) {
-		Prod_Price = prod_Price;
+	public int getPro_price() {
+		return pro_price;
 	}
 
-	public String getProd_Desc() {
-		return Prod_Desc;
+	public void setPro_price(int pro_price) {
+		this.pro_price = pro_price;
 	}
 
-	public void setProd_Desc(String prod_Desc) {
-		Prod_Desc = prod_Desc;
+	public String getPro_desc() {
+		return pro_desc;
+	}
+
+	public void setPro_desc(String pro_desc) {
+		this.pro_desc = pro_desc;
+	}
+
+	public String getPro_img() {
+		return pro_img;
+	}
+
+	public void setPro_img(String pro_img) {
+		this.pro_img = pro_img;
 	}
 	
-
 }

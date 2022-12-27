@@ -36,13 +36,12 @@ public class Join_Service extends HttpServlet {
 		String nextPage = "";
 
 		if (cnt > 0) {
-			nextPage = "index.html";
 			System.out.println("회원가입 성공");
 
 		} else {
-			nextPage = "login.jsp";
 			System.out.println("회원가입 실패");
 		}
+		nextPage = "login.jsp";
 
 		RequestDispatcher rd = request.getRequestDispatcher(nextPage);
 		rd.forward(request, response);

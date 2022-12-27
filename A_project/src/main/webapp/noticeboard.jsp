@@ -169,6 +169,7 @@ li {
 					</div>
 
 					<!-- board list area -->
+					
 					<div id="board-list">
 						<div class="container">
 							<table class="board-table">
@@ -186,7 +187,7 @@ li {
 									%>
 									<tr>
 										<td><%=i + 1%></td>
-										<td><a href = "view"><%=list.get(i).getTitle()%></a></td>
+										<td><a href ="boardView.jsp?number=<%=list.get(i).getNumber()%>"><%=list.get(i).getTitle()%></a></td>
 										<td><%=list.get(i).getWriter()%></td>
 										<td><%=list.get(i).getTime()%></td>
 									</tr>
@@ -204,7 +205,7 @@ li {
 							</table>
 						</div>
 					</div>
-
+					
 				</section>
 			</div>
 		</div>

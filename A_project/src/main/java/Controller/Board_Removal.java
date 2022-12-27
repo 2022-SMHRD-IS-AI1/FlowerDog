@@ -1,6 +1,8 @@
 package Controller;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,27 +18,22 @@ public class Board_Removal extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
-		
-		
 		request.setCharacterEncoding("utf-8");
 		
-		String title = request.getParameter("Title");
-		String writer = request.getParameter("Writer");
-		String content = request.getParameter("Content");
-		
+		int number = Integer.parseInt(request.getParameter("number"));
 		
 		BoardDAO dao = new BoardDAO();
-		BoardDTO dto = new BoardDTO(title, writer, content);
-			
-		int result = dao.removalBoard(dto);
 		
-		if(result >0) {
-			response.sendRedirect("BoardMain.jsp");
+		int cnt = dao.removalBoard(number);
+		
+		if(cnt > 0) {
 			System.out.println("게시글삭제 성공");
 		}else {
 			System.out.println("게시글삭제실패");
 		}
+		
+		RequestDispatcher rd = request.getRequestDispatcher("noticeboard.jsp");
+		rd.forward(request, response);
 		
 		
 	}

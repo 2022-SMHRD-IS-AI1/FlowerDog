@@ -10,6 +10,18 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+* {
+	cursor: url(../image/01Dog.cur) 4 5, url(../image/01Dog.cur), url(../image/01Dog.cur) 5 5, auto;
+}
+
+
+header{
+  height: 100%;
+  width: 100%;
+  background: url("../image/dogbanner.jpg") fixed no-repeat center;
+  background-size: cover;
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;

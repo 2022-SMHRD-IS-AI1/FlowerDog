@@ -9,11 +9,15 @@ public class BoardDTO {
 	private String content;
 	
 	public BoardDTO() {}
-
-	
 	
 	public BoardDTO(String title, String writer, String content) {
-		super();
+		this.title = title;
+		this.writer = writer;
+		this.content = content;
+	}
+	
+	public BoardDTO(int number, String title, String writer, String content) {
+		this.number = number;
 		this.title = title;
 		this.writer = writer;
 		this.content = content;
@@ -22,7 +26,6 @@ public class BoardDTO {
 
 
 	public BoardDTO(int number, String title, String writer, String time, String content) {
-		super();
 		this.number = number;
 		this.title = title;
 		this.writer = writer;
