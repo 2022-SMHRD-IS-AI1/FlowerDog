@@ -389,7 +389,7 @@ header .badges .badge{
   padding-top: 56.25%;
 }
 .youtube .youtube__cover{
-  background-image: url("../Boardcss/image/video_cover_pattern.png");
+  background-image: url("../image/youtube-patten.png");
   background-color: rgb(0, 0, 0, .3);
   position: absolute;
   top: 0;
