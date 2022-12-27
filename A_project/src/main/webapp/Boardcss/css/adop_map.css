@@ -12,7 +12,7 @@
  */
 
 * {
-	cursor: url(./Boardcss/image/01Dog.cur) 4 5, url(./Boardcss/image/01Dog.cur), url(./Boardcss/image/01Dog.cur) 5 5, auto;
+	cursor: url(../image/01Dog.cur) 4 5, url(../image/01Dog.cur), url(../image/01Dog.cur) 5 5, auto;
 }
 
 header{
