@@ -4,8 +4,8 @@
     pageEncoding="UTF-8"%>
  <%
  String[] img ={"./Boardcss/image/goods_01.jpg", "./Boardcss/image/goods_02.jpg", "./Boardcss/image/goods_13.jpg", "./Boardcss/image/goods_19.jpg", "./Boardcss/image/goods_05.jpg", "./Boardcss/image/goods_06.jpg", "./Boardcss/image/goods_15.jpg", "./Boardcss/image/goods_23.jpg"};
- String[] product ={"유기견 일러스트 파우치", "유기견 일러스트 파우치", "2022 유기견 벽걸이 달력", "유기견 일러스트 에코백", "2022 유기묘 포스터벽걸이 달력", "2022 유기묘 포스터벽걸이 달력", "유기동물 일러스트 텀블러", "유기견 일러스트 폰케이스"};
- String[] price ={"8500", "8500", "14000", "18000", "14000", "14000", "22000", "9000"};
+ String[] product ={"Flower Dog 파우치", "Flower Dog 파우치 (제작)", "2023년도 Flower Dog 벽걸이 달력 (블랙)", "Flower Dog 에코백 (제작)", "2023년도 Flower Dog벽걸이 달력 (컬러)", "2023년도 Flower Dog벽걸이 달력 (제작)", "Flower Dog 텀블러", "Flower Dog 폰케이스"};
+ String[] price ={"8,500", "18,500", "14,000", "15,000", "20,000", "20,000", "22,000", "9,000"};
  %>
 <!DOCTYPE html>
 <html lang="en">
