@@ -23,7 +23,6 @@ public class boardView extends HttpServlet {
 		int number = Integer.parseInt(request.getParameter("number")); 
 		HttpSession session = request.getSession();
 		BoardDAO dao = new BoardDAO();
-		
 		BoardDTO dto = new BoardDTO();
 		dto = dao.getNumber(number);
 		

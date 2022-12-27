@@ -1,3 +1,4 @@
+<%@page import="Model.MemberDTO"%>
 <%@page import="java.io.PrintWriter"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -13,6 +14,7 @@
 </head>
 <body>
 	<%
+		MemberDTO info = (MemberDTO)session.getAttribute("info");
 		request.setCharacterEncoding("utf-8");
 		int number = Integer.parseInt(request.getParameter("number"));
 
@@ -46,11 +48,14 @@
 			</tr>
 		</table>
 		<br><br>
-		<input type="button" value="게시글 수정" onclick="location.href='BoardUpdate.jsp?number=<%=dto.getNumber()%>'">
-		<input type="button" value="게시글 삭제" onclick="location.href='Board_Removal?number=<%=dto.getNumber()%>'">
-		<input type="button" value="게시글 리스트" onclick="location.href='noticeboard.jsp'">
-		<input type="button" value="게시글 등록" onclick="location.href='BoardServlet?command=board_write_form'">
-			
+		<%if(info !=null) {%>
+			<input type="button" value="게시글 수정" onclick="location.href='BoardUpdate.jsp?number=<%=dto.getNumber()%>'">
+			<input type="button" value="게시글 삭제" onclick="location.href='Board_Removal?number=<%=dto.getNumber()%>'">
+			<input type="button" value="게시글 리스트" onclick="location.href='noticeboard.jsp'">
+			<input type="button" value="게시글 등록" onclick="location.href='BoardWrite.jsp'">
+		<%} else{%>
+			<input type="button" value="게시글 리스트" onclick="location.href='noticeboard.jsp'">
+		<%} %>	
 	</div>
 </body>
 </html>
