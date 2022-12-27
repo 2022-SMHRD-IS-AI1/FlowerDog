@@ -74,13 +74,12 @@ li {
 						<!-- menu start -->
 						<div class="menu" style="justify-content: center; left: 25%;">
 							<ul class="snip1555">
+							    <li class="nav-item"><a href="main.jsp" class="nav-link active" aria-current="page" href="#!">메인</a></li>
 								<li class="current"><a href="#" data-hover="소개">소개</a></li>
-								<li><a href="#" data-hover="입양">입양</a></li>
+								<li><a href="adop_list.jsp" data-hover="입양">입양</a></li>
 								<li><a href="product.jsp" data-hover="상품">상품</a></li>
-								<li><a href="#" data-hover="혜택">혜택</a></li>
-								<li><a href="#" data-hover="커뮤니티">커뮤니티</a></li>
-								<li><a href="#" data-hover="방문예약&문의">방문예약&문의</a></li>
-								<li><a href="#" data-hover="후원">후원</a></li>
+								<li></li>
+								<!-- <li><a href="#" data-hover="후원">후원</a></li>
 							</ul>
 						</div>
 					</div>
@@ -95,7 +94,7 @@ li {
 
 		<!-- banner -->
 		<div class="banner">
-			<img src="./Boardcss/image/113.jpg" alt="강아지">
+			<img src="./Boardcss/image/dogbanner.jpg" alt="강아지">
 			<div class="container">
 				<!-- heading -->
 				<h2></h2>
