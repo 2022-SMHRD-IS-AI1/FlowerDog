@@ -20,11 +20,12 @@ public class boardView extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
-		String title = request.getParameter("title"); 
+		int number = Integer.parseInt(request.getParameter("number")); 
 		HttpSession session = request.getSession();
 		BoardDAO dao = new BoardDAO();
 		
 		BoardDTO dto = new BoardDTO();
+
 		
 		session.setAttribute("boardinfo", dto);
 		

@@ -10,7 +10,6 @@ public class BoardDTO {
 	
 	public BoardDTO() {}
 	
-	
 	public BoardDTO(String title, String writer, String content) {
 		this.title = title;
 		this.writer = writer;
