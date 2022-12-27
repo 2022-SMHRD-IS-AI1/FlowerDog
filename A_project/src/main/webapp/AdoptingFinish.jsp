@@ -69,8 +69,12 @@ pageEncoding="UTF-8"%>
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase"> 입양신청이 완료되었습니다!!  </h2>
+                
                 <img src="./Boardcss/image/dogbenefit.png" class="dogbenefit" alt="">
                 <img src="./Boardcss/image/line.png" alt="">
+                 <a class="" href="https://developers.kakao.com/demo/pay/index">
+                          <img alt="" src="./Boardcss/image/카카오페이.png">
+                          </a>
                 <a class="btn btn-outline-dark mt-auto" href="Payment_api.jsp">입양비 결제하기</a>
                 <br>
                 <br>
