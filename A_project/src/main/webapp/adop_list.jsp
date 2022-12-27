@@ -44,7 +44,7 @@
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container px-4 px-lg-5">
 			<a class="navbar-brand" href="main.jsp"><img
-				src="./Boardcss/image/logo.png" alt="" style="width: 70px;"></a>
+				src="./Boardcss/image/logo.png" alt="" style="width: 100px;"></a>
 			<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -64,7 +64,7 @@
 								<hr class="dropdown-divider" />
 							</li>
 							<li><a href="adop_list.jsp" class="dropdown-item" href="#!">입양아이들</a></li>
-							<li><a class="dropdown-item" href="kakaomap.jsp">주변 보호소 찾기</a></li>
+							<li><a class="dropdown-item" href="adop_map.jsp">주변 보호소 찾기</a></li>
 						</ul></li>
 				</ul>
 				<form class="d-flex">
