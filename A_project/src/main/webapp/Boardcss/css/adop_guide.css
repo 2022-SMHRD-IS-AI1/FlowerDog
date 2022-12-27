@@ -617,7 +617,7 @@ progress {
 }
 
 .img-fluid {
-  max-width: 100%;
+  width: 95%;
   height: auto;
 }
 
@@ -11603,9 +11603,9 @@ header.masthead .masthead-heading {
     padding: 0 20px 20px;
   }
   .timeline > li .timeline-image {
-    width: 150px;
-    height: 150px;
-    margin-left: -75px;
+    width: 180px;
+    height: 180px;
+    margin-left: -85px;
   }
   .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
     font-size: 18px;
