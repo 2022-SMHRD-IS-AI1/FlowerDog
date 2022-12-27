@@ -15,13 +15,15 @@
 
   <script>
 
+  var bolder = sessionStorage.getItem("bolder");
+  
     clientKey = 'test_ck_5GePWvyJnrKaj1AD7o13gLzN97Eo'
     tossPayments = TossPayments(clientKey) 
     tossPayments.requestPayment('카드', { 
     	
-    	  amount: <%//금액%>,
+    	  amount: 150000,
     	  orderId: '1RPUbUDqwRNYi9Rej_kIi',
-    	  orderName: '쿠리 입양비',
+    	  orderName: bolder+'입양비',
     	  customerName: '입양비',
     	  successUrl: 'http://localhost:8080/success',
     	  failUrl: 'http://localhost:8080/fail',
