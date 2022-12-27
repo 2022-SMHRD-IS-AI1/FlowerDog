@@ -82,7 +82,7 @@ public class BoardDAO {
 		try {
 			getConn();
 			
-			String sql = "select * from TB_COMMUNITY where title = ?";
+			String sql = "select * from TB_COMMUNITY where comm_title = ?";
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, title);
 			

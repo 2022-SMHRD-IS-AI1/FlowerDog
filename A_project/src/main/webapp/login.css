@@ -1,6 +1,6 @@
 @charset "UTF-8";
 * {
-	cursor: url(./Boardcss/image/ckw.png) 2 2, auto;
+	cursor: url(./Boardcss/image/gam1565.cur) 4 5, url(./Boardcss/image/gam1565.cur), /* … ,*/ url(./Boardcss/image/gam1565.cur) 5 5, auto;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
