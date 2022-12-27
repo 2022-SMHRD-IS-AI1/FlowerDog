@@ -113,7 +113,7 @@
                 </div>
                 <ul class="timeline">
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="./Boardcss/image/1.png"  alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="./Boardcss/image/dogperson.jpg"  alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>공고 확인</h4>

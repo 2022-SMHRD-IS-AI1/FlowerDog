@@ -9,6 +9,9 @@
 /*
  * Basic CSS starts 
  */
+* {
+	cursor: url(../image/01Dog.cur) 4 5, url(../image/01Dog.cur), url(../image/01Dog.cur) 5 5, auto;
+}
 body{
 	font-family: 'Open Sans', Sans Serif;
 	font-weight: 400;
