@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,14 +8,14 @@
 	 <style>
        .customoverlay {position:relative;bottom:85px;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;float:left;}
 .customoverlay:nth-of-type(n) {border:0; box-shadow:0px 1px 2px #888;}
-.customoverlay a {display:block;text-decoration:none;color:#000;text-align:center;border-radius:6px;font-size:14px;font-weight:bold;overflow:hidden;background: #d95050;background: #d95050 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;}
+.customoverlay a {display:block;text-decoration:none;color:#000;text-align:center;border-radius:6px;font-size:14px;font-weight:bold;overflow:hidden;background: #558cef;background: #558cef url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;}
 .customoverlay .title {display:block;text-align:center;background:#fff;margin-right:35px;padding:10px 15px;font-size:14px;font-weight:bold;}
 .customoverlay:after {content:'';position:absolute;margin-left:-12px;left:50%;bottom:-12px;width:22px;height:12px;background:url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
 </style>
 </head>
 <body>
-	<div id="map" style="width:500px;height:500px;"></div>
-	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9082e914d68692b263335e35ef298548"></script>
+	<div id="map" style="width:800px;height:700px;"></div>
+	<script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=02cf07e6f0dd30ebf8c188bf4713b928"></script>
 <script>
     var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
         mapOption = { 
@@ -32,7 +34,7 @@
     });
      
     // 마커가 지도 위에 표시되도록 설정합니다
-    //marker.setMap(map);
+    marker.setMap(map);
      
     // 인포윈도우를 생성합니다
     var infowindow = new kakao.maps.InfoWindow({
@@ -68,7 +70,6 @@
         markerTmp = new daum.maps.Marker({
             position: new daum.maps.LatLng(arr[i][1],arr[i][2]),
             title: arr[i][0],
-            image: markerImage,
             map:map
         });
      
