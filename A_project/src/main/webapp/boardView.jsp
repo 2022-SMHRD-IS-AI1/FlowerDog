@@ -33,6 +33,9 @@
 				<tr>
 					<td style="width: 20%">글 제목</td>
 					<td><%=dto.getTitle() %></td>
+					<td><%=dto.getWriter() %></td>
+					<td><%=dto.getNumber() %></td>
+					<td><%=dto.getTitle() %></td>
 				</tr>
 				
 			</tbody>
