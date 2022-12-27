@@ -25,7 +25,6 @@ public class boardView extends HttpServlet {
 		BoardDAO dao = new BoardDAO();
 		
 		BoardDTO dto = new BoardDTO();
-		dto = dao.getTitle(title);
 		
 		session.setAttribute("boardinfo", dto);
 		
