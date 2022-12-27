@@ -46,9 +46,6 @@
 <body>
 <!-- HEADER -->
 
-	
-
-
  <header>
   <div class="inner">
     <a href="main.jsp" class="logo">
@@ -128,51 +125,42 @@
       <div class="fade-in">
         <div class="container">
         
-        	<%
-				String[] bolder = { "쿠리", "후니", "쭈글", "해니", "열무", "몽쓰", "모모", "콩식", "초록", "함박", "탄이", "마중" };
- 				String[] info_img ={"./Boardcss/image/b1.png", "./Boardcss/image/b2.png", "./Boardcss/image/b3.png", "./Boardcss/image/b4.png", "./Boardcss/image/b5.png", "./Boardcss/image/b6.png", "./Boardcss/image/b7.png", "./Boardcss/image/b8.png", 
- 						"./Boardcss/image/b9.png", "./Boardcss/image/b10.png","./Boardcss/image/b11.png", "./Boardcss/image/b12.png"};
- 				String[] img ={"./Boardcss/image/a1.png", "./Boardcss/image/a2.png", "./Boardcss/image/a3.png", "./Boardcss/image/a4.png", 
- 						"./Boardcss/image/a5.png", "./Boardcss/image/a6.png", "./Boardcss/image/a7.png", "./Boardcss/image/a8.png", 
- 						"./Boardcss/image/a9.png", "./Boardcss/image/a10.png","./Boardcss/image/a11.png", "./Boardcss/image/a12.png"};
- 			%>
-
           <div class="animals">
             <div class="animal">
-              <div class="image"><a onclick='fnad("<%=bolder[0]%>","<%=img[0]%>", "<%=info_img[0]%>")'></a></div>
+              <div class="image"></div>
             </div>
             <div class="animal">
-              <div class="image"><a onclick='fnad("<%=bolder[1]%>","<%=img[1]%>", "<%=info_img[1]%>")'></a></div>
+              <div class="image"></div>
             </div>
             <div class="animal">
-              <div class="image"><a onclick='fnad("<%=bolder[2]%>","<%=img[2]%>", "<%=info_img[2]%>")'></a></div>
+              <div class="image"></div>
             </div>
             <div class="animal">
-              <div class="image"><a onclick='fnad("<%=bolder[3]%>","<%=img[3]%>", "<%=info_img[3]%>")'></a></div>
+              <div class="image"></div>
             </div>
             <div class="animal">
-              <div class="image"><a onclick='fnad("<%=bolder[4]%>","<%=img[4]%>", "<%=info_img[4]%>")'></a></div>
+              <div class="image"></div>
             </div>
             <div class="animal">
-              <div class="image"><a onclick='fnad("<%=bolder[5]%>","<%=img[5]%>", "<%=info_img[5]%>")'></a></div>
+              <div class="image"></div>
             </div>
             <div class="animal">
-              <div class="image"><a onclick='fnad("<%=bolder[6]%>","<%=img[6]%>", "<%=info_img[6]%>")'></a></div>
+              <div class="image"></div>
             </div>
             <div class="animal">
-              <div class="image"><a onclick='fnad("<%=bolder[7]%>","<%=img[7]%>", "<%=info_img[7]%>")'></a></div>
+              <div class="image"></div>
             </div>
             <div class="animal">
-              <div class="image"><a onclick='fnad("<%=bolder[8]%>","<%=img[8]%>", "<%=info_img[8]%>")'></a></div>
+              <div class="image"></div>
             </div>
             <div class="animal">
-              <div class="image"><a onclick='fnad("<%=bolder[9]%>","<%=img[9]%>", "<%=info_img[9]%>")'></a></div>
+              <div class="image"></div>
             </div>
             <div class="animal">
-              <div class="image"><a onclick='fnad("<%=bolder[10]%>","<%=img[10]%>", "<%=info_img[10]%>")'></a></div>
+              <div class="image"></div>
             </div>
             <div class="animal">
-              <div class="image"><a onclick='fnad("<%=bolder[11]%>","<%=img[11]%>", "<%=info_img[11]%>")'></a></div>
+              <div class="image"></div>
             </div>
           </div>
           
@@ -195,6 +183,4 @@
 
 
 </body>
-
-
 </html>
