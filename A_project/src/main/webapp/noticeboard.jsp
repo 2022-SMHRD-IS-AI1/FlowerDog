@@ -167,7 +167,7 @@ li {
 										<td>
 											<%if(info != null) {%>
 											<button class="btn btn-dark">
-												<a href="BoardWrite.jsp" class="cnt">글쓰기</a>
+												<a href="BoardWrite.jsp" class="cnt" style="color:#ffffff;">글쓰기</a>
 											</button>
 											<%} %>
 										</td>

@@ -6,52 +6,81 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="./Boardcss/css/adopting.css">
 </head>
 <body>
 <%
 	MemberDTO info = (MemberDTO) session.getAttribute("info");
-	String name = info.getName();
+	
 	%>
 <form action="Adopting_Service" method="post">
-	
-	
-	<div>
-		<label for="serialnum"><strong>입양하는 동물의 일련번호를 적어주세요</strong> </label> <div><input type="text" name="serialnum" placeholder="숫자만 입력해주세요">
-	</div>
-	</div>
-	<div>
-		<label for="name"><strong>신청인 성명</strong> </label> <div><input type="text" name="name" value="<%=name %>" readonly/>
-	</div>
-	</div>
-	<div>
-		<label for="gender"><strong>성별</strong> </label> 
-		<input type="radio" name="gender" value="남"><span>남</span>
-		<input type="radio" name="gender" value="여"><span>여</span>
-	</div>
-	<div>
-		<label for="age"><strong>나이</strong> </label> <input type="number" name="age"
-			placeholder="숫자만 입력">
-	</div>
-	<div>
-		<label for="tel"><strong>전화번호</strong> </label> <input type="text" name="tel"
-			placeholder="숫자만 입력">
-	</div>
-	<div>
-		<label for="email"><strong>이메일</strong> </label> <input type="text" name="email">
-	</div>
-	<div>
-		<label for="city"><strong>살고있는 지역</strong> </label> <input type="text" name="city"
-			placeholder="(예: 서울,경기,강원 등...)">
-	</div>
-	<div>
-		<label for="merry"><strong>결혼 여부</strong> </label> 
-		기혼<input type="radio" name="merry" value="기혼">
-		미혼<input type="radio" name="merry" value="미혼">
-	</div>
-	<div>
-		<label for="job"><strong>신청인 직업</strong> </label> <input type="text" name="job">
-	</div>
-	<input type="submit" value="등록">
-</form>
+        <div class="container">
+            <div class="input-form-backgroud row">
+                <div class="input-form col-md-12 mx-auto">
+                    <h4 class="mb-3">입양신청서</h4>
+                    <form class="validation-form" novalidate>
+                        <div class="mb-3">
+                            <label for="serialnum">입양하려는 아이의 일련번호를 입력해주세요</label>
+                            <input type="text" class="form-control" id="serialnum" name="serialnum" placeholder="ex)22-1337" required>
+                            <div class="invalid-feedback">
+                                일련번호를 입력해주세요.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name">이름</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="" value="<%=info.getName() %>" required
+                                    readonly />
+                                <br>
+                                <label for="gender">성별</label><br>
+                                <input type="radio" id="gender" name="gender" value="남"
+                                    required><span>남</span>
+                                <input type="radio" id="gender" name="gender" value="여"
+                                    required><span>여</span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="age">나이</label>
+                            <input type="number" class="form-control" id="age" name="age" placeholder="" required>
+                            <div class="invalid-feedback">
+                                나이를 입력해주세요.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tel">전화번호<span class="text-muted"></span></label>
+                            <input type="text" class="form-control" id="tel" name="tel" placeholder="" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email">이메일</label>
+                            <input type="text" class="form-control" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="city">살고있는 지역</label>
+                            <input type="text" class="form-control" id="city" name="city" placeholder="" required>
+                        </div>
+                        
+                        
+                        <div class="col-md-4 mb-3">
+                            <label for="code">결혼여부</label><br>
+                            <input type="radio" name="merry" value="미혼"><span>미혼</span>
+                            <input type="radio" name="merry" value="기혼"><span>기혼</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8 mb-3">
+                                <label for="job">신청인 직업</label>
+                                <input type="text" class="form-control" id="job" name="job" placeholder="" required>
+                            </div>
+                            
+                        </div>
+                        <hr class="mb-4">
+                        <div class="mb-4"></div>
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">신청 완료</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </form>
 </body>
 </html>
