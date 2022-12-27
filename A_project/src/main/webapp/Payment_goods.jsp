@@ -32,7 +32,7 @@
     	
     	  amount: <%=pay%>,
     	  orderId: '1RPUbUDqwRNYi9Rej_kIi',
-    	  orderName: '구매상품총액',
+    	  orderName: '상품구매총액',
     	  customerName: '구매상품총액',
     	  successUrl: 'http://localhost:8080/success',
     	  failUrl: 'http://localhost:8080/fail',
