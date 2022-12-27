@@ -187,7 +187,7 @@ li {
 									%>
 									<tr>
 										<td><%=i + 1%></td>
-										<td><a href ="boardView.jsp?title=<%=list.get(i).getTitle()%>"><%=list.get(i).getTitle()%></a></td>
+										<td><a href ="boardView.jsp?number=<%=list.get(i).getNumber()%>"><%=list.get(i).getTitle()%></a></td>
 										<td><%=list.get(i).getWriter()%></td>
 										<td><%=list.get(i).getTime()%></td>
 									</tr>
