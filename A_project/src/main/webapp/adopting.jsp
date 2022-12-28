@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Flower Dog</title>
 <link rel="stylesheet" href="./Boardcss/css/adopting.css">
 </head>
 <body>

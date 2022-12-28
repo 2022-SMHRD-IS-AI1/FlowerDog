@@ -43,25 +43,28 @@ function fnCart(img, name, price) {
     <% ArrayList<CartDTO> cart = (ArrayList<CartDTO>)session.getAttribute("cart"); %>
     
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="main.jsp"><img src="./Boardcss/image/logo.png" height="100px" width="100px"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <!-- <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li> -->
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">모든 제품</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#!">베스트 상품</a></li>
-                                <li><a class="dropdown-item" href="#!">새로운 상품</a></li>
-                            </ul>
-                        </li>
-
-                    </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                  <li class="nav-item"><a href="main.jsp" class="nav-link active" aria-current="page" href="#!">메인</a></li>
+                    <li class="nav-item"><a href="Product_list.jsp" class="nav-link" href="#!">상품</a></li>
+                    <li class="nav-item"><a href="noticeboard.jsp" class="nav-link" href="#!">지식공유방</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">입양리스트</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a href="adop_guide.jsp" class="dropdown-item" href="#!">입양가이드</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a href="adop_list.jsp" class="dropdown-item" href="#!">입양 아이들</a></li>
+                            <li><a class="dropdown-item" href="adop_map.jsp">주변 보호소 찾기</a></li>
+                        </ul>
+                    </li>
+                </ul>
                     <form class="d-flex" action="" method="post">
                         <button class="btn btn-outline-dark" onclick="fnView(); return false;">
                             <i class="bi-cart-fill me-1"></i>
