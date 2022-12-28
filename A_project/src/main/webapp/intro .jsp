@@ -74,19 +74,17 @@
             </div>
             </div>  
                 </div>
-                </section>  
-
-                <section>
-                <!-- 동영상 -->
-                    <div class="video">
-                        <video id="myVideo" src="./Boardcss/image/dddd11.mp4" controls autoplay loop></video>
-                    </div>
-                    
                 </section>
 
-              
-   
-                <section>
+	<!-- 동영상 -->
+	<div class="wrapper">
+		<video class="video" autoplay muted controls>
+			<source type="video/mp4" src="./Boardcss/image/dddd11.mp4">
+		</video>
+	</div>
+
+
+	<section>
                     <div class="intro1"></div>
                     <div class="intro2"></div>
                 </section>
