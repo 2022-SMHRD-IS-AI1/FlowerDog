@@ -9,7 +9,7 @@
 	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="" />
 <meta name="author" content="" />
-<title>flower Dog</title>
+<title>Flower Dog</title>
 <!-- Favicon-->
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 <!-- Bootstrap icons-->
@@ -63,7 +63,7 @@
 				<h1 class="display-4 fw-bolder">Dog Adoption</h1>
 				<hr style="border: solid 3px;">
 				<br>
-				<p class="lead fw-normal text-white-10 mb-0">사지말고 입양하세요</p>
+				<p class="lead fw-normal text-white-10 mb-0"><b>귀여운 아이들이 들어가 있는 상품을 구매해보세요</b></p>
 			</div>
 		</div>
 	</header>

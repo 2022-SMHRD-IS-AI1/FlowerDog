@@ -112,7 +112,7 @@ li {
 				<section class="notice">
 					<div class="page-title">
 						<div class="container">
-							<h3>게시판</h3>
+							<h3>지식공유방</h3>
 						</div>
 					</div>
 

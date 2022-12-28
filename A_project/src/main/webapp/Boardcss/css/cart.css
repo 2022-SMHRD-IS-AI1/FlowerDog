@@ -39,8 +39,6 @@ a {
 }
 
 
-
-
 img {
     display: block;
     width: 100px;
@@ -94,6 +92,7 @@ td {
 
 .cart__list__detail :nth-child(3) {
   vertical-align: middle;
+  border-left: 2px solid whitesmoke;
 }
 
 .cart__list__detail :nth-child(3) a {
@@ -196,13 +195,15 @@ td {
 .cart__bigorderbtn.right {
   background-color: limegreen;
   color: white;
-  border: non}
+  border: 1px lightgray solid;
+}
 
 
 h2{
   color: #026578;
-  text-shadow:1px 1px 5px #bdbdbd
+  text-shadow:1px 1px 5px #bdbdbd;
 }
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -402,15 +403,24 @@ blockquote {
 b,
 strong {
   font-weight: bolder;
+  font-size: 20px
+ 
+  
+}
+
+.total_price{
+background-color: #bce0cf ;
+
 }
 
 small, .small {
-  font-size: 0.875em;
+size: 0.875em;
 }
 
 mark, .mark {
   padding: 0.2em;
-  background-color: #fcf8e3;
+  background-color: rgb(188, 224, 207);
+  padding: 15px 0px;
 }
 
 sub,
@@ -541,10 +551,13 @@ button,
 select,
 optgroup,
 textarea {
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+ background-color: limegreen;
+  color: black;
+    border: 1px lightgray solid;
+    width: 150px;
+    height: 40px;
+    font-size: 13px;
+    border-radius: 5px;
 }
 
 button,
