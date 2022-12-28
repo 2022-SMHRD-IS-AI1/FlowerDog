@@ -77,6 +77,7 @@
                 </section>  
 
                 <section>
+                <!-- 동영상 -->
                     <div class="video">
                         <video id="myVideo" src="./Boardcss/image/dddd11.mp4" controls autoplay loop></video>
                     </div>
