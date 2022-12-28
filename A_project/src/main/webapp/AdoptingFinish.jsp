@@ -43,6 +43,7 @@ pageEncoding="UTF-8"%>
                             <li>
                                 <hr class="dropdown-divider" />
                             </li>
+                            <li><a href="adop_benefit .jsp" class="dropdown-item" href="#!">입양혜택</a></li>
                             <li><a href="adop_list.jsp" class="dropdown-item" href="#!">입양 아이들</a></li>
                             <li><a class="dropdown-item" href="adop_map.jsp">주변 보호소 찾기</a></li>
                         </ul>
@@ -58,7 +59,6 @@ pageEncoding="UTF-8"%>
                 <h1 class="display-4 fw-bolder">Dog Adoption</h1>
                 <hr style="border:solid 3px;">
                 <br>
-                <p class="lead fw-normal text-white-10 mb-0" style="color:#ffffff;"><b>귀여운 아이들이 들어가 있는 상품을 구매해보세요</b></p>
             </div>
         </div>
     </header>
@@ -97,9 +97,15 @@ pageEncoding="UTF-8"%>
 			<p class="copy-right">
 				inception &FlowerDog; 2023 <a href="#홈페이지소개">Your Site</a> | Team Member : <a
 					href="#홈페이지소개">Flower Dog</a>, Have a happy day.
+					
 			</p>
 		</div>
 	</footer>
+	     	<!-- Bootstrap core JS-->
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Core theme JS-->
+	<script src="js/scripts.js"></script>
 
     </body>
 </html>
