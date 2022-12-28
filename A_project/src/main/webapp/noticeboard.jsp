@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>flower Dog</title>
+<title>Flower Dog</title>
 <!-- Description, Keywords and Author -->
 <meta name="description" content="Your description">
 <meta name="keywords" content="Your,Keywords">
@@ -23,7 +23,6 @@
 <link href="./Boardcss/css/font-awesomeMK.min.css" rel="stylesheet">
 <!-- Custom CSS -->
 <link href="./Boardcss/css/styleMK.css" rel="stylesheet">
-
 <link rel="stylesheet" href="assetsBoard/css/main.css" />
 <link rel="stylesheet" href="assetsBoard/css/board.css" />
 
@@ -100,10 +99,9 @@ li {
 	</div>
 	<!-- banner end -->
 
-	
-
-
-	<!-- menu end -->
+		<div style="position: absolute; left: 0px; bottom: 400px;">
+				<a href="#"><img src="./Boardcss/image/dogbbb.png" alt="강아지"></a>
+		</div>
 
 	<!-- events -->
 	<div class="event" id="event">
@@ -182,27 +180,25 @@ li {
 	<footer>
 		<div class="container-footer">
 			<p>
-				<a href="#">Home</a> | <a href="#work">works</a> | <a href="#team">Team</a>
-				| <a href="#contact">Contact</a>
+				<a href="main.jsp">Home</a> | <a href="product_list.jsp">Product</a> | <a href="adop_list.jsp">Adoption</a>
+				| <a href="noticeboard.jsp">Sharing</a>
 			</p>
 			<div class="social">
-				<a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i
-					class="fa fa-twitter"></i></a> <a href="#"><i
-					class="fa fa-dribbble"></i></a> <a href="#"><i
-					class="fa fa-linkedin"></i></a> <a href="#"><i
+				<a href="https://ko-kr.facebook.com/"><i class="fa fa-facebook"></i></a> <a href="https://twitter.com/?lang=ko"><i
+					class="fa fa-twitter"></i></a>  <a href="https://www.instagram.com/"><i
+					class="fa fa-linkedin"></i></a> <a href="https://www.google.com/"><i
 					class="fa fa-google-plus"></i></a>
 			</div>
 			<!-- copy right -->
 			<!-- This theme comes under Creative Commons Attribution 4.0 Unported. So don't remove below link back -->
 			<p class="copy-right">
-				Copyright &copy; 2014 <a href="#">Your Site</a> | Designed By : <a
-					href="http://www.indioweb.in/portfolio">IndioWeb</a>, All rights
-				reserved.
+				inception &FlowerDog; 2023 <a href="#홈페이지소개">Your Site</a> | Team Member : <a
+					href="#홈페이지소개">Flower Dog</a>, Have a happy day.
 			</p>
 		</div>
 	</footer>
 
-	</div>
+
 
 
 	<!-- Javascript files -->

@@ -9,16 +9,13 @@ pageEncoding="UTF-8"%>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Flower Dog</title>
+    <title>flower Dog</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="./Boardcss/css/adop_benefit.css" rel="stylesheet" />
-       <!-- Font awesome CSS -->
-<link href="./Boardcss/css/font-awesomeMK.min.css" rel="stylesheet">
-  <!-- Favicon -->
-<link rel="shortcut icon" href="#">
-<link rel="stylesheet" type="text/css" href="./Boardcss/css/styleMK.css">
+    <link href="./Boardcss/css/company_intro.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -61,10 +58,10 @@ pageEncoding="UTF-8"%>
     <header class="bg-dark py-5">
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
-                <h1 class="display-4 fw-bolder">Dog Adoption</h1>
+                <h1 class="display-4 fw-bolder">Introduction</h1>
                 <hr style="border:solid 3px;">
                 <br>
-                <p class="lead fw-normal text-white-10 mb-0"><b>귀여운 아이들이 들어가 있는 상품을 구매해보세요</b></p>
+                <p class="lead fw-normal text-white-10 mb-0"><b>Flower dog 의 </b></p>
             </div>
         </div>
     </header>
@@ -186,27 +183,7 @@ pageEncoding="UTF-8"%>
         </div>
     </div>
 </section>
-                    	<!-- footer -->
-	<footer>
-		<div class="container-footer">
-			<p>
-				<a href="main.jsp">Home</a> | <a href="product_list.jsp">Product</a> | <a href="adop_list.jsp">Adoption</a>
-				| <a href="noticeboard.jsp">Sharing</a>
-			</p>
-			<div class="social">
-				<a href="https://ko-kr.facebook.com/"><i class="fa fa-facebook"></i></a> <a href="https://twitter.com/?lang=ko"><i
-					class="fa fa-twitter"></i></a>  <a href="https://www.instagram.com/"><i
-					class="fa fa-linkedin"></i></a> <a href="https://www.google.com/"><i
-					class="fa fa-google-plus"></i></a>
-			</div>
-			<!-- copy right -->
-			<!-- This theme comes under Creative Commons Attribution 4.0 Unported. So don't remove below link back -->
-			<p class="copy-right">
-				inception &FlowerDog; 2023 <a href="#홈페이지소개">Your Site</a> | Team Member : <a
-					href="#홈페이지소개">Flower Dog</a>, Have a happy day.
-			</p>
-		</div>
-	</footer>
+                    
         
         
     </body>
