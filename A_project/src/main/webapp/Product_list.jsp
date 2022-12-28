@@ -1,3 +1,6 @@
+<%@page import="Model.ProductDAO"%>
+<%@page import="Model.ProductDTO"%>
+<%@page import="Model.MemberDTO"%>
 <%@page import="Model.CartDTO"%>
 <%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -26,8 +29,13 @@
         <link href="./Boardcss/css/product_list.css" rel="stylesheet" />
     </head>
     <body>
-        <!-- Navigation-->
-            <script>
+    
+    <%
+		MemberDTO info = (MemberDTO)session.getAttribute("info");
+		request.setCharacterEncoding("utf-8");
+	%>
+    
+<script>
 	function fnView() {
 		if (confirm("장바구니를 보시겠습니까?")) {
 			location.href = "CartView.jsp"; 
@@ -68,6 +76,9 @@
                             <li><a href="adop_list.jsp" class="dropdown-item" href="#!">입양 아이들</a></li>
                             <li><a class="dropdown-item" href="adop_map.jsp">주변 보호소 찾기</a></li>
                         </ul>
+                  <% if(info.getId().equals("manager")) {%>
+                    <li class="nav-item"><a href="ProductList.jsp" class="nav-link" href="#!">관리자 페이지</a></li>
+                  <% } %>
                     </li>
                 </ul>
                     <% ArrayList<CartDTO> cart = (ArrayList<CartDTO>)session.getAttribute("cart"); %>

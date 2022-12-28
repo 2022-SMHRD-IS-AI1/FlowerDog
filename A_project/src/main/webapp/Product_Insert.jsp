@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <title>ProductInsert</title>
-<link  rel ="stylesheet" type = "text/css" href ="shopping.css">
+<link  rel ="stylesheet" type = "text/css" href ="./Boardcss/css/shopping.css">
 <script type="text/javascript" src="Product/Product.js"></script>
 </head>
 <body>
@@ -20,7 +20,7 @@
 			</tr>
 			<tr>
 				<th> 가  격 </th>
-				<td><input type="text" name="pro_price"><span>원</span></td>
+				<td><input type="number" name="pro_price"><span>원</span></td>
 			</tr>
 			<tr>
 				<th> 사  진 </th>
@@ -30,7 +30,7 @@
 			</tr>
 			<tr>
 				<th> 설  명 </th>
-				<td><textarea cols="80" row="10" name="pro_desc"></textarea></td>
+				<td><textarea cols="80" rows="10" name="pro_desc"></textarea></td>
 			</tr>
 		</table>
 	

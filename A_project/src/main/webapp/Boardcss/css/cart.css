@@ -39,8 +39,6 @@ a {
 }
 
 
-
-
 img {
     display: block;
     width: 100px;
@@ -94,6 +92,7 @@ td {
 
 .cart__list__detail :nth-child(3) {
   vertical-align: middle;
+  border-left: 2px solid whitesmoke;
 }
 
 .cart__list__detail :nth-child(3) a {
@@ -404,15 +403,28 @@ blockquote {
 b,
 strong {
   font-weight: bolder;
+  font-size: 15px;
+  text-align: center;
+ 
+  
 }
 
+
+div.total_price{
+	background-color:  #e7eaeb;
+	width: 150px;
+    height: 40px;
+    font-size: 13px;
+    border-radius: 5px;
+}
 small, .small {
-  font-size: 0.875em;
+size: 0.875em;
 }
 
 mark, .mark {
   padding: 0.2em;
-  background-color: #fcf8e3;
+  background-color: rgb(188, 224, 207);
+  padding: 15px 0px;
 }
 
 sub,

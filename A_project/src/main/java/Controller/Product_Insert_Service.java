@@ -18,15 +18,14 @@ public class Product_Insert_Service extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
 
-		String pro_name = request.getParameter("pro_name");
 		int pro_price = Integer.parseInt(request.getParameter("pro_price"));
+		String pro_name = request.getParameter("pro_name");
 		String pro_desc = request.getParameter("pro_desc");
 		
 		
 		ProductDTO dto = new ProductDTO(pro_name, pro_price, pro_desc);
 		
 		ProductDAO dao = new ProductDAO();
-		dao.insertProduct(dto);
 		int cnt = dao.insertProduct(dto);
 		
 		String nextPage ="";
