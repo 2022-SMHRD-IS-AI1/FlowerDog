@@ -3,8 +3,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>ProductInsert</title>
-<link  rel ="stylesheet" type = "text/css" href ="shopping.css">
+<title>Flower Dog</title>
+<link  rel ="stylesheet" type = "text/css" href ="./Boardcss/css/shopping.css">
 <script type="text/javascript" src="Product/Product.js"></script>
 </head>
 <body>

@@ -7,7 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <head>
-  <title>결제하기</title>
+  <title>Flower Dog</title>
   <script src="https://js.tosspayments.com/v1/payment"></script>
 </head>
 <body>

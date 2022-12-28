@@ -8,16 +8,23 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>게시판</title>
+<title>Flower Dog</title>
 <link rel="stylesheet" type="text/css" href="Boardcss/css/shopping.css">
 <link href="./Boardcss/css/bootstrapMK.min.css" rel="stylesheet">
 		<!-- Font awesome CSS -->
 		<link href="./Boardcss/css/font-awesomeMK.min.css" rel="stylesheet">		
 		<!-- Custom CSS -->
 		<link href="./Boardcss/css/styleMK.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+<link href="./Boardcss/css/font-awesomeMK.min.css" rel="stylesheet">
+  <!-- Favicon -->
+<link rel="shortcut icon" href="#">
+<link rel="stylesheet" type="text/css" href="./Boardcss/css/styleMK.css">
+<link rel="stylesheet" href="./Boardcss/css/shopping.css">
 		
 <script type="text/javascript" src="script/board.js"></script>
 <style>
+
 ul {
 	list-style: none;
 	padding-left: 0px;
@@ -90,9 +97,9 @@ li {
 	<div id="wrap" align="center">
 
 		<h1>게시글 상세보기</h1>
-		<table border="2">
+		<table border="2" style="height: 300px; font-size: 15px;">
 			<tr>
-				<th>작성자</th>
+				<th style="width: 80px;">작성자</th>
 				<td><%=dto.getWriter()%></td>
 			</tr>
 			
@@ -119,6 +126,27 @@ li {
 			<input type="button" value="게시글 리스트" onclick="location.href='noticeboard.jsp'">
 		<%} %>	
 	</div>
-	<br><br><br><br><br><br><br><br>
+	
+		<!-- footer -->
+	<footer style="margin-top: 30px;">
+		<div class="container-footer">
+			<p>
+				<a href="main.jsp">Home</a> | <a href="product_list.jsp">Product</a> | <a href="adop_list.jsp">Adoption</a>
+				| <a href="noticeboard.jsp">Sharing</a>
+			</p>
+			<div class="social">
+				<a href="https://ko-kr.facebook.com/"><i class="fa fa-facebook"></i></a> <a href="https://twitter.com/?lang=ko"><i
+					class="fa fa-twitter"></i></a>  <a href="https://www.instagram.com/"><i
+					class="fa fa-linkedin"></i></a> <a href="https://www.google.com/"><i
+					class="fa fa-google-plus"></i></a>
+			</div>
+			<!-- copy right -->
+			<!-- This theme comes under Creative Commons Attribution 4.0 Unported. So don't remove below link back -->
+			<p class="copy-right">
+				inception &FlowerDog; 2023 <a href="#홈페이지소개">Your Site</a> | Team Member : <a
+					href="#홈페이지소개">Flower Dog</a>, Have a happy day.
+			</p>
+		</div>
+	</footer>
 </body>
 </html>

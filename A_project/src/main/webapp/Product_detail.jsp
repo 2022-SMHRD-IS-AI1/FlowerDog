@@ -2,10 +2,10 @@
 <%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%
- String[] img ={"./Boardcss/image/goods_01.jpg", "./Boardcss/image/goods_02.jpg", "./Boardcss/image/goods_03.jpg", "./Boardcss/image/goods_04.jpg", "./Boardcss/image/goods_05.jpg", "./Boardcss/image/goods_06.jpg", "./Boardcss/image/goods_07.jpg", "./Boardcss/image/goods_08.jpg"};
- String[] product ={"굿즈1", "굿즈2", "굿즈3", "굿즈4", "굿즈5", "굿즈6", "굿즈7", "굿즈8"};
- String[] price ={"1000", "20000", "5000", "15000", "2000", "8000", "2200", "6600"};
+  <%
+ String[] img ={"./Boardcss/image/goods_01.jpg", "./Boardcss/image/goods_02.jpg", "./Boardcss/image/goods_13.jpg", "./Boardcss/image/goods_19.jpg", "./Boardcss/image/goods_05.jpg", "./Boardcss/image/goods_06.jpg", "./Boardcss/image/goods_15.jpg", "./Boardcss/image/goods_23.jpg"};
+ String[] product ={"Flower Dog 파우치", "Flower Dog 파우치 (제작)", "2023년도 Flower Dog 벽걸이 달력 (블랙)", "Flower Dog 에코백 (제작)", "2023년도 Flower Dog벽걸이 달력 (컬러)", "2023년도 Flower Dog벽걸이 달력 (제작)", "Flower Dog 텀블러", "Flower Dog 폰케이스"};
+ String[] price ={"8500", "18500", "14000", "15000", "20000", "20000", "22000", "9000"};
  %>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,9 +14,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>flower Dog</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <title>Flower Dog</title>
+<!-- Font awesome CSS -->
+<link href="./Boardcss/css/font-awesomeMK.min.css" rel="stylesheet">
+  <!-- Favicon -->
+<link rel="shortcut icon" href="#">
+<link rel="stylesheet" type="text/css" href="./Boardcss/css/styleMK.css">
+
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -83,8 +87,8 @@ function fnCart(img, name, price) {
         </nav>
         <!-- Product section-->
  
- 				<jsp:include page="Product_include.jsp"/>
  
+ 				<jsp:include page="Product_include.jsp"/>
  
  
         <!-- Related items section-->
@@ -151,11 +155,29 @@ function fnCart(img, name, price) {
                  
                 </div>
             </div>
+            
         </section>
-        <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
-        </footer>
+        <!-- footer -->
+	<footer>
+		<div class="container-footer">
+			<p>
+				<a href="main.jsp">Home</a> | <a href="product_list.jsp">Product</a> | <a href="adop_list.jsp">Adoption</a>
+				| <a href="noticeboard.jsp">Sharing</a>
+			</p>
+			<div class="social">
+				<a href="https://ko-kr.facebook.com/"><i class="fa fa-facebook"></i></a> <a href="https://twitter.com/?lang=ko"><i
+					class="fa fa-twitter"></i></a>  <a href="https://www.instagram.com/"><i
+					class="fa fa-linkedin"></i></a> <a href="https://www.google.com/"><i
+					class="fa fa-google-plus"></i></a>
+			</div>
+			<!-- copy right -->
+			<!-- This theme comes under Creative Commons Attribution 4.0 Unported. So don't remove below link back -->
+			<p class="copy-right">
+				inception &FlowerDog; 2023 <a href="#홈페이지소개">Your Site</a> | Team Member : <a
+					href="#홈페이지소개">Flower Dog</a>, Have a happy day.
+			</p>
+		</div>
+	</footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

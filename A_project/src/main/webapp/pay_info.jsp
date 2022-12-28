@@ -11,9 +11,13 @@
 	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="" />
 <meta name="author" content="" />
-<title>flower Dog</title>
-<!-- Favicon-->
-<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<title>Flower Dog</title>
+<!-- Font awesome CSS -->
+<link href="./Boardcss/css/font-awesomeMK.min.css" rel="stylesheet">
+  <!-- Favicon -->
+<link rel="shortcut icon" href="#">
+<link rel="stylesheet" type="text/css" href="./Boardcss/css/styleMK.css">
+
 <!-- Bootstrap icons-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
@@ -100,13 +104,29 @@
 
 			</p>
 		</form>
+		 <br><br><br><br>
 	</div>
 
-	<!-- Footer-->
-	<footer class="py-5 bg-dark">
-		<div class="container">
-			<p class="m-0 text-center text-white">Copyright &copy; Your
-				Website 2022</p>
+	     <!-- footer -->
+     <br><br><br><br>
+	<footer>
+		<div class="container-footer">
+			<p>
+				<a href="main.jsp">Home</a> | <a href="product_list.jsp">Product</a> | <a href="adop_list.jsp">Adoption</a>
+				| <a href="noticeboard.jsp">Sharing</a>
+			</p>
+			<div class="social">
+				<a href="https://ko-kr.facebook.com/"><i class="fa fa-facebook"></i></a> <a href="https://twitter.com/?lang=ko"><i
+					class="fa fa-twitter"></i></a>  <a href="https://www.instagram.com/"><i
+					class="fa fa-linkedin"></i></a> <a href="https://www.google.com/"><i
+					class="fa fa-google-plus"></i></a>
+			</div>
+			<!-- copy right -->
+			<!-- This theme comes under Creative Commons Attribution 4.0 Unported. So don't remove below link back -->
+			<p class="copy-right">
+				inception &FlowerDog; 2023 <a href="#홈페이지소개">Your Site</a> | Team Member : <a
+					href="#홈페이지소개">Flower Dog</a>, Have a happy day.
+			</p>
 		</div>
 	</footer>
 	<!-- Bootstrap core JS-->
@@ -138,6 +158,7 @@ function findAddr(){
     }).open();
 }
 </script>
+
 	<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 </body>
 

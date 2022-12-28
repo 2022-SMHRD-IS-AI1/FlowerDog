@@ -8,9 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>flower Dog</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <title>Flower Dog</title>
+  <!-- Font awesome CSS -->
+<link href="./Boardcss/css/font-awesomeMK.min.css" rel="stylesheet">
+  <!-- Favicon -->
+<link rel="shortcut icon" href="#">
+<link rel="stylesheet" type="text/css" href="./Boardcss/css/styleMK.css">
+
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
@@ -72,8 +76,8 @@
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <span class="">
+                            <i class=""></i>
                             <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
                         </span>
                         
@@ -83,19 +87,19 @@
                     </div>
                     </div>
                     <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <span class="">
+                            <i class=""></i>
                             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">경제적 능력이 있고 반려동물을 사랑하는 가정</h4>
                         <p class="text-muted">아플 때 적절한 치료를 해주고,모든 가족과의 합의가 되어있는 반려동물을 진심으로 사랑해 줄 가정이 필요해요 </p>
                     </div>
                     <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <span class="">
+                            <i class=""></i>
                             <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">입양 후 1년간 6회이내 아이 생활사진을 보내주실 수 있는 분</h4>
+                        <h4 class="my-3">입양 후 1년/6회 아이 생활사진을 보내주실 수 있는 분</h4>
                         <p class="text-muted">반려동물은 10~15년 이상 삽니다.결혼, 임신, 유학, 이사 등으로 가정환경이 바뀌어도 한번 인연을 맺은 동물은 끝까지 책임지고 보살펴줄 가정이 필요해요</p>
                     </div>
                 </div>
@@ -166,23 +170,27 @@
         </section>
         
                     
-        <!-- Footer-->
-        <footer class="footer py-4">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2022</div>
-                    <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <div class="col-lg-4 text-lg-end">
-                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
+<!-- footer -->
+	<footer>
+		<div class="container-footer">
+			<p>
+				<a href="main.jsp">Home</a> | <a href="product_list.jsp">Product</a> | <a href="adop_list.jsp">Adoption</a>
+				| <a href="noticeboard.jsp">Sharing</a>
+			</p>
+			<div class="social">
+				<a href="https://ko-kr.facebook.com/"><i class="fa fa-facebook"></i></a> <a href="https://twitter.com/?lang=ko"><i
+					class="fa fa-twitter"></i></a>  <a href="https://www.instagram.com/"><i
+					class="fa fa-linkedin"></i></a> <a href="https://www.google.com/"><i
+					class="fa fa-google-plus"></i></a>
+			</div>
+			<!-- copy right -->
+			<!-- This theme comes under Creative Commons Attribution 4.0 Unported. So don't remove below link back -->
+			<p class="copy-right">
+				inception &FlowerDog; 2023 <a href="#홈페이지소개">Your Site</a> | Team Member : <a
+					href="#홈페이지소개">Flower Dog</a>, Have a happy day.
+			</p>
+		</div>
+	</footer>
        
  
     

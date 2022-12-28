@@ -9,7 +9,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>flower Dog</title>
+		<title>Flower Dog</title>
 		<!-- Description, Keywords and Author -->
 		<meta name="description" content="Your description">
 		<meta name="keywords" content="Your,Keywords">
@@ -25,9 +25,12 @@
 		<!-- Custom CSS -->
 		<link href="./Boardcss/css/styleMK.css" rel="stylesheet">
 		
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="#">
-		<link  rel ="stylesheet" type = "text/css" href ="./Boardcss/css/styleMK.css">
+		<!-- Font awesome CSS -->
+<link href="./Boardcss/css/font-awesomeMK.min.css" rel="stylesheet">
+  <!-- Favicon -->
+<link rel="shortcut icon" href="#">
+<link rel="stylesheet" type="text/css" href="./Boardcss/css/styleMK.css">
+
 	</head>
 	
 	<body>
@@ -94,17 +97,16 @@
                       <div class="list_title">
                         <h1>지식공유방</h1>
                         <h3>자유롭게 서로 지식을 공유하는 방입니다.</h3>
-                         <textarea name="title" rows="1" cols="100"
+                         <textarea name="title" rows="1" cols="60" style="font-size: 20px;"
                             placeholder="제목" maxlength="100"><%=dto.getTitle() %></textarea>
                       </div>
                       <div>
-                         <textarea name="writer" rows="1" cols="100"
+                         <textarea name="writer" rows="1" cols="60" style="font-size: 20px;"
                               maxlength="100"><%=dto.getWriter() %></textarea>
                       </div>
           
                       <div>
-                         <textarea name="content" placeholder="내용" required rows="30"
-                            cols="100"><%=dto.getContent() %></textarea>
+                         <textarea name="content" placeholder="내용" required rows="10" cols="60" style="font-size: 20px;"><%=dto.getContent() %></textarea>
                       </div>
           
           
@@ -129,22 +131,27 @@
              <script src="assets/js/main.js"></script>
 			<!-- events end -->
 			
-			<!-- footer -->
-			<footer>
-				<div class="container">
-					<p><a href="#">Home</a> | <a href="#work">works</a> | <a href="#team">Team</a> | <a href="#contact">Contact</a></p>
-					<div class="social">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
-						<a href="#"><i class="fa fa-dribbble"></i></a>
-						<a href="#"><i class="fa fa-linkedin"></i></a>
-						<a href="#"><i class="fa fa-google-plus"></i></a>
-					</div>
-					<!-- copy right -->
-					<!-- This theme comes under Creative Commons Attribution 4.0 Unported. So don't remove below link back -->
-					<p class="copy-right">Copyright &copy; 2014 <a href="#">Your Site</a> | Designed By : <a href="http://www.indioweb.in/portfolio">IndioWeb</a>, All rights reserved. </p>
-				</div>
-			</footer>
+		<!-- footer -->
+	<footer style="margin-top: 30px;">
+		<div class="container-footer">
+			<p>
+				<a href="main.jsp">Home</a> | <a href="product_list.jsp">Product</a> | <a href="adop_list.jsp">Adoption</a>
+				| <a href="noticeboard.jsp">Sharing</a>
+			</p>
+			<div class="social">
+				<a href="https://ko-kr.facebook.com/"><i class="fa fa-facebook"></i></a> <a href="https://twitter.com/?lang=ko"><i
+					class="fa fa-twitter"></i></a>  <a href="https://www.instagram.com/"><i
+					class="fa fa-linkedin"></i></a> <a href="https://www.google.com/"><i
+					class="fa fa-google-plus"></i></a>
+			</div>
+			<!-- copy right -->
+			<!-- This theme comes under Creative Commons Attribution 4.0 Unported. So don't remove below link back -->
+			<p class="copy-right">
+				inception &FlowerDog; 2023 <a href="#홈페이지소개">Your Site</a> | Team Member : <a
+					href="#홈페이지소개">Flower Dog</a>, Have a happy day.
+			</p>
+		</div>
+	</footer>
 
 		
 		
