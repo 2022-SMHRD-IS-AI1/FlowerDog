@@ -9,36 +9,28 @@ import java.util.List;
 
 public class ProductDAO {
 
-//	private ProductDAO() {
-//		
-//	}
-//	
-//	private static ProductDAO instance = new ProductDAO();
-//	
-//	public static ProductDAO getInstance() {
-//		return instance;
-//	}
-	
 	Connection conn = null;
 	PreparedStatement psmt = null;
 	ResultSet rs = null;
 	int cnt = 0;
-	
+
 	// DB연결
 	public void getConn() {
 
 		try {
-			Class.forName("jdbc:oracle:thin:@project-db-stu.ddns.net:1524:xe");
-			String url = "jdbc:oracle:thin:@localhost:1521:xe";
-			String username = "cgi_4_1220_1";
-			String password = "smhrd1";
-			conn = DriverManager.getConnection(url, username, password);
+			Class.forName("oracle.jdbc.OracleDriver");
+
+			String url = "jdbc:oracle:thin:@project-db-stu.ddns.net:1524:xe";
+			String DB_User = "cgi_4_1220_1";
+			String DB_Password = "smhrd1";
+
+			conn = DriverManager.getConnection(url, DB_User, DB_Password);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
 	}
-	
+
 	// 객체반환
 	public void close() {
 		try {
@@ -56,28 +48,28 @@ public class ProductDAO {
 			e.printStackTrace();
 		}
 	}
-	
+
 	// 상품 조회
-	public List<ProductDTO> selectAllProducts(){
-	
-		List<ProductDTO> list = new ArrayList<ProductDTO>();
+	public List<ProductDTO> selectAllProducts() {
+
+		List<ProductDTO> list = new ArrayList<>();
 		try {
 			getConn();
-			
-			String sql = "SELECT * FROM PRODUCT ORDER BY PRO_SEQ DESC";
+
+			String sql = "select * from product order by pro_seq desc";
 			psmt = conn.prepareStatement(sql);
 			rs = psmt.executeQuery();
-			
+
 			while (rs.next()) {
 				ProductDTO dto = new ProductDTO();
-				dto.setPro_seq(rs.getInt("pro_seq"));
-				dto.setPro_name(rs.getString("pro_name"));
-				dto.setPro_price(rs.getInt("pro_price"));
-				dto.setPro_desc(rs.getString("pro_desc"));
-				dto.setPro_img(rs.getString("pro_img"));
+				dto.setPro_seq(rs.getInt("PRO_SEQ"));
+				dto.setPro_name(rs.getString("PRO_NAME"));
+				dto.setPro_price(rs.getInt("PRO_PRICE"));
+				dto.setPro_desc(rs.getString("PRO_DESC"));
+				dto.setPro_img(rs.getString("PRO_IMG"));
 				list.add(dto);
 			}
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
@@ -85,10 +77,10 @@ public class ProductDAO {
 		}
 		return list;
 	}
-	
-	//상품 등록
-	public void insertProduct(ProductDTO dto) {
-		
+
+	// 상품 등록
+	public int insertProduct(ProductDTO dto) {
+
 		try {
 			getConn();
 			String sql = "INSERT INTO PRODUCT VALUES(PRODUCT_SEQ.NEXTVAL, ?, ?, ?, null";
@@ -97,6 +89,47 @@ public class ProductDAO {
 			psmt.setInt(2, dto.getPro_price());
 			psmt.setString(3, dto.getPro_desc());
 //			psmt.setString(4, dto.getPro_img());
+			cnt = psmt.executeUpdate();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+		return cnt;
+	}
+
+	// 상품 수정
+	public void UpdateProduct(ProductDTO dto) {
+
+		try {
+			getConn();
+
+			String sql = "UPDATE PRODUCT SET PRO_NAME=?, PRO_PRICE=?, PRO_DESC=?, WHERE PRO_SEQ=?";
+			psmt = conn.prepareStatement(sql);
+			psmt.setString(1, dto.getPro_name());
+			psmt.setInt(2, dto.getPro_price());
+			psmt.setString(3, dto.getPro_desc());
+//			psmt.setString(4, dto.getPro_img());
+			psmt.setInt(4, dto.getPro_seq());
+			psmt.executeUpdate();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+	}
+	
+	// 상품 삭제
+	public void deleteProduct(int pro_seq) {
+		
+		try {
+			getConn();
+			
+			String sql = "DELETE FROM PRODUCT WHERE PRO_SEQ=?";
+			psmt = conn.prepareStatement(sql);
+			psmt.setInt(1, pro_seq);
 			psmt.executeUpdate();
 			
 		} catch (Exception e) {
@@ -105,37 +138,5 @@ public class ProductDAO {
 			close();
 		}
 	}
-	
-	//상품 수정
-	public ProductDTO selectProductUpdate(int pro_number) {
-		
-		ProductDTO dto = null;
-		
-		try {
-			getConn();
-			
-			String sql ="SELECT * FROM PRODUCT WHERE PRO_SEQ = ?";
-			
-			psmt = conn.prepareStatement(sql);
-			psmt.setInt(1, pro_number);
-			rs = psmt.executeQuery();
-			
-			if(rs.next()) {
-				dto = new ProductDTO();
-				dto.setPro_seq(rs.getInt("PRO_SEQ"));
-				dto.setPro_name(rs.getString("PRO_NAME"));
-				dto.setPro_price(rs.getInt("PRO_PRICE"));
-				dto.setPro_desc("PRO_DESC");
-				dto.setPro_img("PRO_IMG");
-			}
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-		} finally {
-			close();
-		}
-		return dto;
-	}
-	
-	
+
 }

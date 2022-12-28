@@ -15,6 +15,12 @@ public class ProductDTO {
 		this.pro_desc = pro_desc;
 		this.pro_img = pro_img;
 	}
+	
+	public ProductDTO(String pro_name, int pro_price, String pro_desc) {
+		this.pro_name = pro_name;
+		this.pro_price = pro_price;
+		this.pro_desc = pro_desc;
+	}
 
 	public ProductDTO() {
 	}
