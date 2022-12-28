@@ -3,15 +3,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>ProductWrite</title>
+<title>ProductInsert</title>
 <link  rel ="stylesheet" type = "text/css" href ="shopping.css">
 <script type="text/javascript" src="Product/Product.js"></script>
 </head>
 <body>
 	
-	<div id="wrap" align="center" action="ProductWriterServlet">
+	<div id="warp" align="center">
 	<h1>상품 등록 - 관리자 페이지</h1>
-	<form action="" method="post">
+	<form action="Product_Insert_Service" method="post">
 	
 		<table>
 			<tr>
@@ -35,7 +35,7 @@
 		</table>
 	
 		<br>
-		<input type="submit" value="등록" onclick="return ProductCheck()">
+		<input type="submit" value="등록">
 		<input type="reset" value="다시작성">
 		<input type="button" value="목록" onclick="location.href='ProductList.jsp'">
 		
