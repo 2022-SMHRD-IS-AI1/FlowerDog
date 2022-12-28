@@ -59,16 +59,24 @@
 
     <div class="sub-menu">
       <ul class="menu">
-        <li>
          <%if(info != null) {%>
+        <li>
           <a href="loginout">로그아웃</a>
-        <%} else{%>
-       	  <a href="login.jsp">로그인</a>	
-     	<%} %>
         </li>
+        <%if(info.getId().equals("manager")) {%>
+        <li>
+          <a href="ProductList.jsp">관리자</a>
+        </li>
+        <%} else {%>
         <li>
           <a href="javascript:void(0)">마이페이지</a>
         </li>
+        <%} %>
+        <%} else {%>
+        <li>
+       	  <a href="login.jsp">로그인</a>	
+        </li>
+     	<%} %>
       </ul>
       <div class="search">
         <input type="text"/>

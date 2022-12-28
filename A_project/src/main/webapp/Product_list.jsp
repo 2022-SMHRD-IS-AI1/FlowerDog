@@ -10,7 +10,6 @@
  String[] img ={"./Boardcss/image/goods_01.jpg", "./Boardcss/image/goods_02.jpg", "./Boardcss/image/goods_13.jpg", "./Boardcss/image/goods_19.jpg", "./Boardcss/image/goods_05.jpg", "./Boardcss/image/goods_06.jpg", "./Boardcss/image/goods_15.jpg", "./Boardcss/image/goods_23.jpg"};
  String[] product ={"Flower Dog 파우치", "Flower Dog 파우치 (제작)", "2023년도 Flower Dog 벽걸이 달력 (블랙)", "Flower Dog 에코백 (제작)", "2023년도 Flower Dog벽걸이 달력 (컬러)", "2023년도 Flower Dog벽걸이 달력 (제작)", "Flower Dog 텀블러", "Flower Dog 폰케이스"};
  String[] price ={"8500", "18500", "14000", "15000", "20000", "20000", "22000", "9000"};
-
  %>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,11 +30,6 @@
         <link href="./Boardcss/css/product_list.css" rel="stylesheet" />
     </head>
     <body>
-    
-    <%
-		MemberDTO info = (MemberDTO)session.getAttribute("info");
-		request.setCharacterEncoding("utf-8");
-	%>
     
 <script>
 	function fnView() {
@@ -64,12 +58,10 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                 <% if(info.getId().equals("manager")) {%>
-                    <li class="nav-item"><a href="ProductList.jsp" class="nav-link active" aria-current="page" href="#!">관리자</a></li>
-                  <% } %>
                   <li class="nav-item"><a href="main.jsp" class="nav-link active" aria-current="page" href="#!">메인</a></li>
                     <li class="nav-item"><a href="Product_list.jsp" class="nav-link" href="#!">상품</a></li>
                     <li class="nav-item"><a href="noticeboard.jsp" class="nav-link" href="#!">지식공유방</a></li>
+                    
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">입양리스트</a>
@@ -81,8 +73,8 @@
                             <li><a href="adop_list.jsp" class="dropdown-item" href="#!">입양 아이들</a></li>
                             <li><a class="dropdown-item" href="adop_map.jsp">주변 보호소 찾기</a></li>
                         </ul>
-                 
                     </li>
+                    
                 </ul>
                     <% ArrayList<CartDTO> cart = (ArrayList<CartDTO>)session.getAttribute("cart"); %>
                     <form class="d-flex">
