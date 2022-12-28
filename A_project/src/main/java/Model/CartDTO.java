@@ -17,6 +17,15 @@ public class CartDTO implements Serializable {
 
 
 
+	public CartDTO(String name, int price) {
+		super();
+		this.name = name;
+		this.price = price;
+	}
+
+
+
+
 	public void setTotalSum(int totalSum) {
 		this.totalSum = totalSum;
 	}
