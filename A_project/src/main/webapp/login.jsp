@@ -19,10 +19,10 @@
                 <form id="login" action="Login_Service" class="input-group" method = "post">
                     <input type="text" class="input-field" name="id" placeholder="아이디">
                     <input type="password" class="input-field" name="pw" placeholder="비밀번호">
-                    <input type="checkbox" class="checkbox">ID 기억하기</br>
-                    <button class="submit" type="submit">로그인</button></br>
-                    <button class="submit">아이디, 비번 잊었니?</button></br>
-                    <button class="kakao">?</button></br>
+                    <input type="checkbox" class="checkbox">ID 기억하기<br>
+                    <button class="submit" type="submit">로그인</button><br>
+                    <button class="submit">아이디, 비번 잊었니?</button><br>
+                    <button class="kakao">?</button><br>
                 </form>
                 
                 <form class="input-group" id="register" action="Join_Service" method="post">
@@ -41,7 +41,7 @@
                     <input class="input-field" type="email" name = "email" placeholder="이메일" required>
                     <input class="input-field" type="text" name = "address" placeholder="주소" required>
                     <input class="input-field" type="text" name = "tel" placeholder="전화번호" required>
-                    </br></br></br></br>
+                    <br><br><br><br>
 
 					<div>
 					<span> <input type="text" placeholder="인증번호입력">
