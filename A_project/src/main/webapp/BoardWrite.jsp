@@ -87,11 +87,15 @@ li {
 			</div>
 		</div>
 	</div>
-	<!-- banner end -->
+	
+		
+
 	<!-- events -->
 
+		<div style="position: absolute; left: 0px; bottom: 300px;">
+					<a href="https://wooof.co.kr/"><img src="./Boardcss/image/ddddd.png" alt="강아지"></a>
+		</div>
 	<div id="board">
-
 
 		<%
 		MemberDTO info = (MemberDTO) session.getAttribute("info");
@@ -99,9 +103,11 @@ li {
 		%>
 
 
-		<form action="Board_Creating" method="post">
+		<form action="Board_Creating" method="post" >
 			<div id="list">
 				<div class="list_title">
+				
+				
 					<h1>지식공유방</h1>
 					<h3>자유롭게 서로 지식을 공유하는 방입니다.</h3>
 					<textarea name="title" rows="1"cols="60" style="font-size: 20px;" placeholder="제목"

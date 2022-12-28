@@ -99,6 +99,10 @@ li {
 	</div>
 	<!-- banner end -->
 
+		<div style="position: absolute; left: 0px; bottom: 400px;">
+				<a href="#"><img src="./Boardcss/image/dogbbb.png" alt="강아지"></a>
+		</div>
+
 	<!-- events -->
 	<div class="event" id="event">
 		<div class="container">
