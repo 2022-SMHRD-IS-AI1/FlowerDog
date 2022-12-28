@@ -16,7 +16,7 @@
 <head>
 <meta charset="UTF-8">
 <title>상품관리</title>
-<link  rel ="stylesheet" type = "text/css" href ="./Boardcss/css/shopping.css">
+<link  rel ="stylesheet" type ="text/css" href ="./Boardcss/css/shopping.css">
 </head>
 <body>
 

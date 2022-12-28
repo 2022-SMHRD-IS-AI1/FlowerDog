@@ -8,7 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <title>ProductUpdate</title>
-<link  rel ="stylesheet" type = "text/css" href ="shopping.css">
+<link  rel ="stylesheet" type = "text/css" href ="./Boardcss/css/shopping.css">
 </head>
 <body>
 	<%
@@ -21,12 +21,11 @@
 	<h1>상품 수정 - 관리자 페이지</h1>
 	<form method="post" action="ProductUpdateService?pro_seq=<%=pro_seq%>">
 	<input type="hidden" name="pro_seq" value="<%=pro_seq%>">
-	<input type="hidden" name="nonmakeImg" value="sadsa">
+	<input type="hidden" name="nonmakeImg" value="">
 	<table>
 	<tr>
 		<td>
 			<img src="upload/noimage.gif">
-			<img src="upload/.gif">
 		</td>
 		<td>
 			<table>
