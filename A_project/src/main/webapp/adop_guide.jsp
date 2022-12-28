@@ -28,6 +28,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                   <li class="nav-item"><a href="main.jsp" class="nav-link active" aria-current="page" href="#!">메인</a></li>
+                    <li class="nav-item"><a href="Product_list.jsp" class="nav-link" href="#!">상품</a></li>
                     <li class="nav-item"><a href="noticeboard.jsp" class="nav-link" href="#!">게시판</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
@@ -54,7 +55,7 @@
                 <h1 class="display-4 fw-bolder">Dog Adoption</h1>
                 <hr style="border:solid 3px;">
                 <br>
-                <p class="lead fw-normal text-white-10 mb-0">사지말고 입양하세요</p>
+                <p class="lead fw-normal text-white-10 mb-0"><b>귀여운 아이들이 들어가 있는 상품을 구매해보세요</b></p>
             </div>
         </div>
     </header>

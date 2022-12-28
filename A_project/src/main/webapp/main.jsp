@@ -62,7 +62,7 @@
      	<%} %>
         </li>
         <li>
-          <a href="javascript:void(0)">My page</a>
+          <a href="javascript:void(0)">마이페이지</a>
         </li>
       </ul>
       <div class="search">
@@ -81,7 +81,7 @@
         <div class="item__name"><a href="adop_list.jsp">입양</a></div>
 
       <li class="item">
-        <div class="item__name"><a href="noticeboard.jsp" >게시판</a></div>
+        <div class="item__name"><a href="noticeboard.jsp" >지식공유방</a></div>
       </li>
     </ul>
   </div>

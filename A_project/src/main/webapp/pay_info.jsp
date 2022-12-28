@@ -39,22 +39,25 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-					<!-- <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li> -->
-
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" id="navbarDropdown" href="#"
-						role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<li><a class="dropdown-item" href="#!">모든 제품</a></li>
-							<li><hr class="dropdown-divider" /></li>
-							<li><a class="dropdown-item" href="#!">베스트 상품</a></li>
-							<li><a class="dropdown-item" href="#!">새로운 상품</a></li>
-						</ul></li>
-
-				</ul>
-
-			</div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                  <li class="nav-item"><a href="main.jsp" class="nav-link active" aria-current="page" href="#!">메인</a></li>
+                    <li class="nav-item"><a href="Product_list.jsp" class="nav-link" href="#!">상품</a></li>
+                    <li class="nav-item"><a href="noticeboard.jsp" class="nav-link" href="#!">지식공유방</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">입양리스트</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a href="adop_guide.jsp" class="dropdown-item" href="#!">입양가이드</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a href="adop_list.jsp" class="dropdown-item" href="#!">입양 아이들</a></li>
+                            <li><a class="dropdown-item" href="adop_map.jsp">주변 보호소 찾기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </div>
+                <form class="d-flex">></form>
 		</div>
 	</nav>
 

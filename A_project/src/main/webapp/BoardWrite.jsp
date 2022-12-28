@@ -25,52 +25,53 @@
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="#">
 		<link  rel ="stylesheet" type = "text/css" href ="./Boardcss/css/styleMK.css">
+		<style type="text/css">
+ul {
+	list-style: none;
+	padding-left: 0px;
+	position: relative;
+	top: 25px;
+}
+
+li {
+	display: inline-block;
+	padding: 20px;
+	box-sizing: border-box;
+	font-weight: bold;
+	font-size: 20px;
+}
+</style>
 	</head>
 	
 	<body>
-	
-		<div class="wrapper">
-		
-			<!-- header -->
-			<header>
-				<!-- navigation -->
-				
-				<nav class="navbar navbar-default" role="navigation">
-					
-					<div class="container">
-						
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-							<a class="navbar-brand" href="#"><img class="img-responsive" src="./Boardcss/image/logo.png" alt="Logo"/></a>	
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-							
-						</div>
+			<div class="wrapper">
+		<!-- header -->
+		<header>
+			<!-- navigation -->
 
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav navbar-right">
-								<li><a href="registration.html">Signup</a></li>
-								<li><a href="login.html">Login</a></li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <span class="caret"></span></a>
-									<ul class="dropdown-menu" role="menu">
-										<li><a href="#event">상품구매</a></li>
-										<li><a href="#blog">입양</a></li>
-										<li><a href="#subscribe">커뮤니티</a></li>
-										<li><a href="#team">고객센터</a></li>
-										<li><a href="#">회사소개</a></li>
-									</ul>
-								</li>
+			<nav class="navbar navbar-default" role="navigation">
+
+				<div class="container">
+
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header" style="display: inline;">
+						<a class="navbar-brand" href="main.jsp"><img class="img-responsive"
+							src="./Boardcss/image/logo.png" alt="Logo" style="width: 100px; height: 100px;"/></a>
+						<!-- menu start -->
+						<div class="menu" style="justify-content: center; left: 25%;">
+							<ul class="snip1555">
+							    <li class="nav-item"><a href="main.jsp" class="nav-link active" aria-current="page" href="#!">메인</a></li>
+								<li class="current"><a href="#" data-hover="소개">소개</a></li>
+								<li><a href="adop_list.jsp" data-hover="입양">입양</a></li>
+								<li><a href="Product_list.jsp" data-hover="상품">상품</a></li>
+								<li></li>
+								<!-- <li><a href="#" data-hover="후원">후원</a></li>-->
 							</ul>
-						</div><!-- /.navbar-collapse -->
-					</div><!-- /.container-fluid -->
-				</nav>
-			</header>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
 			
 			<!-- banner -->
 			<div class="banner">
@@ -85,14 +86,6 @@
 			</div>
 			<!-- banner end -->
 			<!-- events -->
-            <div class = "category" >
-                <div class="category_name">
-                    <h2>커뮤니티</h2>
-                    <a href = "#">입양인증 게시판</a>
-                    <a href = "#">자유게시판</a>
-                    <a href = "#">유용한 꿀팁</a>
-                </div>
-            </div>
                 
                 <div id="board">
 
@@ -106,8 +99,8 @@
 		<form action="Board_Creating" method="post">
                    <div id="list">
                       <div class="list_title">
-                        <h1>커뮤니티</h1>
-                        <h3>자유롭게 글을 쓸 수 있는 공간입니다.</h3>
+                        <h1>지식공유방</h1>
+                        <h3>자유롭게 서로 지식을 공유하는 방입니다.</h3>
                          <textarea name="title" rows="1" cols="100"
                             placeholder="제목" maxlength="100"></textarea>
                       </div>
