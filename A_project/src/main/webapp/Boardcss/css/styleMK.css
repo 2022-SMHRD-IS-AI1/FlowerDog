@@ -27,7 +27,7 @@ h1,h2,h3,h4,h5,h6{
 
 p{
 	padding:0;
-	color: #787878;
+	color: rgb(255, 255, 255);
 }
 
 a{
@@ -408,9 +408,8 @@ header .navbar-brand img {
  */
 
 footer {
-	margin-top: 80px;
 	padding: 50px 0;
-	background: #e6b0d0;
+	background: rgb(192, 192, 192);
 	text-align: center;
 	border-top: 1px solid rgba(0,0,0,0.1);
 }
@@ -700,7 +699,7 @@ table {
 	font-family: Arial, sans-serif;
   }
   #list{
-	margin-top: 210px;
+	margin-top: 20px;
 	position: relative;
 
   }

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>flower Dog</title>
+<title>Flower Dog</title>
 <link  rel ="stylesheet" type = "text/css" href ="./login.css">
 </head>
 <body>
