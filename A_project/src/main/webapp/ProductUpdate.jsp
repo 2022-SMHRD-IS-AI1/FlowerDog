@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>ProductUpdate</title>
+<title>Flower Dog</title>
 <link  rel ="stylesheet" type = "text/css" href ="./Boardcss/css/shopping.css">
 </head>
 <body>

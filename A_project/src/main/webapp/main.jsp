@@ -12,7 +12,7 @@
 <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>flower Dog</title>
+  <title>Flower Dog</title>
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Flower" />
   <meta property="og:title" content="Flower Dog" />

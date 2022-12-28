@@ -15,7 +15,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>상품관리</title>
+<title>Flower Dog</title>
 <link  rel ="stylesheet" type ="text/css" href ="./Boardcss/css/shopping.css">
 </head>
 <body>
