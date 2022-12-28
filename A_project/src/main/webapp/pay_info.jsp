@@ -55,6 +55,7 @@
                             <li>
                                 <hr class="dropdown-divider" />
                             </li>
+                            <li><a href="adop_benefit .jsp" class="dropdown-item" href="#!">입양혜택</a></li>
                             <li><a href="adop_list.jsp" class="dropdown-item" href="#!">입양 아이들</a></li>
                             <li><a class="dropdown-item" href="adop_map.jsp">주변 보호소 찾기</a></li>
                         </ul>

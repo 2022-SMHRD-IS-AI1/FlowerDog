@@ -10,15 +10,16 @@ pageEncoding="UTF-8"%>
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Flower Dog</title>
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="./Boardcss/css/adop_benefit.css" rel="stylesheet" />
-       <!-- Font awesome CSS -->
+   <!-- Font awesome CSS -->
 <link href="./Boardcss/css/font-awesomeMK.min.css" rel="stylesheet">
   <!-- Favicon -->
 <link rel="shortcut icon" href="#">
 <link rel="stylesheet" type="text/css" href="./Boardcss/css/styleMK.css">
+
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./Boardcss/css/adop_benefit.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -42,18 +43,12 @@ pageEncoding="UTF-8"%>
                             <li>
                                 <hr class="dropdown-divider" />
                             </li>
+                            <li><a href="adop_benefit .jsp" class="dropdown-item" href="#!">입양혜택</a></li>
                             <li><a href="adop_list.jsp" class="dropdown-item" href="#!">입양 아이들</a></li>
                             <li><a class="dropdown-item" href="adop_map.jsp">주변 보호소 찾기</a></li>
                         </ul>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <button class="btn btn-outline-dark" type="submit">
-                        <i class="bi-cart-fill me-1"></i>
-                        Cart
-                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                    </button>
-                </form>
             </div>
         </div>
     </nav>
@@ -64,7 +59,7 @@ pageEncoding="UTF-8"%>
                 <h1 class="display-4 fw-bolder">Dog Adoption</h1>
                 <hr style="border:solid 3px;">
                 <br>
-                <p class="lead fw-normal text-white-10 mb-0"><b>귀여운 아이들이 들어가 있는 상품을 구매해보세요</b></p>
+                <p class="lead fw-normal text-white-10 mb-0"></p>
             </div>
         </div>
     </header>
@@ -207,7 +202,11 @@ pageEncoding="UTF-8"%>
 			</p>
 		</div>
 	</footer>
-        
+        <!-- Bootstrap core JS-->
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Core theme JS-->
+	<script src="js/scripts.js"></script>
         
     </body>
 </html>
