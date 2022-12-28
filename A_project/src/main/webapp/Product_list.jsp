@@ -3,9 +3,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
  <%
- String[] img ={"./Boardcss/image/goods_01.jpg", "./Boardcss/image/goods_02.jpg", "./Boardcss/image/goods_03.jpg", "./Boardcss/image/goods_04.jpg", "./Boardcss/image/goods_05.jpg", "./Boardcss/image/goods_06.jpg", "./Boardcss/image/goods_07.jpg", "./Boardcss/image/goods_08.jpg"};
- String[] product ={"굿즈1", "굿즈2", "굿즈3", "굿즈4", "굿즈5", "굿즈6", "굿즈7", "굿즈8"};
- String[] price ={"1000", "20000", "5000", "15000", "2000", "8000", "2200", "660000"};
+ String[] img ={"./Boardcss/image/goods_01.jpg", "./Boardcss/image/goods_02.jpg", "./Boardcss/image/goods_13.jpg", "./Boardcss/image/goods_19.jpg", "./Boardcss/image/goods_05.jpg", "./Boardcss/image/goods_06.jpg", "./Boardcss/image/goods_15.jpg", "./Boardcss/image/goods_23.jpg"};
+ String[] product ={"Flower Dog 파우치", "Flower Dog 파우치 (제작)", "2023년도 Flower Dog 벽걸이 달력 (블랙)", "Flower Dog 에코백 (제작)", "2023년도 Flower Dog벽걸이 달력 (컬러)", "2023년도 Flower Dog벽걸이 달력 (제작)", "Flower Dog 텀블러", "Flower Dog 폰케이스"};
+ String[] price ={"8500", "18500", "14000", "15000", "20000", "20000", "22000", "9000"};
  %>
 <!DOCTYPE html>
 <html lang="en">
@@ -53,9 +53,12 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                         <!-- <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">About</a></li> -->
-
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                        <li class="nav-item"><a href="main.jsp" class="nav-link active" aria-current="page" href="#!">메인</a></li>
+					<li class="nav-item"><a href="noticeboard.jsp"
+						class="nav-link" href="#!">게시판</a></li>
+					<li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">상품</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#!">모든 제품</a></li>
                                 <li><hr class="dropdown-divider" /></li>
@@ -120,7 +123,7 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">BEST</div>
                             <!-- Product image-->
                             <img class="card-img-top" src="<%=img[i] %>" alt="..." />
                             <!-- Product details-->

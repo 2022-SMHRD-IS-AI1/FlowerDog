@@ -27,8 +27,11 @@ form h1{
  text-align:center;
  padding-bottom: 10px;
 }
+
 form .submit{
  text-align:right;
+ padding-right: 50px;
+
  
 }
 form .submit label{
@@ -46,20 +49,26 @@ span{
  padding:0 auto 10px auto;
  width:150px;
  height:30px;
- margin: 10px 5px;
+ margin: 5px 5px;
+ float: left;
+
 }
 input{
- width:100px;
- height:20px;
+ width:95px;
+ height:30px;
  margin:2px;
  border: 1px solid ;
 }
 .text2{
  width:260px;
 }
-div{
+.pay{
  background: cornsilk;
  padding-bottom: 20px;
  width: 500px;
- margin: 200px auto;
+ margin: 70px auto;
+}
+.submit3{
+	float: left;
+	 
 }

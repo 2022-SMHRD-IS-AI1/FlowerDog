@@ -81,11 +81,7 @@
         <div class="item__name"><a href="adop_list.jsp">입양</a></div>
 
       <li class="item">
-      <%if(info != null) {%>
         <div class="item__name"><a href="noticeboard.jsp" >게시판</a></div>
-
-      <%}%>  
-
       </li>
     </ul>
   </div>
@@ -124,7 +120,6 @@
     <div class="inner">
       <div class="fade-in">
         <div class="container">
-        
           <div class="animals">
             <div class="animal">
               <div class="image"></div>

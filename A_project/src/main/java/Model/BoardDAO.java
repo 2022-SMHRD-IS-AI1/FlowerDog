@@ -101,31 +101,6 @@ public class BoardDAO {
 		}
 		return dto;
 	}
-	public BoardDTO selectOne(int num) {
-		BoardDTO dto = null;
-		try {
-			getConn();
-			
-			String sql = "select *from TB_COMMUNITY where number = ?";
-			psmt = conn.prepareStatement(sql);
-			psmt.setInt(1, num);
-			
-			rs = psmt.executeQuery();
-			if(rs.next()) {
-				dto.setNumber(rs.getInt("number"));
-				dto.setTitle(rs.getString("title"));
-				dto.setWriter(rs.getString("writer"));
-				dto.setTime(rs.getString("time"));
-				dto.setContent(rs.getString("content"));
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}finally {
-			close();
-		}
-		return dto;
-	}
-	
 	
 	public ArrayList<BoardDTO> Listofposts() {
 		try {
