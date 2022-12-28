@@ -196,13 +196,15 @@ td {
 .cart__bigorderbtn.right {
   background-color: limegreen;
   color: white;
-  border: non}
+  border: 1px lightgray solid;
+}
 
 
 h2{
   color: #026578;
-  text-shadow:1px 1px 5px #bdbdbd
+  text-shadow:1px 1px 5px #bdbdbd;
 }
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -541,10 +543,13 @@ button,
 select,
 optgroup,
 textarea {
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+ background-color: limegreen;
+  color: black;
+    border: 1px lightgray solid;
+    width: 150px;
+    height: 40px;
+    font-size: 13px;
+    border-radius: 5px;
 }
 
 button,

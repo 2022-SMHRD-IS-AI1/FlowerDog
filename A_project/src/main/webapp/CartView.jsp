@@ -151,8 +151,8 @@ if (obj == null) { //세션 정보가 없으면 배열을 생성 : 주문한 제
                         
                         <td colspan="4"></td>
                        
-                      <% out.println("<td name = \"pay\"> 총액 : ");%> <%=totalSum %>원</td>
                          <%out.println("<input type='button' value='장바구니 비우기' onclick='fnClear()' />"); %> 
+                      <% out.println("<a name = \"pay\"> 총액 : ");%> <%=totalSum %>원</a>
                     </tr>
                 </tfoot>
             </form>
