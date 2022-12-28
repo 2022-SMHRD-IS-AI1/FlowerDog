@@ -8,7 +8,7 @@
     pageEncoding="UTF-8"%>
  <%
  
- String[] img ={"./Boardcss/image/goods_15.jpg", "./Boardcss/image/goods_05.jpg", "./Boardcss/image/goods_23.jpg","./Boardcss/image/goods_05.jpg" ,"./Boardcss/image/goods_06.jpg","./Boardcss/image/goods_19.jpg" , "./Boardcss/image/goods_01.jpg","./Boardcss/image/goods_02.jpg" };
+ String[] img ={"./Boardcss/image/goods_15.jpg", "./Boardcss/image/goods_05.jpg", "./Boardcss/image/goods_23.jpg","./Boardcss/image/goods_05.jpg" ,"./Boardcss/image/goods_19.jpg","./Boardcss/image/goods_06.jpg" , "./Boardcss/image/goods_01.jpg","./Boardcss/image/goods_02.jpg" };
 
  ArrayList<String> product = new ArrayList<>();
 ArrayList<String> price = new ArrayList<>();
@@ -140,7 +140,7 @@ price.add(String.valueOf(result.get(i).getPrice()));
                             </div>
                         </div>
                     </div>
-					<%for(int i = 1; i <img.length;i++){ %>
+					<%for(int i = 1; i <product.size();i++){ %>
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Sale badge-->
