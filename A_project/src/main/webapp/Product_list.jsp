@@ -7,9 +7,22 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
  <%
- String[] img ={"./Boardcss/image/goods_01.jpg", "./Boardcss/image/goods_02.jpg", "./Boardcss/image/goods_13.jpg", "./Boardcss/image/goods_19.jpg", "./Boardcss/image/goods_05.jpg", "./Boardcss/image/goods_06.jpg", "./Boardcss/image/goods_15.jpg", "./Boardcss/image/goods_23.jpg"};
- String[] product ={"Flower Dog 파우치", "Flower Dog 파우치 (제작)", "2023년도 Flower Dog 벽걸이 달력 (블랙)", "Flower Dog 에코백 (제작)", "2023년도 Flower Dog벽걸이 달력 (컬러)", "2023년도 Flower Dog벽걸이 달력 (제작)", "Flower Dog 텀블러", "Flower Dog 폰케이스"};
- String[] price ={"8500", "18500", "14000", "15000", "20000", "20000", "22000", "9000"};
+ 
+ String[] img ={"./Boardcss/image/goods_15.jpg", "./Boardcss/image/goods_05.jpg", "./Boardcss/image/goods_23.jpg","./Boardcss/image/goods_05.jpg" ,"./Boardcss/image/goods_19.jpg","./Boardcss/image/goods_06.jpg" , "./Boardcss/image/goods_01.jpg","./Boardcss/image/goods_02.jpg" };
+
+ ArrayList<String> product = new ArrayList<>();
+ArrayList<String> price = new ArrayList<>();
+
+CartDAO dao = new CartDAO();
+
+ArrayList<CartDTO> result = dao.cart_info();
+for(int i = 0; i<result.size(); i++){
+product.add(result.get(i).getName()) ;
+price.add(String.valueOf(result.get(i).getPrice()));
+}
+ 
+ 
+ 
  %>
 <!DOCTYPE html>
 <html lang="en">
@@ -100,7 +113,6 @@
                     <h1 class="display-4 fw-bolder"> 굿즈 상품</h1>
                     <hr style="border: solid 3px;">
 				   <br>
-                    <p class="lead fw-normal text-white-50 mb-0"><b>귀여운 아이들이 들어가 있는 상품을 구매해보세요</b></p>
                 </div>
             </div>
         </header>
@@ -116,19 +128,19 @@
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder" style="font-size: 18px;"><%=product[0] %></h5>
+                                    <h5 class="fw-bolder" style="font-size: 18px;"><%=product.get(0) %></h5>
                                     <!-- Product price-->
-                                    <%=price[0] %>원
+                                    <%=price.get(0) %>원
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a style="margin-bottom: 10px" class="btn btn-outline-dark mt-auto" onclick='fnproduct("<%=img[0]%>","<%=product[0]%>", "<%=price[0]%>")'>자세히 보기</a></div>
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick='fnCart("<%=img[0]%>","<%=product[0]%>", "<%=price[0]%>")'>장바구니 담기</a></div>
+                                <div class="text-center"><a style="margin-bottom: 10px" class="btn btn-outline-dark mt-auto" onclick='fnproduct("<%=img[0]%>","<%=product.get(0)%>", "<%=price.get(0)%>")'>자세히 보기</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick='fnCart("<%=img[0]%>","<%=product.get(0)%>", "<%=price.get(0)%>")'>장바구니 담기</a></div>
                             </div>
                         </div>
                     </div>
-					<%for(int i = 1; i <img.length;i++){ %>
+					<%for(int i = 1; i <product.size();i++){ %>
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Sale badge-->
@@ -139,7 +151,7 @@
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder" style="font-size: 18px;"><%=product[i] %></h5>
+                                    <h5 class="fw-bolder" style="font-size: 18px;"><%=product.get(i) %></h5>
                                     <!-- Product reviews-->
                                     <!-- <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>
@@ -150,13 +162,13 @@
                                     </div> -->
                                     <!-- Product price-->
                                     <span class="text-muted text-decoration-line-through"></span>
-                                    <%=price[i]%>원
+                                    <%=price.get(i)%>원
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a style="margin-bottom: 10px" class="btn btn-outline-dark mt-auto" onclick='fnproduct("<%=img[i]%>","<%=product[i]%>", "<%=price[i]%>")'>자세히 보기</a></div>
-                            	<div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick='fnCart("<%=img[i]%>","<%=product[i]%>", "<%=price[i]%>")'>장바구니 담기</a></div>
+                                <div class="text-center"><a style="margin-bottom: 10px" class="btn btn-outline-dark mt-auto" onclick='fnproduct("<%=img[i]%>","<%=product.get(i)%>", "<%=price.get(i)%>")'>자세히 보기</a></div>
+                            	<div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick='fnCart("<%=img[i]%>","<%=product.get(i)%>", "<%=price.get(i)%>")'>장바구니 담기</a></div>
                             </div>
                         </div>
                     </div>
