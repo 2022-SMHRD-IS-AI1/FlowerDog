@@ -113,7 +113,6 @@ price.add(String.valueOf(result.get(i).getPrice()));
                     <h1 class="display-4 fw-bolder"> 굿즈 상품</h1>
                     <hr style="border: solid 3px;">
 				   <br>
-                    <p class="lead fw-normal text-white-50 mb-0"><b>귀여운 아이들이 들어가 있는 상품을 구매해보세요</b></p>
                 </div>
             </div>
         </header>
