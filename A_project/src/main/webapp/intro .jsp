@@ -78,13 +78,7 @@
 
                 <section>
                     <div class="video">
-
-                        <video autoplay controls loop muted poster="#" preload="auto">
-                            <source src="intro_video.mp4" type="autoplay" width="auto" height="700px">
-                            브라우저가 비디오를 지원하지 않습니다.
-                          </video>
-            
-        
+                        <video id="myVideo" src="./Boardcss/image/dddd11.mp4" controls autoplay loop></video>
                     </div>
                     
                 </section>
