@@ -18,85 +18,154 @@ if (obj == null) { //세션 정보가 없으면 배열을 생성 : 주문한 제
 %>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-
-<script type="text/javascript">
-	function fnPay() {
-		location.href = "pay_info.jsp";
-	}
-
-	function fnClear() {
-		if (confirm("장바구니를 비우시겠습니까?")) {
-			location.href = "CartClear.jsp";
-			
-		}
-	}
-
-	function fnGo() {
-		location.href = "main.jsp";
-	}
-</script>
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>flower Dog</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./Boardcss/css/cart.css" rel="stylesheet" />
 </head>
+
 <body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+             <a class="navbar-brand" href="main.jsp"><img src="./Boardcss/image/logo.png" alt="" style="width: 70px;" ></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#!">All Products</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                            <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="bg-dark py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder">Shop Cart</h1>
+                <hr style="border:solid 3px;">
+                <br>
+                <p class="lead fw-normal text-white-10 mb-0"></p>
+            </div>
+        </div>
+    </header>
 
-	<div align="center">
-		<h3>[장바구니 보기]</h3>
-		<table border="1">
-			<tr>
-				<th>번호</th>
-				<th>상품이미지</th>
-				<th>상품명</th>
-				<th>단가</th>
-				<th>주문 수량</th>
-				<th>가격</th>
-			</tr>
-			<%
-			if (cart.size() == 0) {
-				out.println("<tr align='center'>");
-				out.println("<td colspan= '5'>");
-				out.println("장바구니에 담긴 상품이 없습니다.");
-				out.println("<a href= 'Product_list.jsp'>주문하기</a>");
-				out.println("</td>");
-				out.println("</tr>");
-			} else {
-				int totalSum = 0, total = 0;
+
+    <script type="text/javascript">
+        function fnPay() {
+            location.href = "pay_info.jsp";
+        }
+    
+        function fnClear() {
+            if (confirm("장바구니를 비우시겠습니까?")) {
+                location.href = "CartClear.jsp";
+                
+            }
+        }
+    
+        function fnGo() {
+            location.href = "main.jsp";
+        }
+    </script>
+
+    <section class="cart">
+        <div class="cart__information">
+            <ul>
+                <li>가격, 옵션 등 정보가 변경된 경우 주문이 불가할 수 있습니다.</li>
+                <li>오늘출발 상품은 판매자 설정 시점에 따라 오늘출발 여부가 변경될 수 있으니 주문 시 꼭 다시 확인해 주시기 바랍니다.</li>
+                <li>주문자 정보를 정확하게 기입 부탁드립니다.</li>
+            </ul>
+        </div>
+        
+        <table class="cart__list">
+            <form>
+                <thead>
+                    <tr>
+                        
+                        <td>번호</td>
+                        <td>상품이미지</td>
+                        <td>단가</td>
+                        <td>상품명</td>
+                        <td>가격</td>
+                        <td>주문수량</td>
+                    </tr>
+                </thead>
+                      <% if (cart.size() == 0) { %>
+                    <tbody>
+                        <tr class="cart__list__detail" align = 'center'>
+                            <td><span class="price">장바구니에 담긴 상품이 없습니다.</span></td>
+                            <% out.println("<a href= 'Product_list.jsp'>주문하기</a>");%>
+                        </tr>
+                    </tbody>
+                     <% } else {
+                    	  int totalSum = 0 , total = 0 ;%>
 				
-				for (int i = 0; i < cart.size(); i++) {
-					CartDTO dto = cart.get(i);
-					out.println("<tr align= 'center'>");
-					out.println("<td>" + (i + 1) + "</td>");
-					out.println("<td>" + "<img src=\""+dto.getImg()+"\" width=\"150px\" height=\"150px\">" + "</td>");
-					out.println("<td>" + dto.getName() + "</td>");
-					out.println("<td>" + dto.getPrice() + "</td>");
-					out.println("<td>" + dto.getCnt() + "</td>");
-					total = dto.getPrice() * dto.getCnt();
-					out.println("<td>" + total + "</td>");
-					out.println("</tr>");
-					totalSum += total;
-					
-				}
-				out.println("<tr align = 'center'>");
-				out.println("<td colspan= '4'>");
-				out.println("<input type='button' value='결제하기' onclick='fnPay()' />");
-				out.println("<input type='button' value='장바구니 비우기' onclick='fnClear()' />");
-				out.println("<input type='button' value='쇼핑 계속하기' onclick='fnGo()' />");
-				out.println("</td>");
-				out.println("<td  colspan = '2' 'text-align' name = \"pay\"> 총액 : ");
-				out.println(totalSum);
-				out.println("</td>");
-				out.println("</tr>");
-				session.setAttribute("pay", totalSum);
-			} //if else
-			%>
-		</table>
-	</div>
 
-
-
-
+				<% for (int i = 0; i < cart.size(); i++) {
+                     CartDTO dto = cart.get(i);%>
+				
+                <tbody>
+                    <tr class="cart__list__detail">
+                    <td align = center ><%=i+1 %></td>
+                        <td ><img  src=<%=dto.getImg() %> alt=""></td>
+                        <td><%=dto.getPrice() %>원</td>
+                        <td class="cart__list__option">
+                            <p><%=dto.getName() %></p>
+                        
+                        <td><span class="price"><%=dto.getPrice() %>원</span></td>
+                       <td><%=dto.getCnt() %>개 </td>
+                        <% total = dto.getPrice() * dto.getCnt();%>
+                        <%totalSum += total; %>
+                             </tr>
+                </tbody>
+                <%} %>
+                
+                
+                <tfoot>
+                    <tr>
+                        
+                        <td colspan="4"></td>
+                       
+                      <% out.println("<td name = \"pay\"> 총액 : ");%> <%=totalSum %>원</td>
+                         <%out.println("<input type='button' value='장바구니 비우기' onclick='fnClear()' />"); %> 
+                    </tr>
+                </tfoot>
+            </form>
+                       <%session.setAttribute("pay", totalSum); %>
+                <%} %>
+                
+                
+                
+        </table>
+        <div class="cart__mainbtns">
+            <button class="cart__bigorderbtn left"><a onclick='fnPay()'>결제하기</a></button>
+            <button class="cart__bigorderbtn right"><a href= 'Product_list.jsp'> 계속 쇼핑하기</a></button>
+        </div>
+    </section>
 </body>
 </html>

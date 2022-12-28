@@ -79,16 +79,11 @@ li {
 								<li><a href="adop_list.jsp" data-hover="입양">입양</a></li>
 								<li><a href="Product_list.jsp" data-hover="상품">상품</a></li>
 								<li></li>
-								<!-- <li><a href="#" data-hover="후원">후원</a></li>
+								<!-- <li><a href="#" data-hover="후원">후원</a></li>-->
 							</ul>
 						</div>
 					</div>
-
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					
-					<!-- /.navbar-collapse -->
 				</div>
-				<!-- /.container-fluid -->
 			</nav>
 		</header>
 
@@ -127,7 +122,7 @@ li {
 							<div class="search-window">
 								<form action="">
 									<div class="search-wrap">
-										<label for="search" class="blind">공지사항 내용 검색</label> <input
+										<label for="search" class="blind">지식공유방 내용 검색</label> <input
 											id="search" type="search" name="" placeholder="검색어를 입력해주세요."
 											value="">
 										<button type="submit" class="btn btn-dark">검색</button>
