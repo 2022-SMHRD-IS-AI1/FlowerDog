@@ -15,9 +15,7 @@ import Model.ProductDTO;
 @WebServlet("/Product_Insert_Service")
 public class Product_Insert_Service extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 		request.setCharacterEncoding("utf-8");
 
 		String pro_name = request.getParameter("pro_name");

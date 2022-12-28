@@ -20,7 +20,7 @@
 			</tr>
 			<tr>
 				<th> 가  격 </th>
-				<td><input type="text" name="pro_price"> 원</td>
+				<td><input type="text" name="pro_price"><span>원</span></td>
 			</tr>
 			<tr>
 				<th> 사  진 </th>
