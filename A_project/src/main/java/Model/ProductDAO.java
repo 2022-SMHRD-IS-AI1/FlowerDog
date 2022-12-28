@@ -78,12 +78,38 @@ public class ProductDAO {
 		return list;
 	}
 
+	public ProductDTO selectOne(int pro_seq) {
+		ProductDTO dto = new ProductDTO();
+		try {
+			getConn();
+
+			String sql = "select * from product where pro_seq = ?";
+			psmt = conn.prepareStatement(sql);
+			psmt.setInt(1, pro_seq);
+			rs = psmt.executeQuery();
+
+			while (rs.next()) {
+				dto.setPro_seq(pro_seq);
+				dto.setPro_name(rs.getString(2));
+				dto.setPro_price(rs.getInt(3));
+				dto.setPro_desc(rs.getString(4));
+				dto.setPro_img(rs.getString(5));
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			close();
+		}
+		return dto;
+	}
+	
 	// 상품 등록
 	public int insertProduct(ProductDTO dto) {
 
 		try {
 			getConn();
-			String sql = "INSERT INTO PRODUCT VALUES(PRODUCT_SEQ.NEXTVAL, ?, ?, ?, null";
+			String sql = "INSERT INTO PRODUCT VALUES(PRODUCT_SEQ.NEXTVAL, ?, ?, ?, null)";
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, dto.getPro_name());
 			psmt.setInt(2, dto.getPro_price());
@@ -101,11 +127,10 @@ public class ProductDAO {
 
 	// 상품 수정
 	public void UpdateProduct(ProductDTO dto) {
-
 		try {
 			getConn();
 
-			String sql = "UPDATE PRODUCT SET PRO_NAME=?, PRO_PRICE=?, PRO_DESC=?, WHERE PRO_SEQ=?";
+			String sql = "UPDATE PRODUCT SET PRO_NAME=?, PRO_PRICE=?, PRO_DESC=? WHERE PRO_SEQ = ?";
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, dto.getPro_name());
 			psmt.setInt(2, dto.getPro_price());
@@ -123,7 +148,6 @@ public class ProductDAO {
 	
 	// 상품 삭제
 	public void deleteProduct(int pro_seq) {
-		
 		try {
 			getConn();
 			

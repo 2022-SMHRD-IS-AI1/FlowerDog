@@ -16,7 +16,7 @@
 <head>
 <meta charset="UTF-8">
 <title>상품관리</title>
-<link  rel ="stylesheet" type = "text/css" href ="shopping.css">
+<link  rel ="stylesheet" type = "text/css" href ="./Boardcss/css/shopping.css">
 </head>
 <body>
 
@@ -41,10 +41,10 @@
 			<td><%=dto.getPro_name()%></td>
 			<td><%=dto.getPro_price()%></td>
 			<td>
-				<a href="ProductUpdate.jsp">상품 수정</a>
+				<a href="ProductUpdate.jsp?pro_seq=<%=dto.getPro_seq()%>">상품 수정</a>
 			</td>
 			<td>
-				<a href="Product_Delete_Service">상품 삭제</a>
+				<a href="Product_Delete_Service?pro_seq=<%=dto.getPro_seq()%>">상품 삭제</a>
 			</td>
 		</tr>
 
