@@ -155,7 +155,7 @@ if (obj == null) { //세션 정보가 없으면 배열을 생성 : 주문한 제
                     <tr>
                         
                         <td colspan="5"></td>
-                     <td  name = "pay"><b > <div class="total_price" >총액 : <%=totalSum %>원 <div> </b></td> 
+                     <td  name = "pay"><b class="total_price" > 총액 : <%=totalSum %>원 </b></td> 
                        
                          <%out.println("<input type='button' value='장바구니 비우기' onclick='fnClear()' />"); %> 
                     </tr>
