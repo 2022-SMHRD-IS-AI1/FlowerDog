@@ -32,6 +32,7 @@ if (obj == null) { //세션 정보가 없으면 배열을 생성 : 주문한 제
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="./Boardcss/css/cart.css" rel="stylesheet" />
+    
 </head>
 
 <body>
@@ -166,5 +167,9 @@ if (obj == null) { //세션 정보가 없으면 배열을 생성 : 주문한 제
             <button class="cart__bigorderbtn right"><a href= 'Product_list.jsp'> 계속 쇼핑하기</a></button>
         </div>
     </section>
+    	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Core theme JS-->
+	<script src="js/scripts.js"></script>
 </body>
 </html>
