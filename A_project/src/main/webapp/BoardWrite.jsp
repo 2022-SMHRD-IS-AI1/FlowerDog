@@ -75,7 +75,7 @@ li {
 			
 			<!-- banner -->
 			<div class="banner">
-				<img src="./Boardcss/image/113.jpg" alt="강아지">
+				<img src="./Boardcss/image/dogbanner.jpg" alt="강아지">
 					<div class="container">
 						<!-- heading -->
 						<h2></h2>
