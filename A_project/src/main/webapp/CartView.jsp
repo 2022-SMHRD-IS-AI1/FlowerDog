@@ -151,10 +151,10 @@ if (obj == null) { //세션 정보가 없으면 배열을 생성 : 주문한 제
                         <td colspan="4"></td>
                        
                          <%out.println("<input type='button' value='장바구니 비우기' onclick='fnClear()' />"); %> 
-                      <% out.println("<a name = \"pay\"> 총액 : ");%> <%=totalSum %>원</a>
                     </tr>
                 </tfoot>
             </form>
+                      <a name = "pay" ><b> 총액 : <%=totalSum %>원</b></a>
                        <%session.setAttribute("pay", totalSum); %>
                 <%} %>
                 
@@ -162,6 +162,7 @@ if (obj == null) { //세션 정보가 없으면 배열을 생성 : 주문한 제
                 
         </table>
         <div class="cart__mainbtns">
+        
             <button class="cart__bigorderbtn left"><a onclick='fnPay()'>결제하기</a></button>
             <button class="cart__bigorderbtn right"><a href= 'Product_list.jsp'> 계속 쇼핑하기</a></button>
         </div>
