@@ -46,6 +46,7 @@
                             <li>
                                 <hr class="dropdown-divider" />
                             </li>
+                            <li><a href="adop_benefit .jsp" class="dropdown-item" href="#!">입양혜택</a></li>
                             <li><a href="adop_list.jsp" class="dropdown-item" href="#!">입양 아이들</a></li>
                             <li><a class="dropdown-item" href="adop_map.jsp">주변 보호소 찾기</a></li>
                         </ul>
@@ -60,10 +61,9 @@
 	<header class="bg-dark py-5">
 		<div class="container px-4 px-lg-5 my-5">
 			<div class="text-center text-white">
-				<h1 class="display-4 fw-bolder">Dog Adoption</h1>
+				<h1 class="display-4 fw-bolder">유기견 보호센터</h1>
 				<hr style="border: solid 3px;">
 				<br>
-				<p class="lead fw-normal text-white-10 mb-0"><b>귀여운 아이들이 들어가 있는 상품을 구매해보세요</b></p>
 			</div>
 		</div>
 	</header>
@@ -86,5 +86,10 @@
 					width="800px" height="700px" style="border:" allowfullscreen=""
 					loading="lazy"> </iframe>
 			</p>
+			     	<!-- Bootstrap core JS-->
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Core theme JS-->
+	<script src="js/scripts.js"></script>
 </body>
 </html>

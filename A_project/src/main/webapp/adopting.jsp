@@ -7,12 +7,21 @@
 <meta charset="UTF-8">
 <title>Flower Dog</title>
 <link rel="stylesheet" href="./Boardcss/css/adopting.css">
+<style>
+	body {
+	margin-top: 100px;
+	min-height: 100vh;
+	background: url("./Boardcss/image/back2.jpg") fixed no-repeat center;
+	background-size: cover;
+	}
+</style>
 </head>
+
 <body>
 <%
 	MemberDTO info = (MemberDTO) session.getAttribute("info");
 	
-	%>
+%>
 <form action="Adopting_Service" method="post">
         <div class="container">
             <div class="input-form-backgroud row">
@@ -82,5 +91,10 @@
             </div>
         </div>
     </form>
+         	<!-- Bootstrap core JS-->
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Core theme JS-->
+	<script src="js/scripts.js"></script>
 </body>
 </html>

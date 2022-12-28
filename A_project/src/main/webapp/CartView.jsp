@@ -26,17 +26,16 @@ if (obj == null) { //세션 정보가 없으면 배열을 생성 : 주문한 제
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Flower Dog</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="./Boardcss/css/cart.css" rel="stylesheet" />
     <!-- Font awesome CSS -->
 <link href="./Boardcss/css/font-awesomeMK.min.css" rel="stylesheet">
   <!-- Favicon -->
 <link rel="shortcut icon" href="#">
 <link rel="stylesheet" type="text/css" href="./Boardcss/css/styleMK.css">
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./Boardcss/css/cart.css" rel="stylesheet" />
+
     
 </head>
 
@@ -59,6 +58,7 @@ if (obj == null) { //세션 정보가 없으면 배열을 생성 : 주문한 제
                             <li>
                                 <hr class="dropdown-divider" />
                             </li>
+                            <li><a href="adop_benefit .jsp" class="dropdown-item" href="#!">입양혜택</a></li>
                             <li><a href="adop_list.jsp" class="dropdown-item" href="#!">입양 아이들</a></li>
                             <li><a class="dropdown-item" href="adop_map.jsp">주변 보호소 찾기</a></li>
                         </ul>
@@ -155,7 +155,7 @@ if (obj == null) { //세션 정보가 없으면 배열을 생성 : 주문한 제
                     <tr>
                         
                         <td colspan="5"></td>
-                     <td  name = "pay"><b > <div class="total_price" >총액 : <%=totalSum %>원 <div> </b></td> 
+                     <td  name = "pay"><b class="total_price" > 총액 : <%=totalSum %>원 </b></td> 
                        
                          <%out.println("<input type='button' value='장바구니 비우기' onclick='fnClear()' />"); %> 
                     </tr>
