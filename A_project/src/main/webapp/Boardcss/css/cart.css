@@ -403,16 +403,20 @@ blockquote {
 b,
 strong {
   font-weight: bolder;
-  font-size: 20px
+  font-size: 15px;
+  text-align: center;
  
   
 }
 
-.total_price{
-background-color: #bce0cf ;
 
+div.total_price{
+	background-color:  #e7eaeb;
+	width: 150px;
+    height: 40px;
+    font-size: 13px;
+    border-radius: 5px;
 }
-
 small, .small {
 size: 0.875em;
 }
