@@ -149,13 +149,13 @@ if (obj == null) { //세션 정보가 없으면 배열을 생성 : 주문한 제
                 <tfoot>
                     <tr>
                         
-                        <td colspan="4"></td>
+                        <td colspan="5"></td>
+                     <td class="total_price" name = "pay"><b> 총액 : <%=totalSum %>원</b></td> 
                        
                          <%out.println("<input type='button' value='장바구니 비우기' onclick='fnClear()' />"); %> 
                     </tr>
                 </tfoot>
             </form>
-                      <a name = "pay" ><b> 총액 : <%=totalSum %>원</b></a>
                        <%session.setAttribute("pay", totalSum); %>
                 <%} %>
                 
