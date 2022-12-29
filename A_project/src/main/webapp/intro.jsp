@@ -1,4 +1,3 @@
-
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -9,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>flower Dog</title>
+    <title>Flower Dog</title>
     <!-- Font awesome CSS -->
 <link href="./Boardcss/css/font-awesomeMK.min.css" rel="stylesheet">
   <!-- Favicon -->
@@ -49,7 +48,13 @@
                         </ul>
                     </li>
                 </ul>
-              
+                <form class="d-flex">
+                    <button class="btn btn-outline-dark" type="submit">
+                        <i class="bi-cart-fill me-1"></i>
+                        Cart
+                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </form>
             </div>
         </div>
     </nav>
@@ -79,7 +84,7 @@
 	<!-- 동영상 -->
 	<div class="wrapper">
 		<video class="video" autoplay muted controls>
-			<source type="video/mp4" src="./Boardcss/image/intro.mp4">
+			<source type="video/mp4" src="./Boardcss/image/dddd11.mp4">
 		</video>
 	</div>
 
