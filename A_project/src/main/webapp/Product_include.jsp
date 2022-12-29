@@ -20,7 +20,7 @@
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="./Boardcss/css/product_detail.css" rel="stylesheet" />
+        <link href="./Boardcss/css/product_detail.css?" rel="stylesheet" />
         
 </head>
 
@@ -52,8 +52,13 @@
                         </div>
                     </div>
                 </div>
-                            <span >수익금 일부는 유기동물을 위해 후원됩니다</span>
             </div>
+            
+            <div class="intro">
+                        <p class="lead"> 수익금의 일부는 유기동물을 위해 후원됩니다. </p>
+                        </div>
+            
+            
             
 
         </section>
