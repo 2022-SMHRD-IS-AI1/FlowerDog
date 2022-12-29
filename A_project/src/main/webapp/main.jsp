@@ -2,7 +2,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
+	
 	 MemberDTO info = (MemberDTO)session.getAttribute("info");
+	
 %>
 <!DOCTYPE html>
 <html>
@@ -83,7 +85,7 @@
     </div>
     <ul class="main-menu">
       <li class="item">
-        <div class="item__name"><a href="intro.jsp">회사 소개</div>
+        <div class="item__name">회사 소개</div>
       </li>
       <li class="item">
         <div class="item__name"><a href="Product_list.jsp">상품</a></div>
@@ -98,32 +100,22 @@
   </div>
 </header>
 
-
-  <!-- YOUTUBE VIDEO -->
-  <section class="youtube">
-	<div class="youtube__area">
-		<div id="player"></div>
-	</div>
-		<div class="youtube__cover"></div>
-		<div class="inner"></div>
-  </section>
-
 	<!-- VISUAL -->
 <section class="visual">
   <div class="promotion">
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="./Boardcss/image/banner2.png" alt="꽃개3"/>
+          <img src="./Boardcss/image/promotion1.png" alt="꽃개1"/>
         </div>
         <div class="swiper-slide">
-          <img src="./Boardcss/image/promotion1.png" alt="꽃개1"/>
+          <img src="./Boardcss/image/banner7.png" alt="꽃개3"/>
         </div>
         <div class="swiper-slide">
           <img src="./Boardcss/image/promotion2.png" alt="꽃개2"/>
         </div>
         <div class="swiper-slide">
-          <img src="./Boardcss/image/banner1.png" alt="꽃개4"/>
+          <img src="./Boardcss/image/banner5.png" alt="꽃개4"/>
         </div>
         <div class="swiper-slide">
           <img src="./Boardcss/image/banner3.png" alt="꽃개5"/>
@@ -138,7 +130,16 @@
       <div class="material-icons">arrow_forward</div>
     </div>
   </div>
-  
+
+  <div style="height: 300px;"></div>
+  <!-- YOUTUBE VIDEO -->
+  <section class="youtube">
+	<div class="youtube__area">
+		<div id="player"></div>
+	</div>
+		<div class="youtube__cover"></div>
+		<div class="inner"></div>
+  </section>
   
   <div class="content">
   	<h1 align="center" style="font-size: 50px;">입양</h1>
