@@ -100,11 +100,24 @@
   </div>
 </header>
 
+
+  <!-- YOUTUBE VIDEO -->
+  <section class="youtube">
+	<div class="youtube__area">
+		<div id="player"></div>
+	</div>
+		<div class="youtube__cover"></div>
+		<div class="inner"></div>
+  </section>
+
 	<!-- VISUAL -->
 <section class="visual">
   <div class="promotion">
     <div class="swiper-container">
       <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./Boardcss/image/banner2.png" alt="꽃개3"/>
+        </div>
         <div class="swiper-slide">
           <img src="./Boardcss/image/promotion1.png" alt="꽃개1"/>
         </div>
@@ -112,13 +125,10 @@
           <img src="./Boardcss/image/promotion2.png" alt="꽃개2"/>
         </div>
         <div class="swiper-slide">
-          <img src="./Boardcss/image/promotion3.png" alt="꽃개3"/>
+          <img src="./Boardcss/image/banner1.png" alt="꽃개4"/>
         </div>
         <div class="swiper-slide">
-          <img src="./Boardcss/image/promotion4.png" alt="꽃개4"/>
-        </div>
-        <div class="swiper-slide">
-          <img src="./Boardcss/image/promotion4.png" alt="5"/>
+          <img src="./Boardcss/image/banner3.png" alt="꽃개5"/>
         </div>
       </div>
     </div>
@@ -130,15 +140,7 @@
       <div class="material-icons">arrow_forward</div>
     </div>
   </div>
-  <div style="height: 300px;"></div>
-  <!-- YOUTUBE VIDEO -->
-  <section class="youtube">
-	<div class="youtube__area">
-		<div id="player"></div>
-	</div>
-		<div class="youtube__cover"></div>
-		<div class="inner"></div>
-  </section>
+  
   
   <div class="content">
   	<h1 align="center" style="font-size: 50px;">입양</h1>
