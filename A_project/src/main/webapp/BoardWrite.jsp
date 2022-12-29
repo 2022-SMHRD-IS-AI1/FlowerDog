@@ -123,12 +123,12 @@ li {
 
 
 				<div>
-					<input type="file">
+					<input type="file" class="btn1">
 				</div>
 
 				<div>
-					<a href="BoardWrite.jsp"><button id="Reset">초기화하기</button></a> <input
-						type="submit" value="작성하기">
+					<a href="BoardWrite.jsp"><button id="Reset" class="btn1">초기화하기</button></a>
+					 <input	type="submit" value="작성하기" class="btn1">
 				</div>
 			</div>
 		</form>
