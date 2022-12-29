@@ -1,4 +1,3 @@
-
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -9,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>flower Dog</title>
+    <title>Flower Dog</title>
     <!-- Font awesome CSS -->
 <link href="./Boardcss/css/font-awesomeMK.min.css" rel="stylesheet">
   <!-- Favicon -->
@@ -35,7 +34,7 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                   <li class="nav-item"><a href="main.jsp" class="nav-link active" aria-current="page" href="#!">메인</a></li>
                     <li class="nav-item"><a href="Product_list.jsp" class="nav-link" href="#!">상품</a></li>
-                    <li class="nav-item"><a href="noticeboard.jsp" class="nav-link" href="#!">게시판</a></li>
+                    <li class="nav-item"><a href="noticeboard.jsp" class="nav-link" href="#!">지식공유방</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">입양리스트</a>
@@ -44,6 +43,7 @@
                             <li>
                                 <hr class="dropdown-divider" />
                             </li>
+                            <li><a href="adop_benefit .jsp" class="dropdown-item" href="#!">입양혜택</a></li>
                             <li><a href="adop_list.jsp" class="dropdown-item" href="#!">입양 아이들</a></li>
                             <li><a class="dropdown-item" href="adop_map.jsp">주변 보호소 찾기</a></li>
                         </ul>
@@ -85,7 +85,7 @@
 	<!-- 동영상 -->
 	<div class="wrapper">
 		<video class="video" autoplay muted controls>
-			<source type="video/mp4" src="./Boardcss/image/intro.mp4">
+			<source type="video/mp4" src="./Boardcss/image/dddd11.mp4">
 		</video>
 	</div>
 
@@ -115,6 +115,11 @@
 			</p>
 		</div>
 	</footer>
+	<!-- Bootstrap core JS-->
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Core theme JS-->
+	<script src="js/scripts.js"></script>
     </body>
 
     
