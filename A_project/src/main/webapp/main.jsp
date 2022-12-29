@@ -86,11 +86,7 @@
     </div>
     <ul class="main-menu">
       <li class="item">
-<<<<<<< HEAD
-        <div class="item__name">회사 소개</div>
-=======
         <div class="item__name"><a href="intro.jsp"><b>소개</b></a></div>
->>>>>>> branch 'master' of https://github.com/2022-SMHRD-IS-AI1/FlowerDog.git
       </li>
       <li class="item">
         <div class="item__name"><a href="Product_list.jsp"><b>상품</b></a></div>
@@ -135,7 +131,7 @@
       <div class="material-icons">arrow_forward</div>
     </div>
   </div>
-
+  
   <div style="height: 300px;"></div>
   <!-- YOUTUBE VIDEO -->
   <section class="youtube">
@@ -146,6 +142,7 @@
 		<div class="inner"></div>
   </section>
   
+ 
   <div class="content">
     <div class="inner">
       <div class="fade-in">
@@ -193,7 +190,10 @@
       </div>
     </div>
   </div>
+  
+  
 </section>
+
 
 
   	<!-- footer -->
