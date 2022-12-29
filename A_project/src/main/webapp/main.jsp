@@ -2,7 +2,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
+	
 	 MemberDTO info = (MemberDTO)session.getAttribute("info");
+	
 %>
 <!DOCTYPE html>
 <html>
@@ -45,6 +47,7 @@
   <!-- Favicon -->
 <link rel="shortcut icon" href="#">
 <link rel="stylesheet" type="text/css" href="./Boardcss/css/styleMK.css">
+
 </head>
 <body>
 <!-- HEADER -->
@@ -107,16 +110,16 @@
           <img src="./Boardcss/image/promotion1.png" alt="꽃개1"/>
         </div>
         <div class="swiper-slide">
+          <img src="./Boardcss/image/banner7.png" alt="꽃개3"/>
+        </div>
+        <div class="swiper-slide">
           <img src="./Boardcss/image/promotion2.png" alt="꽃개2"/>
         </div>
         <div class="swiper-slide">
-          <img src="./Boardcss/image/promotion3.png" alt="꽃개3"/>
+          <img src="./Boardcss/image/banner5.png" alt="꽃개4"/>
         </div>
         <div class="swiper-slide">
-          <img src="./Boardcss/image/promotion4.png" alt="꽃개4"/>
-        </div>
-        <div class="swiper-slide">
-          <img src="./Boardcss/image/promotion4.png" alt="5"/>
+          <img src="./Boardcss/image/banner3.png" alt="꽃개5"/>
         </div>
       </div>
     </div>
@@ -128,6 +131,7 @@
       <div class="material-icons">arrow_forward</div>
     </div>
   </div>
+  
   <div style="height: 300px;"></div>
   <!-- YOUTUBE VIDEO -->
   <section class="youtube">
@@ -138,8 +142,8 @@
 		<div class="inner"></div>
   </section>
   
+ 
   <div class="content">
-  	<h1 align="center" style="font-size: 50px;">입양</h1>
     <div class="inner">
       <div class="fade-in">
         <div class="container">
@@ -186,7 +190,10 @@
       </div>
     </div>
   </div>
+  
+  
 </section>
+
 
 
   	<!-- footer -->
@@ -205,8 +212,8 @@
 			<!-- copy right -->
 			<!-- This theme comes under Creative Commons Attribution 4.0 Unported. So don't remove below link back -->
 			<p class="copy-right">
-				inception &FlowerDog; 2023 <a href="#홈페이지소개">Your Site</a> | Team Member : <a
-					href="#홈페이지소개">Flower Dog</a>, Have a happy day.
+				inception &FlowerDog; 2023 <a href="intro.jsp">Your Site</a> | Team Member : <a
+					href="intro.jsp">Flower Dog</a>, Have a happy day.
 			</p>
 		</div>
 	</footer>
