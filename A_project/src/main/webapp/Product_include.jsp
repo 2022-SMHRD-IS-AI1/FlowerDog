@@ -33,6 +33,7 @@ String name = request.getParameter("name");
 String price = request.getParameter("price");
 %>
 
+
 <!-- Product section-->
 <section class="py-5">
 	<div class="container px-4 px-lg-5 my-5">
@@ -42,6 +43,7 @@ String price = request.getParameter("price");
 			</div>
 			<div class="col-md-6">
 				<h1 class="display-5 fw-bolder"><%=name%></h1>
+
 
 				<div class="fs-5 mb-5">
 					<span class="text-decoration-line-through"></span>
