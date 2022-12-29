@@ -20,7 +20,7 @@
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="./Boardcss/css/product_detail.css" rel="stylesheet" />
+        <link href="./Boardcss/css/product_detail.css?" rel="stylesheet" />
         
 </head>
 
@@ -52,9 +52,26 @@
                         </div>
                     </div>
                 </div>
-                            <span >수익금 일부는 유기동물을 위해 후원됩니다</span>
             </div>
+<<<<<<< HEAD
+            <br>
+            <br>
+            <br>
+                  <div class="container px-4 px-lg-5 my-5">
+            <h1 class="lead" style="border-bottom: 1px solid #000; position:relative; font-size: 40px">상품소개</h1>
+                <div class="row gx-4 gx-lg-5 align-items-center">
+                    <div class="col-md-6"><img src="./Boardcss/image/tumb.png"></div>
+                    </div>
+                </div>
+=======
             
+            <div class="intro">
+                        <p class="lead"> 수익금의 일부는 유기동물을 위해 후원됩니다. </p>
+                        </div>
+            
+            
+            
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-IS-AI1/FlowerDog.git
 
         </section>
 
