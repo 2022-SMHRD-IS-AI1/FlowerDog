@@ -5,7 +5,7 @@
   <%
  String[] img ={"./Boardcss/image/goods_01.jpg", "./Boardcss/image/goods_02.jpg", "./Boardcss/image/goods_13.jpg", "./Boardcss/image/goods_19.jpg", "./Boardcss/image/goods_05.jpg", "./Boardcss/image/goods_06.jpg", "./Boardcss/image/goods_15.jpg", "./Boardcss/image/goods_23.jpg"};
  String[] product ={"Flower Dog 파우치", "Flower Dog 파우치 (제작)", "2023년도 Flower Dog 벽걸이 달력 (블랙)", "Flower Dog 에코백 (제작)", "2023년도 Flower Dog벽걸이 달력 (컬러)", "2023년도 Flower Dog벽걸이 달력 (제작)", "Flower Dog 텀블러", "Flower Dog 폰케이스"};
- String[] price ={"8500", "18500", "14000", "15000", "20000", "20000", "22000", "9000"};
+ String[] price ={"8500", "18500", "14000", "15000", "20000", "20000", "25000", "9000"};
  %>
 <!DOCTYPE html>
 <html lang="en">
@@ -115,7 +115,7 @@ function fnCart(img, name, price) {
                             
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick='fnCart("<%=img[5]%>","<%=product[5]%>", "<%=price[5]%>")'>Add to cart</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick='fnCart("<%=img[5]%>","<%=product[5]%>", "<%=price[5]%>")'>장바구니</a></div>
                            
                             </div>
                         </div>

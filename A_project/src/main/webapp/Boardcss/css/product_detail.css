@@ -79,6 +79,11 @@
   }
 }
 
+ .img{
+position: relative;
+top: 40px; left: 40px;
+ }
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -493,7 +498,6 @@ progress {
 .lead {
     font-size: 1.25rem;
     font-weight: 300;
-    margin-left: 21rem;
     
 }
 .display-1 {

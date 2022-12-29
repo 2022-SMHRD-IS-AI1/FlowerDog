@@ -8,9 +8,9 @@
     pageEncoding="UTF-8"%>
  <%
  
- String[] img ={"./Boardcss/image/goods_15.jpg", "./Boardcss/image/goods_05.jpg", "./Boardcss/image/goods_23.jpg","./Boardcss/image/goods_05.jpg" ,"./Boardcss/image/goods_19.jpg","./Boardcss/image/goods_06.jpg" , "./Boardcss/image/goods_01.jpg","./Boardcss/image/goods_02.jpg" };
+ String[] img ={"./Boardcss/image/tmb.png", "./Boardcss/image/goods_05.jpg", "./Boardcss/image/goods_23.jpg","./Boardcss/image/goods_05.jpg" ,"./Boardcss/image/goods_19.jpg","./Boardcss/image/goods_06.jpg" , "./Boardcss/image/goods_01.jpg","./Boardcss/image/goods_02.jpg"};
 
- ArrayList<String> product = new ArrayList<>();
+ArrayList<String> product = new ArrayList<>();
 ArrayList<String> price = new ArrayList<>();
 
 CartDAO dao = new CartDAO();

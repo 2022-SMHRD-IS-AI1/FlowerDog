@@ -125,19 +125,16 @@ header .main-menu{
   z-index: 1;
   display: flex;
 }
-header .main-menu .item{
-
-}
 header .main-menu .item .item__name{
-  padding: 10px 20px 34px 20px;
+  padding: 10px 20px 10px 20px;
   font-family: Arial, sans-serif;
 }
 header .main-menu .item:hover .item__name{
-  background-color: #ffffff;
+  background-color: rgb(192, 192, 192);
   color: #669900;
   border-radius: 10px;
 }
-header .main-menu .item .item__contents{
+header .main-menu.item__contents{
   width: 100%;
   position: fixed;
   left: 0;

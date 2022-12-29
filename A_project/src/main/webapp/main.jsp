@@ -70,7 +70,7 @@
         </li>
         <%} else {%>
         <li>
-          <a href="javascript:void(0)">마이페이지</a>
+          <a href="CartView.jsp">장바구니</a>
         </li>
         <%} %>
         <%} else {%>
