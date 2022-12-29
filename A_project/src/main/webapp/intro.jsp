@@ -1,5 +1,4 @@
-
-
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,11 +43,6 @@
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <button class="btn btn-outline-dark" type="submit">
-                        <i class="bi-cart-fill me-1"></i>
-                        Cart
-                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                    </button>
                 </form>
             </div>
         </div>
@@ -79,15 +73,15 @@
 	<!-- 동영상 -->
 	<div class="wrapper">
 		<video class="video" autoplay muted controls>
-			<source type="video/mp4" src="./Boardcss/image/dddd11.mp4">
+			<source type="video/mp4" src="./Boardcss/image/intro.mp4">
 		</video>
 	</div>
 
 
 	<section>
-                    <div class="intro1"></div>
-                    <div class="intro2"></div>
-                </section>
+		<div class="intro1"></div>
+		<div class="intro2"></div>
+	</section>
 
 
 
