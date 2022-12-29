@@ -52,8 +52,9 @@
                         </div>
                     </div>
                 </div>
+                            <span >수익금 일부는 유기동물을 위해 후원됩니다</span>
             </div>
-            <p class="lead">상품설명</p>
+            
 
         </section>
 
