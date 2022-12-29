@@ -85,7 +85,7 @@
     </div>
     <ul class="main-menu">
       <li class="item">
-        <div class="item__name">회사 소개</div>
+        <div class="item__name"><a href="intro.jsp">회사 소개</a></div>
       </li>
       <li class="item">
         <div class="item__name"><a href="Product_list.jsp">상품</a></div>
