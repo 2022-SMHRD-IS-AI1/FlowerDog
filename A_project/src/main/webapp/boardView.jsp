@@ -21,7 +21,7 @@
 <link rel="shortcut icon" href="#">
 <link rel="stylesheet" type="text/css" href="./Boardcss/css/styleMK.css">
 <link rel="stylesheet" href="./Boardcss/css/shopping.css">
-		
+<link rel="stylesheet" href="./Boardcss/css/btn.css">
 <script type="text/javascript" src="script/board.js"></script>
 <style>
 
@@ -118,12 +118,25 @@ li {
 		</table>
 		<br><br>
 		<%if(info !=null) {%>
-			<input type="button" value="게시글 수정" onclick="location.href='BoardUpdate.jsp?number=<%=dto.getNumber()%>'">
-			<input type="button" value="게시글 삭제" onclick="location.href='Board_Removal?number=<%=dto.getNumber()%>'">
-			<input type="button" value="게시글 리스트" onclick="location.href='noticeboard.jsp'">
-			<input type="button" value="게시글 등록" onclick="location.href='BoardWrite.jsp'">
+			<div style="margin: 0; display: flex; margin-top: 10px; justify-content: center;">
+				<div class="reserve_btn">
+					<input type="button" value="게시글 수정" onclick="location.href='BoardUpdate.jsp?number=<%=dto.getNumber()%>'">
+				</div>
+				<div class="reserve_btn" style="margin-left: 10px;">
+					<input type="button" value="게시글 삭제" onclick="location.href='Board_Removal?number=<%=dto.getNumber()%>'">
+				</div>
+				<div class="reserve_btn" style="margin-left: 10px;">
+					<input type="button" value="게시글 리스트" onclick="location.href='noticeboard.jsp'">
+				</div>
+				<div class="reserve_btn" style="margin-left: 10px;">
+					<input type="button" value="게시글 등록" onclick="location.href='BoardWrite.jsp'">
+				</div>
+				
+			</div>
 		<%} else{%>
-			<input type="button" value="게시글 리스트" onclick="location.href='noticeboard.jsp'">
+			<div class="reserve_btn">
+				<input type="button" value="게시글 리스트" onclick="location.href='noticeboard.jsp'">
+			</div>
 		<%} %>	
 	</div>
 	

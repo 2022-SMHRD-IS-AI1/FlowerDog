@@ -27,6 +27,7 @@
 		
 		<!-- Font awesome CSS -->
 <link href="./Boardcss/css/font-awesomeMK.min.css" rel="stylesheet">
+<link rel="stylesheet" href="./Boardcss/css/btn.css">
   <!-- Favicon -->
 <link rel="shortcut icon" href="#">
 <link rel="stylesheet" type="text/css" href="./Boardcss/css/styleMK.css">
@@ -110,14 +111,14 @@
                       </div>
           
           
-                      <div>
-                         <input type="file">
-                      </div>
-          
-                      <div>
-                         <a href="BoardUpdate.jsp"><button id="Reset">초기화하기</button></a> 
-                         <input type="submit" value="작성하기">
-                      </div>
+	                  <div style="margin: 0; display: flex; margin-top: 10px;">
+						<div class="reserve_btn" >
+							<a href="BoardUpdate.jsp">초기화하기</a>
+						</div>
+						<div class="reserve_btn" style="margin-left: 5px;">
+							<input	type="submit" value="작성하기">
+						</div>
+					  </div>
                    </div>
                 </form>
              </div>

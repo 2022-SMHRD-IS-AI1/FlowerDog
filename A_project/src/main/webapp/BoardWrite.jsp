@@ -25,6 +25,7 @@
 <!-- Favicon -->
 <link rel="shortcut icon" href="#">
 <link rel="stylesheet" type="text/css" href="./Boardcss/css/styleMK.css">
+<link rel="stylesheet" type="text/css" href="./Boardcss/css/btn.css">
 <style type="text/css">
 ul {
 	list-style: none;
@@ -120,16 +121,15 @@ li {
 				<div>
 					<textarea name="content" placeholder="내용" required rows="10"cols="60" style="font-size: 20px;"></textarea>
 				</div>
-
-
-				<div>
-					<input type="file" class="btn1">
+				<div style="margin: 0; display: flex; margin-top: 10px;">
+					<div class="reserve_btn" >
+						<a href="BoardWrite.jsp">초기화하기</a>
+					</div>
+					<div class="reserve_btn" style="margin-left: 5px;">
+						<input	type="submit" value="작성하기">
+					</div>
 				</div>
-
-				<div>
-					<a href="BoardWrite.jsp"><button id="Reset" class="btn1">초기화하기</button></a>
-					 <input	type="submit" value="작성하기" class="btn1">
-				</div>
+				
 			</div>
 		</form>
 	</div>
