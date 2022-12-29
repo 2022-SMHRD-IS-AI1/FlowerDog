@@ -53,7 +53,7 @@
                     </div>
                 </div>
             </div>
-<<<<<<< HEAD
+
             <br>
             <br>
             <br>
@@ -63,7 +63,7 @@
                     <div class="col-md-6"><img src="./Boardcss/image/tumb.png"></div>
                     </div>
                 </div>
-=======
+
             
             <div class="intro">
                         <p class="lead"> 수익금의 일부는 유기동물을 위해 후원됩니다. </p>
@@ -71,7 +71,7 @@
             
             
             
->>>>>>> branch 'master' of https://github.com/2022-SMHRD-IS-AI1/FlowerDog.git
+
 
         </section>
 
