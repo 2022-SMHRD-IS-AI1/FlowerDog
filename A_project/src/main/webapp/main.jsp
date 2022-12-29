@@ -47,6 +47,7 @@
   <!-- Favicon -->
 <link rel="shortcut icon" href="#">
 <link rel="stylesheet" type="text/css" href="./Boardcss/css/styleMK.css">
+
 </head>
 <body>
 <!-- HEADER -->
@@ -142,7 +143,6 @@
   </section>
   
   <div class="content">
-  	<h1 align="center" style="font-size: 50px;">입양</h1>
     <div class="inner">
       <div class="fade-in">
         <div class="container">

@@ -274,9 +274,8 @@ header .badges .badge{
 .content{
   width: 100%;
   margin-top: 200px;
-  background-image: url("../image/flower-bg.png");
-  background-repeat: no-repeat;
-
+  background-image: url("../image/bg-flower.png");
+  backgrckground-repeat: no-repeat;
 }
 .content .inner{
   height: 400px;
