@@ -86,16 +86,20 @@
     </div>
     <ul class="main-menu">
       <li class="item">
+<<<<<<< HEAD
         <div class="item__name">회사 소개</div>
+=======
+        <div class="item__name"><a href="intro.jsp"><b>소개</b></a></div>
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-IS-AI1/FlowerDog.git
       </li>
       <li class="item">
-        <div class="item__name"><a href="Product_list.jsp">상품</a></div>
+        <div class="item__name"><a href="Product_list.jsp"><b>상품</b></a></div>
       </li>
       <li class="item">
-        <div class="item__name"><a href="adop_list.jsp">입양</a></div>
+        <div class="item__name"><a href="adop_list.jsp"><b>입양</b></a></div>
 
       <li class="item">
-        <div class="item__name"><a href="noticeboard.jsp" >지식공유방</a></div>
+        <div class="item__name"><a href="noticeboard.jsp"><b>지식공유방</b></a></div>
       </li>
     </ul>
   </div>

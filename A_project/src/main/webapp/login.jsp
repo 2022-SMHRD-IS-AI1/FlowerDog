@@ -43,11 +43,7 @@
                     <input class="input-field" type="text" name = "tel" placeholder="전화번호" required>
                     <br><br><br><br>
 
-					<div>
-					<span> <input type="text" placeholder="인증번호입력">
-					<button href="#">인증번호받기</button>
-					</span>
-					</div>
+				
 
 				<button class="submit" type="submit">REGISTER</button>
                 </form>
