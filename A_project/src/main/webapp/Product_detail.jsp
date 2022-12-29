@@ -115,7 +115,7 @@ function fnCart(img, name, price) {
                             
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick='fnCart("<%=img[5]%>","<%=product[5]%>", "<%=price[5]%>")'>Add to cart</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick='fnCart("<%=img[5]%>","<%=product[5]%>", "<%=price[5]%>")'>장바구니</a></div>
                            
                             </div>
                         </div>
