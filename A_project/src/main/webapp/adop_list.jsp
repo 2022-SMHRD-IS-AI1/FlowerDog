@@ -82,7 +82,7 @@
 	<header class="bg-dark py-5">
 		<div class="container px-4 px-lg-5 my-5">
 			<div class="text-center text-white">
-				<h1 class="display-4 fw-bolder">Dog Adoption</h1>
+				<h1 class="display-4 fw-bolder">보호중인 아이들</h1>
 				<hr style="border: solid 3px;">
 				<br>
 			</div>
