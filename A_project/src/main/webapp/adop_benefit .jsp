@@ -38,7 +38,7 @@ pageEncoding="UTF-8"%>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                   <li class="nav-item"><a href="main.jsp" class="nav-link active" aria-current="page" href="#!">메인</a></li>
                     <li class="nav-item"><a href="Product_list.jsp" class="nav-link" href="#!">상품</a></li>
-                    <li class="nav-item"><a href="noticeboard.jsp" class="nav-link" href="#!">게시판</a></li>
+                    <li class="nav-item"><a href="noticeboard.jsp" class="nav-link" href="#!">지식공유방</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">입양리스트</a>
