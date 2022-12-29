@@ -57,7 +57,7 @@
     <header class="bg-dark py-5">
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
-                <h1 class="display-4 fw-bolder">Dog Adoption</h1>
+                <h1 class="display-4 fw-bolder">입양절차 안내</h1>
                 <hr style="border:solid 3px;">
                 <br>
                 <p class="lead fw-normal text-white-10 mb-0"></p>
@@ -135,7 +135,7 @@
                                 <h4 class="subheading"> 방문예약 & 입양 문의</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">보호소의 아이들은 실시간으로 입양이 이루어지고 있기 떄문에 방문예약 및 입양 문의글을 남겨주세요.</p></div>
-                            <a href="#">입양 문의 바로가기</a>
+                           
                         </div>
                     </li>
                     <li>

@@ -58,7 +58,7 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                   <li class="nav-item"><a href="main.jsp" class="nav-link active" aria-current="page" href="#!">메인</a></li>
                     <li class="nav-item"><a href="Product_list.jsp" class="nav-link" href="#!">상품</a></li>
-                    <li class="nav-item"><a href="noticeboard.jsp" class="nav-link" href="#!">게시판</a></li>
+                    <li class="nav-item"><a href="noticeboard.jsp" class="nav-link" href="#!">지식공유방</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">입양리스트</a>
@@ -82,7 +82,7 @@
 	<header class="bg-dark py-5">
 		<div class="container px-4 px-lg-5 my-5">
 			<div class="text-center text-white">
-				<h1 class="display-4 fw-bolder">Dog Adoption</h1>
+				<h1 class="display-4 fw-bolder">보호중인 아이들</h1>
 				<hr style="border: solid 3px;">
 				<br>
 			</div>
