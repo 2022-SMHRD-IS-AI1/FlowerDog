@@ -85,7 +85,7 @@
 	<!-- 동영상 -->
 	<div class="wrapper">
 		<video class="video" autoplay muted controls>
-			<source type="video/mp4" src="./Boardcss/image/intro.mp4">
+			<source type="video/mp4" src="./Boardcss/image/dddd11.mp4">
 		</video>
 	</div>
 
