@@ -79,6 +79,11 @@
   }
 }
 
+ .img{
+position: relative;
+top: 40px; left: 40px;
+ }
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);

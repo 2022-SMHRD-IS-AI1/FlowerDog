@@ -53,7 +53,15 @@
                     </div>
                 </div>
             </div>
-            <p class="lead">상품설명</p>
+            <br>
+            <br>
+            <br>
+                  <div class="container px-4 px-lg-5 my-5">
+            <h1 class="lead" style="border-bottom: 1px solid #000; position:relative; font-size: 40px">상품소개</h1>
+                <div class="row gx-4 gx-lg-5 align-items-center">
+                    <div class="col-md-6"><img src="./Boardcss/image/tumb.png"></div>
+                    </div>
+                </div>
 
         </section>
 
