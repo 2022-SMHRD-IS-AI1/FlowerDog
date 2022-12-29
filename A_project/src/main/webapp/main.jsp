@@ -139,7 +139,6 @@
   </section>
   
   <div class="content">
-  	<h1 align="center" style="font-size: 50px;">입양</h1>
     <div class="inner">
       <div class="fade-in">
         <div class="container">
@@ -205,8 +204,8 @@
 			<!-- copy right -->
 			<!-- This theme comes under Creative Commons Attribution 4.0 Unported. So don't remove below link back -->
 			<p class="copy-right">
-				inception &FlowerDog; 2023 <a href="#홈페이지소개">Your Site</a> | Team Member : <a
-					href="#홈페이지소개">Flower Dog</a>, Have a happy day.
+				inception &FlowerDog; 2023 <a href="intro.jsp">Your Site</a> | Team Member : <a
+					href="intro.jsp">Flower Dog</a>, Have a happy day.
 			</p>
 		</div>
 	</footer>
